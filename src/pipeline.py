@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import hashlib
 import json
+from datetime import UTC, datetime
 from pathlib import Path
 
 import joblib
@@ -173,7 +175,14 @@ def run_pipeline(raw_df: pd.DataFrame, output_dir: Path = Path(".")) -> dict:
     sample_rows["classical_score"] = logistic_score[:12]
     sample_rows["typed_state"] = [employee_row_to_state(row) for _, row in test_x.head(12).iterrows()]
 
+    dataset_fingerprint = hashlib.sha256(raw_df.to_csv(index=False).encode()).hexdigest()[:16]
+
     summary = {
+        "run": {
+            "id": f"attrition-lab-{datetime.now(UTC).strftime('%Y%m%d%H%M%S')}",
+            "created_at": datetime.now(UTC).isoformat(),
+            "dataset_hash": dataset_fingerprint,
+        },
         "dataset": "IBM HR Analytics Employee Attrition",
         "source": "https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset",
         "rows": len(raw_df),
