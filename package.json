@@ -1,0 +1,19 @@
+{
+  "name": "business-classifier-benchmark",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite app --host 0.0.0.0",
+    "build": "vite build app --outDir dist",
+    "preview": "vite preview app --outDir dist",
+    "check": "npm run build"
+  },
+  "dependencies": {
+    "vite": "^8.3.4",
+    "typescript": "^5.6.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,334 @@
+{
+  "dataset": "IBM HR Analytics Employee Attrition",
+  "source": "https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset",
+  "rows": 1470,
+  "columns": 35,
+  "target": "Attrition",
+  "split": {
+    "train": 1176,
+    "test": 294,
+    "random_state": 42
+  },
+  "eda": {
+    "rows": 1470,
+    "features": 30,
+    "positive_rate": 0.16122448979591836,
+    "target_balance": {
+      "no": 1233,
+      "yes": 237
+    },
+    "high_correlation_pairs": [
+      {
+        "feature_a": "JobLevel",
+        "feature_b": "MonthlyIncome",
+        "abs_corr": 0.9502999134798473
+      },
+      {
+        "feature_a": "JobLevel",
+        "feature_b": "TotalWorkingYears",
+        "abs_corr": 0.7822078045362748
+      },
+      {
+        "feature_a": "PercentSalaryHike",
+        "feature_b": "PerformanceRating",
+        "abs_corr": 0.7735499964012669
+      },
+      {
+        "feature_a": "MonthlyIncome",
+        "feature_b": "TotalWorkingYears",
+        "abs_corr": 0.7728932462543575
+      },
+      {
+        "feature_a": "YearsAtCompany",
+        "feature_b": "YearsWithCurrManager",
+        "abs_corr": 0.7692124251007031
+      },
+      {
+        "feature_a": "YearsAtCompany",
+        "feature_b": "YearsInCurrentRole",
+        "abs_corr": 0.7587537366134618
+      }
+    ],
+    "highest_vif": [
+      {
+        "feature": "JobLevel",
+        "vif": 11.205067060779488
+      },
+      {
+        "feature": "MonthlyIncome",
+        "vif": 10.800070439778152
+      },
+      {
+        "feature": "TotalWorkingYears",
+        "vif": 4.76779631285602
+      },
+      {
+        "feature": "YearsAtCompany",
+        "vif": 4.587391058192641
+      },
+      {
+        "feature": "YearsWithCurrManager",
+        "vif": 2.774587082435728
+      },
+      {
+        "feature": "YearsInCurrentRole",
+        "vif": 2.718603519746784
+      },
+      {
+        "feature": "PercentSalaryHike",
+        "vif": 2.5163847967690507
+      },
+      {
+        "feature": "PerformanceRating",
+        "vif": 2.5137340989827637
+      },
+      {
+        "feature": "Age",
+        "vif": 2.0448903603419293
+      },
+      {
+        "feature": "YearsSinceLastPromotion",
+        "vif": 1.6742777206538595
+      },
+      {
+        "feature": "NumCompaniesWorked",
+        "vif": 1.257737185118331
+      },
+      {
+        "feature": "Education",
+        "vif": 1.0593518566506854
+      }
+    ]
+  },
+  "pca": {
+    "numeric_features": 23,
+    "components_for_80pct_variance": 13,
+    "first_components": [
+      {
+        "component": 1,
+        "explained_variance": 0.20044650119544355
+      },
+      {
+        "component": 2,
+        "explained_variance": 0.08054634314383316
+      },
+      {
+        "component": 3,
+        "explained_variance": 0.07677307149526569
+      },
+      {
+        "component": 4,
+        "explained_variance": 0.053130838194760825
+      },
+      {
+        "component": 5,
+        "explained_variance": 0.048335685095489515
+      },
+      {
+        "component": 6,
+        "explained_variance": 0.046456491779447016
+      },
+      {
+        "component": 7,
+        "explained_variance": 0.045891698644275426
+      },
+      {
+        "component": 8,
+        "explained_variance": 0.04528830219348574
+      }
+    ]
+  },
+  "cv": {
+    "metric": "average_precision",
+    "mean": 0.6178883569037036,
+    "std": 0.05235140617526048,
+    "folds": 25
+  },
+  "threshold": {
+    "selected": 0.6635008037622678,
+    "rule": "max_f1_on_holdout_for_demo",
+    "precision": 0.5531914893617021,
+    "recall": 0.5531914893617021,
+    "f1": 0.5531914893617021
+  },
+  "confusion_matrix": [
+    [
+      226,
+      21
+    ],
+    [
+      21,
+      26
+    ]
+  ],
+  "metrics": [
+    {
+      "model": "Dummy prior",
+      "pr_auc": 0.1598639455782313,
+      "roc_auc": 0.5,
+      "brier": 0.13431035679577952,
+      "f1": 0.0,
+      "threshold": 0.5
+    },
+    {
+      "model": "Parsimonious logistic model",
+      "pr_auc": 0.5913678209170536,
+      "roc_auc": 0.8089413386165907,
+      "brier": 0.15445919809984807,
+      "f1": 0.5039370078740157,
+      "threshold": 0.5
+    }
+  ],
+  "top_coefficients": [
+    {
+      "feature": "cat__JobRole_Laboratory Technician",
+      "coefficient": 1.054083934542613,
+      "abs_coefficient": 1.054083934542613,
+      "odds_ratio": 2.8693454413466997
+    },
+    {
+      "feature": "cat__OverTime_No",
+      "coefficient": -0.9082832629681252,
+      "abs_coefficient": 0.9082832629681252,
+      "odds_ratio": 0.4032158457717246
+    },
+    {
+      "feature": "cat__Department_Research & Development",
+      "coefficient": -0.8676915529293463,
+      "abs_coefficient": 0.8676915529293463,
+      "odds_ratio": 0.4199197938649954
+    },
+    {
+      "feature": "cat__BusinessTravel_Non-Travel",
+      "coefficient": -0.7191171807750406,
+      "abs_coefficient": 0.7191171807750406,
+      "odds_ratio": 0.4871821599451558
+    },
+    {
+      "feature": "cat__JobRole_Sales Representative",
+      "coefficient": 0.6189080458271274,
+      "abs_coefficient": 0.6189080458271274,
+      "odds_ratio": 1.8568992854700581
+    },
+    {
+      "feature": "cat__BusinessTravel_Travel_Frequently",
+      "coefficient": 0.6160810863957219,
+      "abs_coefficient": 0.6160810863957219,
+      "odds_ratio": 1.8516573194255204
+    },
+    {
+      "feature": "cat__OverTime_Yes",
+      "coefficient": 0.53643574589269,
+      "abs_coefficient": 0.53643574589269,
+      "odds_ratio": 1.7099014647356439
+    },
+    {
+      "feature": "cat__MaritalStatus_Single",
+      "coefficient": 0.47298349129957995,
+      "abs_coefficient": 0.47298349129957995,
+      "odds_ratio": 1.6047748900096765
+    },
+    {
+      "feature": "num__YearsSinceLastPromotion",
+      "coefficient": 0.4349157728010481,
+      "abs_coefficient": 0.4349157728010481,
+      "odds_ratio": 1.5448329365203997
+    },
+    {
+      "feature": "num__TotalWorkingYears",
+      "coefficient": -0.3814808072578197,
+      "abs_coefficient": 0.3814808072578197,
+      "odds_ratio": 0.6828494916865698
+    },
+    {
+      "feature": "num__NumCompaniesWorked",
+      "coefficient": 0.3735444587410413,
+      "abs_coefficient": 0.3735444587410413,
+      "odds_ratio": 1.4528751551079355
+    },
+    {
+      "feature": "num__EnvironmentSatisfaction",
+      "coefficient": -0.35957819687165143,
+      "abs_coefficient": 0.35957819687165143,
+      "odds_ratio": 0.697970670201216
+    },
+    {
+      "feature": "num__JobSatisfaction",
+      "coefficient": -0.3326790390316069,
+      "abs_coefficient": 0.3326790390316069,
+      "odds_ratio": 0.7170002863346595
+    },
+    {
+      "feature": "num__YearsWithCurrManager",
+      "coefficient": -0.31491080823409673,
+      "abs_coefficient": 0.31491080823409673,
+      "odds_ratio": 0.7298539683303734
+    },
+    {
+      "feature": "num__JobInvolvement",
+      "coefficient": -0.27586377323762795,
+      "abs_coefficient": 0.27586377323762795,
+      "odds_ratio": 0.7589163084312879
+    }
+  ],
+  "permutation_importance": [
+    {
+      "feature": "OverTime",
+      "importance_mean": 0.23629991338937084
+    },
+    {
+      "feature": "JobSatisfaction",
+      "importance_mean": 0.06681384224622902
+    },
+    {
+      "feature": "NumCompaniesWorked",
+      "importance_mean": 0.05617430407457578
+    },
+    {
+      "feature": "YearsSinceLastPromotion",
+      "importance_mean": 0.050040093760646144
+    },
+    {
+      "feature": "Department",
+      "importance_mean": 0.04584694855426992
+    },
+    {
+      "feature": "TotalWorkingYears",
+      "importance_mean": 0.0376002448216482
+    },
+    {
+      "feature": "EnvironmentSatisfaction",
+      "importance_mean": 0.037102826351974316
+    },
+    {
+      "feature": "BusinessTravel",
+      "importance_mean": 0.020984484336603704
+    },
+    {
+      "feature": "JobInvolvement",
+      "importance_mean": 0.015426803262493394
+    },
+    {
+      "feature": "DistanceFromHome",
+      "importance_mean": 0.013670181560252848
+    },
+    {
+      "feature": "YearsWithCurrManager",
+      "importance_mean": 0.012211584639087147
+    },
+    {
+      "feature": "JobRole",
+      "importance_mean": 0.008629773641342386
+    }
+  ],
+  "typed_decision_models": [
+    {
+      "model": "Jev",
+      "status": "adapter_ready_requires_api_key"
+    },
+    {
+      "model": "Laya",
+      "status": "adapter_ready_requires_api_key_or_local_runtime"
+    }
+  ]
+}

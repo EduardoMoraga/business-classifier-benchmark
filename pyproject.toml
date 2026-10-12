@@ -1,0 +1,28 @@
+[project]
+name = "business-classifier-benchmark"
+version = "0.1.0"
+description = "Classical ML vs typed-decision models for business classification"
+requires-python = ">=3.11"
+dependencies = [
+  "pandas>=2.2",
+  "numpy>=1.26",
+  "scikit-learn>=1.5",
+  "statsmodels>=0.14",
+  "scipy>=1.13",
+  "matplotlib>=3.8",
+  "seaborn>=0.13",
+  "joblib>=1.4",
+  "python-dotenv>=1.0",
+  "requests>=2.32",
+  "supabase>=2.7",
+  "typesafe-sdk>=0.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6", "jupyter>=1.0"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
