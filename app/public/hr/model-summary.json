@@ -1,14 +1,14 @@
 {
   "run": {
-    "id": "attrition-lab-20261013010058",
-    "created_at": "2026-10-13T01:00:58.555876+00:00",
+    "id": "attrition-lab-20261013012158",
+    "created_at": "2026-10-13T01:21:58.000615+00:00",
     "dataset_hash": "d2e8db171aae30c4"
   },
   "case": "hr",
-  "dataset": "HR Analytics (employee-attrition-predictor)",
-  "source": "https://github.com/EduardoMoraga/employee-attrition-predictor",
+  "dataset": "HR Analytics (HR_comma_sep)",
+  "source": "https://www.kaggle.com/datasets/giripujar/hr-analytics",
   "production": "xgboost",
-  "production_name": "XGBoost (original notebook)",
+  "production_name": "XGBoost (baseline configuration)",
   "duplicates_removed": 3008,
   "rows": 11991,
   "columns": 10,
@@ -1616,7 +1616,7 @@
       "threshold": 0.5
     },
     {
-      "model": "XGBoost (original notebook)",
+      "model": "XGBoost (baseline configuration)",
       "pr_auc": 0.9662526788536705,
       "roc_auc": 0.9831855429069385,
       "brier": 0.017230050638318062,

@@ -19,7 +19,7 @@ class Case:
     source: str
     raw_path: Path
     load: Callable[[Path], pd.DataFrame]
-    production: str  # "logistic" (parsimonious L1) or "xgboost" (the original notebook's model)
+    production: str  # "logistic" (parsimonious L1) or "xgboost" (fixed baseline configuration)
     model_label: str  # how the hybrid state names the production model to the LLM
     score_note: str  # what the LLM is told about the score scale (checked against calibration)
     drop_columns: list[str] = field(default_factory=list)
@@ -43,8 +43,8 @@ CASES = {
     ),
     "hr": Case(
         id="hr",
-        dataset="HR Analytics (employee-attrition-predictor)",
-        source="https://github.com/EduardoMoraga/employee-attrition-predictor",
+        dataset="HR Analytics (HR_comma_sep)",
+        source="https://www.kaggle.com/datasets/giripujar/hr-analytics",
         raw_path=HR_RAW_PATH,
         load=load_hr_workbook,
         production="xgboost",

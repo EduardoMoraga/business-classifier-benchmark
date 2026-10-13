@@ -15,11 +15,11 @@ const logit = (p) => Math.log(p / (1 - p));
 const day = (iso) => (iso ? new Date(iso).toLocaleDateString("es-CL", { day: "2-digit", month: "2-digit", year: "numeric" }).replaceAll("/", "-") : "—");
 
 const TABS = [
-  ["verdict", "Hipótesis"],
+  ["verdict", "Hipótesis y resultados"],
   ["summary", "Resumen"],
   ["bench", "Comparación de modelos"],
   ["lab", "Torneo e híbridos"],
-  ["audit", "Ejercicio original"],
+  ["audit", "Análisis previo"],
   ["eda", "EDA"],
   ["corr", "Correlación · VIF"],
   ["pca", "PCA"],
@@ -34,8 +34,11 @@ const WATCH_MARGIN = 0.25;
 /* Per-dataset field mapping: everything else in the report is read from the artifacts. */
 const CASES = {
   ibm: {
-    id: "ibm", label: "Caso 1 · IBM HR", rows: 1470,
-    sourceLabel: "IBM HR Analytics (Kaggle)",
+    id: "ibm", label: "Dataset 1 · IBM HR Analytics", short: "Dataset 1", rows: 1470,
+    name: "IBM HR Analytics Employee Attrition & Performance",
+    sourceUrl: "https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset",
+    sourceLabel: "Kaggle · IBM HR Analytics Employee Attrition & Performance",
+    about: "Dataset ficticio creado por científicos de datos de IBM: 1.470 empleados, 35 columnas de perfil, compensación, satisfacción y trayectoria.",
     dept: (r) => r.Department, deptShort: { "Research & Development": "R&D", "Human Resources": "HR" },
     flag: (r) => r.OverTime === "Yes", flagLabel: "Solo horas extra", flagCol: "Horas extra",
     search: (r) => `${r.JobRole} ${r.Department} ${r.EducationField}`, searchPh: "Buscar cargo, área o formación…",
@@ -45,8 +48,11 @@ const CASES = {
     dataNote: ["Dataset sintético", "IBM HR es ficticio: sirve para método, no para conclusiones de negocio reales"],
   },
   hr: {
-    id: "hr", label: "Caso 2 · HR Analytics (tu ejercicio)", rows: 14999,
-    sourceLabel: "employee-attrition-predictor (HR Analytics, Kaggle)",
+    id: "hr", label: "Dataset 2 · HR Analytics", short: "Dataset 2", rows: 14999,
+    name: "HR Analytics (HR_comma_sep.csv)",
+    sourceUrl: "https://www.kaggle.com/datasets/giripujar/hr-analytics",
+    sourceLabel: "Kaggle · HR Analytics (HR_comma_sep.csv, CC0)",
+    about: "14.999 registros con satisfacción, evaluación, proyectos, horas, antigüedad, área y salario; 3.008 filas son duplicados exactos y se eliminan antes del split.",
     dept: (r) => r.department, deptShort: { product_mng: "product", management: "mgmt", accounting: "acct" },
     flag: (r) => r.average_monthly_hours > 240, flagLabel: "Solo sobrecarga (> 240 h/mes)", flagCol: "> 240 h/mes",
     search: (r) => `${r.department} ${r.salary}`, searchPh: "Buscar área o salario (low, medium, high)…",
@@ -194,6 +200,7 @@ function App() {
             {c.label}<span className="muted"> · {int(c.rows)} filas</span>
           </button>
         ))}
+        <a className="case-src" href={cs.sourceUrl} target="_blank" rel="noreferrer">Fuente: {cs.sourceLabel} ↗</a>
       </nav>
       <nav className="tabs" aria-label="Secciones">
         {tabs.map(([id, label]) => (
@@ -211,7 +218,7 @@ function App() {
       ) : (
         <div className="scope">
           <span className="scope-label">ALCANCE</span>
-          {tab === "verdict" ? "Los dos datasets · mismo protocolo · holdout intacto en cada uno" : tab === "audit" ? "Protocolo del notebook original vs protocolo limpio · mismo dataset" : tab === "lab" ? "Train para ajustar y elegir · holdout intacto para medir · mismas filas para todos" : tab === "bench" ? "Holdout completo · mismas filas, mismas métricas, mismo state string" : tab === "method" ? `Run ${summary.run?.id} · semilla ${summary.split.random_state} · hash ${summary.run?.dataset_hash}` : `Dataset completo · ${int(summary.rows)} filas · ${summary.eda.features} variables · train ${int(summary.split.train)} / test ${int(summary.split.test)}`}
+          {tab === "verdict" ? "Los dos datasets · mismo protocolo · holdout intacto en cada uno" : tab === "audit" ? "Protocolo de un análisis previo vs protocolo limpio · mismo dataset" : tab === "lab" ? "Train para ajustar y elegir · holdout intacto para medir · mismas filas para todos" : tab === "bench" ? "Holdout completo · mismas filas, mismas métricas, mismo state string" : tab === "method" ? `Run ${summary.run?.id} · semilla ${summary.split.random_state} · hash ${summary.run?.dataset_hash}` : `Dataset completo · ${int(summary.rows)} filas · ${summary.eda.features} variables · train ${int(summary.split.train)} / test ${int(summary.split.test)}`}
         </div>
       )}
       <main className="page">
@@ -229,7 +236,7 @@ function App() {
         {tab === "method" && <Methodology {...ctx} />}
       </main>
       <footer className="foot">
-        <span>Run {summary.run?.id} · dataset hash {summary.run?.dataset_hash} · fuente: <a href={summary.source} target="_blank" rel="noreferrer">{cs.sourceLabel}</a> · <a href="https://github.com/EduardoMoraga/business-classifier-benchmark" target="_blank" rel="noreferrer">código ↗</a></span>
+        <span>Run {summary.run?.id} · dataset hash {summary.run?.dataset_hash} · fuente: <a href={cs.sourceUrl} target="_blank" rel="noreferrer">{cs.sourceLabel}</a> · <a href="https://github.com/EduardoMoraga/business-classifier-benchmark" target="_blank" rel="noreferrer">código ↗</a></span>
         <a href="https://eduardomoraga.github.io/" target="_blank" rel="noreferrer">Eduardo Moraga · Economist & Data Scientist ↗</a>
       </footer>
     </div>
@@ -242,7 +249,7 @@ function Masthead({ summary, d }) {
       <a className="wordmark" href="https://eduardomoraga.github.io/" target="_blank" rel="noreferrer"><span className="sq" />Eduardo Moraga</a>
       <div className="mast-title">
         <h1>Attrition Intelligence<em>.</em></h1>
-        <p>{summary.dataset} · Corte {day(summary.run?.created_at)} · Holdout n={int(summary.split.test)} · {d.xgb ? "XGBoost" : "Logística L1"}</p>
+        <p>{CASES[summary.case].short} · {summary.dataset} · Corte {day(summary.run?.created_at)} · Holdout n={int(summary.split.test)} · {d.xgb ? "XGBoost" : "Logística L1"}</p>
       </div>
       <div className="mast-right">
         <span>People Analytics · Classifier Benchmark</span>
@@ -587,7 +594,7 @@ function Eda({ summary, rows, d, cs }) {
               <tr><td>Semilla</td><td className="r num">{split.random_state}</td></tr>
               <tr><td>Hash del dataset</td><td className="r mono">{summary.run?.dataset_hash}</td></tr>
               {summary.duplicates_removed > 0 && <tr><td>Duplicados exactos</td><td className="r num">{int(summary.duplicates_removed)} eliminados antes del split</td></tr>}
-              <tr><td>Fuente</td><td className="r"><a href={summary.source} target="_blank" rel="noreferrer">{cs.sourceLabel} ↗</a></td></tr>
+              <tr><td>Fuente</td><td className="r"><a href={cs.sourceUrl} target="_blank" rel="noreferrer">{cs.sourceLabel} ↗</a></td></tr>
             </tbody>
           </table>
         </Exhibit>
@@ -807,7 +814,7 @@ function TreeDrivers({ summary, d }) {
   return (
     <>
       <SectionHead kicker="MODELO" meta={`XGBClassifier · ${cfg.n_estimators} árboles · profundidad ${cfg.max_depth} · learning rate ${num(cfg.learning_rate, 2)} · scale_pos_weight`}>
-        XGBoost de tu ejercicio original, rehecho sin duplicados ni fugas: {clean(drivers[0].feature)} es el factor que más mueve el riesgo
+        XGBoost con configuración base, sin duplicados ni fugas: {clean(drivers[0].feature)} es el factor que más mueve el riesgo
       </SectionHead>
       <KeyMessage items={[
         <><b>{clean(drivers[0].feature)}</b> mueve el log-odds en <b>{num(drivers[0].mean_abs, 2)}</b> en promedio, {num(drivers[0].mean_abs / drivers[1].mean_abs, 1)}× el segundo factor ({clean(drivers[1].feature)}).</>,
@@ -1072,7 +1079,7 @@ function compareRows(summary, typed, d) {
   const at = (summary.threshold_sweep || []).find((r) => Math.abs(r.threshold - CMP_THR) < 1e-6);
   const rows = [
     { name: "Sin modelo (dummy)", note: `Asigna a todos la misma probabilidad (${pct(d.positives / (d.positives + d.negatives), 0)}): nunca alerta`, m: d.dummy, c: { tp: 0, fp: 0, fn: d.positives, tn: d.negatives } },
-    { name: d.prodName, note: d.xgb ? "Tu XGBoost original: árboles en secuencia sobre la tabla de datos" : "Modelo estadístico clásico sobre la tabla de datos", m: d.logistic, c: at },
+    { name: d.prodName, note: d.xgb ? "XGBoost: árboles en secuencia sobre la tabla de datos" : "Modelo estadístico clásico sobre la tabla de datos", m: d.logistic, c: at },
   ];
   PROVIDERS.forEach(([id, name]) => {
     const run = typedRun(typed, id);
@@ -1389,14 +1396,14 @@ function Lab({ summary, typed, tournament, sample, d }) {
       <SectionHead kicker="TORNEO E HÍBRIDOS" meta={`${challengers.length} retadores · ajustados sólo con train · holdout n=${int(n)}`}>
         {better.length
           ? own
-            ? `Los modelos de árboles aplastan a la regresión logística: ${num(prod.holdout.pr_auc)} contra ${num(deployed.holdout.pr_auc)} de tu XGBoost, una diferencia muy por encima del azar`
+            ? `Los modelos de árboles aplastan a la regresión logística: ${num(prod.holdout.pr_auc)} contra ${num(deployed.holdout.pr_auc)} del XGBoost base, una diferencia muy por encima del azar`
             : `${better.map((c) => c.name).join(" y ")} supera a la regresión logística con diferencia estadística`
           : `Ningún modelo más complejo le gana con claridad a la regresión logística: el mejor retador (${bestChallenger.name}) pasa de ${num(prod.holdout.pr_auc)} a ${num(bestChallenger.holdout.pr_auc)}, dentro del margen de azar`}
       </SectionHead>
       <KeyMessage items={[
-        <>El <b>“accuracy” engaña</b> cuando pocos se van: decir que <b>nadie se va acierta {pct(tournament.accuracy_if_nobody_leaves, 0)}</b> y no detecta a ninguna de las {int(pos)} personas que se fueron.{own ? <> Aquí sí hay señal: tu XGBoost acierta <b>{pct(deployed.holdout.accuracy, 1)}</b> y detecta {int(deployed.holdout.confusion.tp)} de {int(pos)}.</> : unbalanced && <> Una logística optimizada para acertar llega a <b>{pct(unbalanced.holdout.accuracy, 0)}</b>, pero detecta sólo {unbalanced.holdout.confusion.tp} de {pos}.</>}</>,
+        <>El <b>“accuracy” engaña</b> cuando pocos se van: decir que <b>nadie se va acierta {pct(tournament.accuracy_if_nobody_leaves, 0)}</b> y no detecta a ninguna de las {int(pos)} personas que se fueron.{own ? <> Aquí sí hay señal: el XGBoost base acierta <b>{pct(deployed.holdout.accuracy, 1)}</b> y detecta {int(deployed.holdout.confusion.tp)} de {int(pos)}.</> : unbalanced && <> Una logística optimizada para acertar llega a <b>{pct(unbalanced.holdout.accuracy, 0)}</b>, pero detecta sólo {unbalanced.holdout.confusion.tp} de {pos}.</>}</>,
         own
-          ? <>Todos los modelos de árboles quedan entre <b>{num(Math.min(...trees.map((c) => c.holdout.pr_auc)))} y {num(Math.max(...trees.map((c) => c.holdout.pr_auc)))}</b> y la logística en <b>{num(prod.holdout.pr_auc)}</b>. Afinar hiperparámetros no le gana a tu XGBoost original: {tunedTies.length} de {cands.filter((c) => c.vs_deployed && !["Lineal", "Ensamble"].includes(c.family) && c.id !== "boruta_logistic").length} retadores de árboles empatan con él.</>
+          ? <>Todos los modelos de árboles quedan entre <b>{num(Math.min(...trees.map((c) => c.holdout.pr_auc)))} y {num(Math.max(...trees.map((c) => c.holdout.pr_auc)))}</b> y la logística en <b>{num(prod.holdout.pr_auc)}</b>. Afinar hiperparámetros no le gana al XGBoost base: {tunedTies.length} de {cands.filter((c) => c.vs_deployed && !["Lineal", "Ensamble"].includes(c.family) && c.id !== "boruta_logistic").length} retadores de árboles empatan con él.</>
           : <>De {challengers.length} retadores ajustados (Random Forest, XGBoost, LightGBM, Boruta, ensamble): <b>{ties.length} empatan</b> con la logística y <b>{worse.length} son peores</b>{better.length ? <> y {better.length} la superan</> : <>; ninguno la supera</>}. {worse.length > 0 && <>Peores: {worse.map((c) => c.name).join(", ")}.</>}</>,
         boruta.length > 0 && (borutaBetter.length
           ? <><b>Boruta</b> deja sólo {[...new Set(boruta.map((c) => c.n_features))].join(" y ")} de {prod.n_features} variables sin perder calidad (Boruta + XGBoost {num(borutaBetter[0].holdout.pr_auc)}): cuando la señal es fuerte, recorta lo que sobra.</>
@@ -1433,7 +1440,7 @@ function Lab({ summary, typed, tournament, sample, d }) {
       <Exhibit n={3} title="Torneo de modelos" meta="ordenado por validación cruzada en train · el holdout se mira una sola vez">
         <div className="table-wrap">
           <table className="dense lab-table">
-            <thead><tr><th>Modelo</th><th className="w-bar">Calidad de lista · CV (±1σ)</th><th className="r">Holdout PR-AUC</th><th className="r">ROC-AUC</th><th className="r">Accuracy</th><th className="r">Detecta</th><th className="r">Falsas alarmas</th><th>vs logística (IC 95%)</th>{own && <th>vs tu XGBoost</th>}<th className="r">Variables</th></tr></thead>
+            <thead><tr><th>Modelo</th><th className="w-bar">Calidad de lista · CV (±1σ)</th><th className="r">Holdout PR-AUC</th><th className="r">ROC-AUC</th><th className="r">Accuracy</th><th className="r">Detecta</th><th className="r">Falsas alarmas</th><th>vs logística (IC 95%)</th>{own && <th>vs XGBoost base</th>}<th className="r">Variables</th></tr></thead>
             <tbody>{ranked.map((c) => {
               const v = verdict(c.vs_production);
               return (
@@ -1512,7 +1519,7 @@ function Verdict({ overview, pickCase, setTab }) {
   if (!overview) return <p className="state">Cargando los dos casos…</p>;
   const ibm = caseScore(overview.ibm);
   const hr = caseScore(overview.hr);
-  const cols = [["ibm", "Caso 1 · IBM HR", ibm], ["hr", "Caso 2 · tu ejercicio", hr]].filter(([, , x]) => x);
+  const cols = [["ibm", CASES.ibm.label, ibm], ["hr", CASES.hr.label, hr]].filter(([, , x]) => x);
   const llmBest = (x) => Math.max(...[x.jev, x.laya].filter(Boolean).map((r) => r.metrics.pr_auc ?? 0));
   const hybBest = (x) => Math.max(...[x.jevH, x.layaH].filter(Boolean).map((r) => r.metrics.pr_auc ?? 0));
   const rows = [
@@ -1524,21 +1531,55 @@ function Verdict({ overview, pickCase, setTab }) {
     ["Jev + modelo", "ficha + score y factores del modelo", (x) => x.jevH?.metrics.pr_auc],
     ["Laya + modelo", "ficha + score y factores del modelo", (x) => x.layaH?.metrics.pr_auc],
   ];
+  const hybrids = [ibm, hr].filter(Boolean).flatMap((x) => [x.jevH, x.layaH]).filter(Boolean);
   const rho = (x) => [x.jevH, x.layaH].filter(Boolean).map((r) => r.vs_classical?.rank_agreement).filter((v) => v != null);
   const ready = ibm && hr && ibm.jev && hr.jev && hr.jevH;
-  const hybrids = [ibm, hr].filter(Boolean).flatMap((x) => [x.jevH, x.layaH]).filter(Boolean);
+  const findings = ibm && hr ? [
+    ["Solos, los LLM pierden", `Leyendo la ficha del empleado, Jev y Laya logran como máximo ${num(llmBest(ibm))} y ${num(llmBest(hr))} de calidad de lista; el mejor modelo de ML, ${num(ibm.best.holdout.pr_auc)} y ${num(hr.best.holdout.pr_auc)}.`],
+    ["El diseño importa más que el algoritmo de moda", `Con señal débil (dataset 1) una logística empata con los árboles; con señal no lineal (dataset 2) los árboles la superan por ${num(hr.best.holdout.pr_auc - hr.logistic.holdout.pr_auc, 2)} de PR-AUC y un LLM solo llega a ganarle a la logística.`],
+    ["Como capa de despliegue, los LLM funcionan", `Con el score y los factores del modelo, igualan al modelo o quedan apenas por debajo (${hybrids.map((r) => num(r.metrics.pr_auc)).join(" · ")}), sin superarlo de forma significativa.`],
+  ] : [];
   return (
     <>
-      <SectionHead kicker="HIPÓTESIS" meta="¿un buen modelo de machine learning le gana a los modelos de decisión con LLM?">
+      <section className="intro">
+        <span className="kicker"><span className="sq" />APERTURA</span>
+        <h2>¿Puede un modelo de lenguaje reemplazar a un modelo de machine learning bien diseñado para predecir la rotación de personal?</h2>
+        <div className="intro-grid">
+          <div>
+            <h4>Hipótesis</h4>
+            <p>Los modelos de decisión basados en LLM, como <b>Jev</b> y <b>Laya</b>, prometen clasificar casos leyendo una descripción en texto. La hipótesis es que, para predecir y clasificar, un modelo de machine learning bien diseñado sigue siendo superior, y que el mejor uso del LLM es como <b>capa de despliegue</b> del modelo: recibir su resultado y convertirlo en una decisión explicable.</p>
+          </div>
+          <div>
+            <h4>Cómo se probó</h4>
+            <p>Dos datasets públicos de RR.HH. con el mismo protocolo: split estratificado 80/20 congelado, <b>10 modelos</b> ajustados sólo con train (regresión logística, Random Forest, XGBoost, LightGBM, Boruta y un ensamble), y Jev y Laya puntuando a <b>cada empleado del holdout</b>, primero solos y luego recibiendo el score y los factores del modelo. Las diferencias se prueban con bootstrap pareado.</p>
+          </div>
+          <div>
+            <h4>Qué resultó</h4>
+            <ol className="intro-findings">{findings.map(([t, x]) => <li key={t}><b>{t}.</b> {x}</li>)}</ol>
+          </div>
+        </div>
+        <div className="intro-data">
+          {Object.values(CASES).map((c) => (
+            <div key={c.id}>
+              <span className="exn">{c.short.toUpperCase()}</span>
+              <b>{c.name}</b>
+              <p>{c.about}</p>
+              <a href={c.sourceUrl} target="_blank" rel="noreferrer">Fuente: {c.sourceLabel} ↗</a>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <SectionHead kicker="RESULTADO" meta="¿un buen modelo de machine learning le gana a los modelos de decisión con LLM?">
         {ready
           ? `Sí: en los dos datasets el mejor modelo de ML ordena el riesgo mejor que Jev y Laya solos (${num(ibm.best.holdout.pr_auc)} vs ${num(llmBest(ibm))} y ${num(hr.best.holdout.pr_auc)} vs ${num(llmBest(hr))}); con el modelo como insumo, los LLM ${hybrids.some((r) => r.vs_classical?.low > 0) ? "llegan a superarlo" : hybrids.some((r) => r.vs_classical?.high < 0) ? "se acercan pero no siempre lo alcanzan" : "lo igualan pero no lo superan"}`
           : "Resultados parciales: faltan corridas de Jev o Laya"}
       </SectionHead>
       <KeyMessage items={[
-        ibm && hr && <><b>El diseño del modelo depende del dataset.</b> En IBM (1.470 personas, señal débil) la regresión logística empata con XGBoost, LightGBM y Random Forest. En tu dataset ({int(hr.t.holdout_size)} personas de holdout, señal fuerte y no lineal) los árboles llegan a <b>{num(hr.deployed.holdout.pr_auc)}</b> y la logística se queda en <b>{num(hr.logistic.holdout.pr_auc)}</b>.</>,
-        ibm?.jev && hr?.jev && <><b>Solos, Jev y Laya no reemplazan al modelo.</b> Leyendo la ficha del empleado logran {num(llmBest(ibm))} en IBM y {num(llmBest(hr))} en tu dataset: mejor que el azar, lejos del modelo entrenado con la historia de la empresa.</>,
-        hr?.jev && llmBest(hr) > hr.logistic.holdout.pr_auc && <><b>Ojo: no cualquier modelo de ML gana.</b> En tu dataset, el mejor LLM solo ({num(llmBest(hr))}) supera a la regresión logística ({num(hr.logistic.holdout.pr_auc)}), que no ve las combinaciones de variables. Lo que gana es el <b>buen diseño</b> (aquí, árboles), no la etiqueta “machine learning”.</>,
-        ibm?.jevH && hr?.jevH && <><b>Como capa de despliegue sí funcionan.</b> Con el score y los factores del modelo llegan a {num(hybBest(ibm))} y {num(hybBest(hr))}, al nivel del modelo o apenas por debajo, nunca por encima, porque siguen de cerca su orden (correlación {rho(ibm).concat(rho(hr)).map((v) => num(v, 2)).join(" · ")}). Aportan la conversación y la explicación, no señal nueva.</>,
+        ibm && hr && <><b>El diseño del modelo depende del dataset.</b> En el dataset 1 (1.470 personas, señal débil) la regresión logística empata con XGBoost, LightGBM y Random Forest. En el dataset 2 ({int(hr.t.holdout_size)} personas de holdout, señal fuerte y no lineal) los árboles llegan a <b>{num(hr.deployed.holdout.pr_auc)}</b> y la logística se queda en <b>{num(hr.logistic.holdout.pr_auc)}</b>.</>,
+        ibm?.jev && hr?.jev && <><b>Solos, Jev y Laya no reemplazan al modelo.</b> Leyendo la ficha del empleado logran {num(llmBest(ibm))} en el dataset 1 y {num(llmBest(hr))} en el dataset 2: mejor que el azar, lejos del modelo entrenado con la historia de la empresa.</>,
+        hr?.jev && llmBest(hr) > hr.logistic.holdout.pr_auc && <><b>Ojo: no cualquier modelo de ML gana.</b> En el dataset 2, el mejor LLM solo ({num(llmBest(hr))}) supera a la regresión logística ({num(hr.logistic.holdout.pr_auc)}), que no ve las combinaciones de variables. Lo que gana es el <b>buen diseño</b> (aquí, árboles), no la etiqueta “machine learning”.</>,
+        ibm?.jevH && hr?.jevH && <><b>Como capa de despliegue sí funcionan.</b> Con el score y los factores del modelo llegan a {num(hybBest(ibm))} y {num(hybBest(hr))}, al nivel del modelo o apenas por debajo, sin superarlo de forma significativa, porque siguen de cerca su orden (correlación {rho(ibm).concat(rho(hr)).map((v) => num(v, 2)).join(" · ")}). Aportan la conversación y la explicación, no señal nueva.</>,
         <><b>Arquitectura recomendada:</b> el modelo de ML decide el riesgo; el LLM lo recibe como contexto y lo traduce en una explicación y una acción para RR.HH. No al revés.</>,
       ].filter(Boolean)} />
       <Exhibit n={1} title="Calidad de la lista de riesgo por enfoque" meta="PR-AUC en el holdout de cada caso · 1 = perfecto · la tasa base es el azar">
@@ -1576,35 +1617,35 @@ function Verdict({ overview, pickCase, setTab }) {
   );
 }
 
-/* ---------- Ejercicio original (caso 2) ---------- */
+/* ---------- Análisis previo (dataset 2) ---------- */
 
 function Audit({ audit, summary }) {
   const o = audit.original;
   const u = audit.original_unseen_rows;
   const c = audit.clean;
   const rows = [
-    ["Notebook original", "split con duplicados · early stopping sobre test", o.test_rows, o.roc_auc, o.pr_auc, "warn"],
+    ["Análisis previo", "split con duplicados · early stopping sobre test", o.test_rows, o.roc_auc, o.pr_auc, "warn"],
     ["Mismo modelo, sólo filas nuevas", "test sin las filas copiadas de train", u.test_rows, u.roc_auc, u.pr_auc, ""],
     ["Rehecho limpio", "duplicados fuera · sin fugas · holdout intacto", c.test_rows, c.roc_auc, c.pr_auc, "good"],
   ];
   const issues = [
     ["Filas duplicadas", `${int(audit.duplicate_rows)} de ${int(audit.rows_raw)} filas (${pct(audit.duplicate_rows / audit.rows_raw, 0)}) son copias exactas. Con un split aleatorio, ${pct(audit.test_rows_copied_from_train, 0)} del test ya estaba en train: el modelo “recuerda” en vez de predecir.`, "Alto", "bad"],
-    ["Early stopping con el test", `El notebook usa el test para decidir cuándo parar y luego reporta sobre ese mismo test. ${o.best_iteration + 1 >= 300 ? "Aquí no llegó a activarse (usó las 300 iteraciones), así que no infló el resultado" : `Aquí paró en la iteración ${o.best_iteration + 1}`}, pero es una fuga de método.`, "Medio", "warn"],
+    ["Early stopping con el test", `El análisis usaba el test para decidir cuándo parar y luego reporta sobre ese mismo test. ${o.best_iteration + 1 >= 300 ? "Aquí no llegó a activarse (usó las 300 iteraciones), así que no infló el resultado" : `Aquí paró en la iteración ${o.best_iteration + 1}`}, pero es una fuga de método.`, "Medio", "warn"],
     ["Validación cruzada inconsistente", `La CV usa otro modelo (200 árboles, sin subsample) y todas las filas, incluido el test (ROC-AUC ${num(o.cv_roc_auc)}). No valida al modelo que se reporta.`, "Medio", "warn"],
     ["Sólo ROC-AUC", "Con 24% de salidas, ROC-AUC se ve alto con facilidad. Falta PR-AUC y el costo de las falsas alarmas.", "Bajo", "neutral"],
     ["Lo que estaba bien", "Feature engineering (satisfacción × evaluación, horas por proyecto, sobrecarga), scale_pos_weight y explicación con SHAP. Todo eso se mantiene en la versión rehecha.", "OK", "good"],
   ];
   return (
     <>
-      <SectionHead kicker="EJERCICIO ORIGINAL" meta="employee-attrition-predictor · auditoría reproducible con scripts/audit_original.py">
-        Tu ejercicio original no estaba mal: los duplicados inflaban el resultado de {num(o.roc_auc, 3)} a {num(c.roc_auc, 3)} de ROC-AUC, pero el modelo sigue siendo excelente sin ellos
+      <SectionHead kicker="ANÁLISIS PREVIO" meta="auditoría reproducible con scripts/audit_original.py">
+        Un análisis previo de este dataset reportaba {num(o.roc_auc, 2)} de ROC-AUC; sin duplicados ni fugas el mismo modelo logra {num(c.roc_auc, 3)}: la conclusión se mantiene, la cifra estaba inflada
       </SectionHead>
       <KeyMessage items={[
-        <>El número del portafolio (<b>0,99 AUC-ROC</b>) incluía <b>{pct(audit.test_rows_copied_from_train, 0)} de filas de test copiadas de train</b>. Medido sólo en filas nuevas, el mismo modelo da <b>{num(u.roc_auc, 3)}</b>.</>,
+        <>El análisis previo (<a href="https://github.com/EduardoMoraga/employee-attrition-predictor" target="_blank" rel="noreferrer">employee-attrition-predictor</a>) reportaba <b>0,99 AUC-ROC</b> con <b>{pct(audit.test_rows_copied_from_train, 0)} de filas de test copiadas de train</b>. Medido sólo en filas nuevas, el mismo modelo da <b>{num(u.roc_auc, 3)}</b>.</>,
         <>Rehecho limpio (sin duplicados, sin early stopping en test, CV 5×5 en train), XGBoost logra <b>{num(c.roc_auc, 3)}</b> de ROC-AUC y <b>{num(c.pr_auc, 3)}</b> de calidad de lista. CV {num(c.cv_pr_auc, 3)}: estable.</>,
-        <>Por qué los números no se parecen a IBM: <b>son datasets distintos</b>. Este tiene {int(audit.rows_raw)} filas y variables de carga (proyectos, horas, satisfacción) que separan casi perfecto; IBM tiene 1.470 y su techo es 0,82.</>,
+        <>Por qué los números no se parecen a los del dataset 1: <b>son datasets distintos</b>. Este tiene {int(audit.rows_raw)} filas y variables de carga (proyectos, horas, satisfacción) que separan casi perfecto; el dataset 1 tiene 1.470 y su techo es 0,82.</>,
       ]} />
-      <Exhibit n={1} title="Mismo dataset, distinto protocolo" meta="XGBoost con los hiperparámetros del notebook">
+      <Exhibit n={1} title="Mismo dataset, distinto protocolo" meta="XGBoost con la misma configuración en los tres protocolos">
         <table className="dense">
           <thead><tr><th>Protocolo</th><th>Qué cambia</th><th className="r">Filas de test</th><th className="w-bar">ROC-AUC</th><th className="r">PR-AUC</th></tr></thead>
           <tbody>{rows.map(([name, what, n, roc, pr, tone]) => (
@@ -1640,7 +1681,7 @@ function Methodology({ summary, typed, d, cs }) {
     ["EDA sólo sobre train", "Correlación, VIF, PCA y tasas por segmento sin tocar el holdout", summary.eda?.scope === "train_only"],
     ["Reducción de redundancia", summary.eda.high_correlation_pairs.length ? `${summary.eda.high_correlation_pairs.length} pares |r| ≥ 0,75; VIF máx ${num(summary.eda.highest_vif[0].vif, 1)}; L1 hace la selección` : `Sin pares |r| ≥ 0,75; VIF máx ${num(summary.eda.highest_vif[0].vif, 1)}: nada que reducir`, true],
     ["PCA como lente, no como modelo", `${summary.pca.components_for_80pct_variance} de ${summary.pca.numeric_features} componentes para 80%: no compensa perder interpretabilidad`, true],
-    [d.xgb ? "XGBoost del ejercicio original" : "Logística parsimoniosa", `PR-AUC ${num(summary.metrics.at(-1).pr_auc)} en holdout · CV ${num(summary.cv.mean)} ± ${num(summary.cv.std)}`, true],
+    [d.xgb ? "XGBoost con configuración base" : "Logística parsimoniosa", `PR-AUC ${num(summary.metrics.at(-1).pr_auc)} en holdout · CV ${num(summary.cv.mean)} ± ${num(summary.cv.std)}`, true],
     ["Calibración y curvas", "Tabla de confiabilidad, PR y ROC exportadas por el pipeline", Boolean(summary.calibration)],
     ["Jev y Laya en las mismas filas", runs.length ? `${runs.map(([, n]) => n).join(" y ")} corridos` : "Adapters listos; faltan API keys", runs.length === PROVIDERS.length],
     ["Métricas de negocio", "Costo por umbral en la app; latencia en el runner tipado", runs.length > 0 ? true : "partial"],
@@ -1676,7 +1717,7 @@ function Methodology({ summary, typed, d, cs }) {
           <pre className="state-str cmd">{`uv sync --extra dev && npm install
 uv run python scripts/run_pipeline.py                 # ambos casos
 uv run python scripts/run_tournament.py --case ${summary.case}
-${summary.case === "hr" ? "uv run python scripts/audit_original.py           # protocolo original vs limpio\n" : ""}uv run pytest -q && uv run ruff check .
+${summary.case === "hr" ? "uv run python scripts/audit_original.py           # análisis previo vs protocolo limpio\n" : ""}uv run pytest -q && uv run ruff check .
 npm run build                                         # sitio estático en app/dist`}</pre>
         </Exhibit>
         <Exhibit n={4} title="Límites conocidos" meta="lo que esta demo no prueba">

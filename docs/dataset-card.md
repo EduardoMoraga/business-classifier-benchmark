@@ -29,11 +29,12 @@ License must be verified from Kaggle before public release. Until then, do not c
 
 ---
 
-# Case 2: HR Analytics (employee-attrition-predictor)
+# Dataset 2: HR Analytics (HR_comma_sep)
 
 ## Source
 
-- Workbook from the earlier portfolio project: <https://github.com/EduardoMoraga/employee-attrition-predictor> (`data/empleados.xlsx`, SHA-256 `4c00e485…3d903c792`).
+- Original: Kaggle HR Analytics, `HR_comma_sep.csv`, CC0: <https://www.kaggle.com/datasets/giripujar/hr-analytics>
+- Copy used here, from a prior analysis: <https://github.com/EduardoMoraga/employee-attrition-predictor> (`data/empleados.xlsx`, SHA-256 `4c00e485…3d903c792`).
 - It is a Spanish translation of Kaggle's HR Analytics `HR_comma_sep.csv`. `src/data/load_dataset.py` restores the original English column names and values.
 - Download: `curl -L -o data/raw/hr_empleados.xlsx https://github.com/EduardoMoraga/employee-attrition-predictor/raw/main/data/empleados.xlsx`
 

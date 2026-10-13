@@ -172,8 +172,8 @@ def build_candidates(
     ]
     if original_xgboost:
         candidates.insert(2, Candidate(
-            ORIGINAL_ID, "XGBoost del ejercicio original", "Boosting",
-            "Tu XGBoost con sus hiperparámetros originales, sin ajustar y sin fugas.",
+            ORIGINAL_ID, "XGBoost base (sin ajuste)", "Boosting",
+            "XGBoost con una configuración fija definida antes de ver los datos de prueba.",
             _pipe(xgb(**original_xgboost)),
         ))
     return candidates

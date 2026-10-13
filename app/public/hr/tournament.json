@@ -73,9 +73,9 @@
     },
     {
       "id": "xgboost_original",
-      "name": "XGBoost del ejercicio original",
+      "name": "XGBoost base (sin ajuste)",
       "family": "Boosting",
-      "plain": "Tu XGBoost con sus hiperpar\u00e1metros originales, sin ajustar y sin fugas.",
+      "plain": "XGBoost con una configuraci\u00f3n fija definida antes de ver los datos de prueba.",
       "params": {},
       "n_features": 23,
       "cv": {
@@ -96,7 +96,7 @@
           "tn": 1982
         }
       },
-      "seconds": 0.9,
+      "seconds": 1.0,
       "vs_production": {
         "low": 0.4882047608146087,
         "high": 0.5673298925650371,
@@ -128,7 +128,7 @@
           "tn": 1922
         }
       },
-      "seconds": 0.4,
+      "seconds": 0.6,
       "vs_production": {
         "low": 0.02477582772424756,
         "high": 0.059991863875808626,
@@ -167,7 +167,7 @@
           "tn": 1613
         }
       },
-      "seconds": 0.5,
+      "seconds": 0.6,
       "vs_production": {
         "low": -0.00042983262511606113,
         "high": 0.0032899286739302112,
@@ -208,7 +208,7 @@
           "tn": 1996
         }
       },
-      "seconds": 54.5,
+      "seconds": 55.6,
       "vs_production": {
         "low": 0.48794960945748483,
         "high": 0.5661914304416409,
@@ -296,7 +296,7 @@
           "tn": 1957
         }
       },
-      "seconds": 3.7,
+      "seconds": 3.9,
       "vs_production": {
         "low": 0.491250380363896,
         "high": 0.5693506431978715,
@@ -377,7 +377,7 @@
           "tn": 1968
         }
       },
-      "seconds": 3.1,
+      "seconds": 3.4,
       "vs_production": {
         "low": 0.4912517635712386,
         "high": 0.5698686018373993,
@@ -433,5 +433,5 @@
     }
   ],
   "case": "hr",
-  "run_at": "2026-10-13T01:03:03.985437+00:00"
+  "run_at": "2026-10-13T01:23:34.596568+00:00"
 }

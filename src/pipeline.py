@@ -26,8 +26,8 @@ from src.models.typed_state import employee_row_to_state
 RANDOM_STATE = 42
 DROP_COLUMNS = CASES["ibm"].drop_columns
 LOGISTIC_C = 0.25
-# Hyperparameters of the original employee-attrition-predictor notebook, fixed up front. The
-# notebook early-stopped on its own test set; here the tree count is simply fixed.
+# Fixed XGBoost configuration from a prior analysis of the HR dataset (employee-attrition-predictor),
+# set before seeing the holdout. That analysis early-stopped on its test set; here the tree count is fixed.
 XGBOOST_PARAMS = {
     "n_estimators": 300,
     "max_depth": 6,
@@ -321,7 +321,7 @@ def run_pipeline(
     production_score = production.predict_proba(test_x)[:, 1]
 
     production_name = (
-        "XGBoost (original notebook)" if case.production == "xgboost"
+        "XGBoost (baseline configuration)" if case.production == "xgboost"
         else "Parsimonious logistic model"
     )
     threshold = threshold_summary(test_y, production_score)

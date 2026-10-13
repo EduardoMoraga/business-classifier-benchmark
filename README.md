@@ -10,10 +10,10 @@ Primary business use case: employee attrition classification, run on two dataset
 
 | Case | Dataset | Rows (holdout) | Production model |
 |---|---|---|---|
-| `ibm` | IBM HR Analytics Employee Attrition & Performance | 1,470 (294) | Parsimonious L1 logistic |
-| `hr` | HR Analytics from [employee-attrition-predictor](https://github.com/EduardoMoraga/employee-attrition-predictor), deduplicated | 11,991 (2,399) | XGBoost with the original notebook's hyperparameters |
+| `ibm` (Dataset 1) | [IBM HR Analytics Employee Attrition & Performance](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset) | 1,470 (294) | Parsimonious L1 logistic |
+| `hr` (Dataset 2) | [HR Analytics, HR_comma_sep.csv](https://www.kaggle.com/datasets/giripujar/hr-analytics) (CC0), deduplicated | 11,991 (2,399) | XGBoost with a fixed baseline configuration |
 
-The `hr` case redoes the earlier XGBoost + SHAP project without its leaks (3,008 duplicate rows, early stopping on the test set) and audits the difference with `scripts/audit_original.py`.
+The `hr` case also audits a prior XGBoost + SHAP analysis of the same data ([employee-attrition-predictor](https://github.com/EduardoMoraga/employee-attrition-predictor)) and redoes it without its leaks (3,008 duplicate rows, early stopping on the test set) and audits the difference with `scripts/audit_original.py`.
 
 ## Current status
 
@@ -21,10 +21,10 @@ The project is runnable end to end for the classical model and portfolio web app
 
 Verified local run (holdout PR-AUC; CV is RepeatedStratifiedKFold 5x5 on train):
 
-| | IBM | HR (your exercise) |
+| | Dataset 1 (IBM) | Dataset 2 (HR Analytics) |
 |---|---|---|
 | Logistic L1 | 0.591 (CV 0.618) | 0.437 (CV 0.417) |
-| Best tree model | 0.571 LightGBM, tie | 0.969 LightGBM / Boruta + XGBoost, tie with original XGBoost 0.966 |
+| Best tree model | 0.571 LightGBM, tie | 0.969 LightGBM / Boruta + XGBoost, tie with baseline XGBoost 0.966 |
 | Max ROC-AUC, any model | 0.82 | 0.985 |
 
 Live web app: https://eduardomoraga.github.io/business-classifier-benchmark/ (deployed by `.github/workflows/pages.yml` on every push to `main`).
@@ -97,7 +97,7 @@ uv run python scripts/run_tournament.py --case ibm
 uv run python scripts/run_tournament.py --case hr
 ```
 
-Tunes logistic L2, Random Forest, XGBoost, LightGBM, Boruta + logistic, Boruta + XGBoost and a soft-voting ensemble on the training split only (inner 5-fold randomized search), scores each with RepeatedStratifiedKFold 5x5, evaluates once on the holdout and compares against the L1 logistic with a paired bootstrap. In the `hr` case it also scores the original notebook's XGBoost untuned and compares every model against it. Boruta's fitted step is cached in `.cache/boruta` across the search. Writes `app/public/<case>/tournament.json` and `reports/<case>/tournament.csv`. XGBoost on macOS needs `brew install libomp`.
+Tunes logistic L2, Random Forest, XGBoost, LightGBM, Boruta + logistic, Boruta + XGBoost and a soft-voting ensemble on the training split only (inner 5-fold randomized search), scores each with RepeatedStratifiedKFold 5x5, evaluates once on the holdout and compares against the L1 logistic with a paired bootstrap. In the `hr` case it also scores the baseline XGBoost configuration untuned and compares every model against it. Boruta's fitted step is cached in `.cache/boruta` across the search. Writes `app/public/<case>/tournament.json` and `reports/<case>/tournament.csv`. XGBoost on macOS needs `brew install libomp`.
 
 ## Audit of the original exercise
 
