@@ -1,0 +1,3236 @@
+[
+  {
+    "row_id": 1061,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.59,
+    "latency_ms": 575.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.59
+    }
+  },
+  {
+    "row_id": 891,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.22,
+    "latency_ms": 368.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.22
+    }
+  },
+  {
+    "row_id": 456,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.36,
+    "latency_ms": 476.8,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.36
+    }
+  },
+  {
+    "row_id": 922,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.54,
+    "latency_ms": 466.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.54
+    }
+  },
+  {
+    "row_id": 69,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.65,
+    "latency_ms": 282.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.65
+    }
+  },
+  {
+    "row_id": 1164,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.38,
+    "latency_ms": 317.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.38
+    }
+  },
+  {
+    "row_id": 406,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.29,
+    "latency_ms": 460.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.29
+    }
+  },
+  {
+    "row_id": 1330,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.26,
+    "latency_ms": 331.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.26
+    }
+  },
+  {
+    "row_id": 1232,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.29,
+    "latency_ms": 441.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.29
+    }
+  },
+  {
+    "row_id": 1311,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.69,
+    "latency_ms": 322.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.69
+    }
+  },
+  {
+    "row_id": 1212,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.23,
+    "latency_ms": 465.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.23
+    }
+  },
+  {
+    "row_id": 771,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.44,
+    "latency_ms": 361.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.44
+    }
+  },
+  {
+    "row_id": 196,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.41,
+    "latency_ms": 421.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.41
+    }
+  },
+  {
+    "row_id": 1274,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.29,
+    "latency_ms": 317.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.29
+    }
+  },
+  {
+    "row_id": 930,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.55,
+    "latency_ms": 457.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.55
+    }
+  },
+  {
+    "row_id": 318,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.55,
+    "latency_ms": 330.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.55
+    }
+  },
+  {
+    "row_id": 403,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.37,
+    "latency_ms": 467.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.37
+    }
+  },
+  {
+    "row_id": 261,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.26,
+    "latency_ms": 364.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.26
+    }
+  },
+  {
+    "row_id": 602,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.66,
+    "latency_ms": 489.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.66
+    }
+  },
+  {
+    "row_id": 1458,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.22,
+    "latency_ms": 509.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.22
+    }
+  },
+  {
+    "row_id": 645,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.4,
+    "latency_ms": 507.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.4
+    }
+  },
+  {
+    "row_id": 985,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.31,
+    "latency_ms": 319.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.31
+    }
+  },
+  {
+    "row_id": 854,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.44,
+    "latency_ms": 431.2,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.44
+    }
+  },
+  {
+    "row_id": 1098,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.37,
+    "latency_ms": 334.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.37
+    }
+  },
+  {
+    "row_id": 788,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.22,
+    "latency_ms": 473.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.22
+    }
+  },
+  {
+    "row_id": 397,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.3,
+    "latency_ms": 327.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.3
+    }
+  },
+  {
+    "row_id": 1263,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.45,
+    "latency_ms": 516.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.45
+    }
+  },
+  {
+    "row_id": 136,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.28,
+    "latency_ms": 449.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.28
+    }
+  },
+  {
+    "row_id": 704,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.25,
+    "latency_ms": 335.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.25
+    }
+  },
+  {
+    "row_id": 45,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.24,
+    "latency_ms": 462.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.24
+    }
+  },
+  {
+    "row_id": 1150,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.48,
+    "latency_ms": 334.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.48
+    }
+  },
+  {
+    "row_id": 901,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.65,
+    "latency_ms": 438.2,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.65
+    }
+  },
+  {
+    "row_id": 603,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.43,
+    "latency_ms": 522.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.43
+    }
+  },
+  {
+    "row_id": 821,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.46,
+    "latency_ms": 527.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.46
+    }
+  },
+  {
+    "row_id": 671,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.54,
+    "latency_ms": 319.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.54
+    }
+  },
+  {
+    "row_id": 514,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.63,
+    "latency_ms": 429.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.63
+    }
+  },
+  {
+    "row_id": 78,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.36,
+    "latency_ms": 352.8,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.36
+    }
+  },
+  {
+    "row_id": 1393,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.29,
+    "latency_ms": 471.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.29
+    }
+  },
+  {
+    "row_id": 874,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.44,
+    "latency_ms": 336.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.44
+    }
+  },
+  {
+    "row_id": 709,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.64,
+    "latency_ms": 513.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.64
+    }
+  },
+  {
+    "row_id": 189,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.46,
+    "latency_ms": 437.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.46
+    }
+  },
+  {
+    "row_id": 841,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.48,
+    "latency_ms": 334.8,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.48
+    }
+  },
+  {
+    "row_id": 235,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.2,
+    "latency_ms": 303.8,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.2
+    }
+  },
+  {
+    "row_id": 1371,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.79,
+    "latency_ms": 509.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.79
+    }
+  },
+  {
+    "row_id": 1141,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.37,
+    "latency_ms": 462.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.37
+    }
+  },
+  {
+    "row_id": 1342,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.37,
+    "latency_ms": 330.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.37
+    }
+  },
+  {
+    "row_id": 1238,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.58,
+    "latency_ms": 437.8,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.58
+    }
+  },
+  {
+    "row_id": 1215,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.29,
+    "latency_ms": 336.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.29
+    }
+  },
+  {
+    "row_id": 240,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.36,
+    "latency_ms": 462.8,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.36
+    }
+  },
+  {
+    "row_id": 374,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.19,
+    "latency_ms": 318.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.19
+    }
+  },
+  {
+    "row_id": 1047,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.63,
+    "latency_ms": 303.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.63
+    }
+  },
+  {
+    "row_id": 1361,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.4,
+    "latency_ms": 488.2,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.4
+    }
+  },
+  {
+    "row_id": 1451,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.21,
+    "latency_ms": 483.2,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.21
+    }
+  },
+  {
+    "row_id": 1100,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.43,
+    "latency_ms": 354.2,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.43
+    }
+  },
+  {
+    "row_id": 596,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.37,
+    "latency_ms": 400.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.37
+    }
+  },
+  {
+    "row_id": 522,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.55,
+    "latency_ms": 324.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.55
+    }
+  },
+  {
+    "row_id": 448,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.24,
+    "latency_ms": 463.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.24
+    }
+  },
+  {
+    "row_id": 132,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.44,
+    "latency_ms": 323.2,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.44
+    }
+  },
+  {
+    "row_id": 572,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.43,
+    "latency_ms": 464.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.43
+    }
+  },
+  {
+    "row_id": 897,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.28,
+    "latency_ms": 522.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.28
+    }
+  },
+  {
+    "row_id": 1026,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.34,
+    "latency_ms": 525.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.34
+    }
+  },
+  {
+    "row_id": 1210,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.22,
+    "latency_ms": 323.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.22
+    }
+  },
+  {
+    "row_id": 191,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.41,
+    "latency_ms": 445.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.41
+    }
+  },
+  {
+    "row_id": 1293,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.41,
+    "latency_ms": 300.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.41
+    }
+  },
+  {
+    "row_id": 1469,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.35,
+    "latency_ms": 298.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.35
+    }
+  },
+  {
+    "row_id": 1280,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.52,
+    "latency_ms": 451.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.52
+    }
+  },
+  {
+    "row_id": 66,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.38,
+    "latency_ms": 318.8,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.38
+    }
+  },
+  {
+    "row_id": 1297,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.45,
+    "latency_ms": 305.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.45
+    }
+  },
+  {
+    "row_id": 1028,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.49,
+    "latency_ms": 457.2,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.49
+    }
+  },
+  {
+    "row_id": 850,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.68,
+    "latency_ms": 316.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.68
+    }
+  },
+  {
+    "row_id": 1450,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.3,
+    "latency_ms": 454.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.3
+    }
+  },
+  {
+    "row_id": 137,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.22,
+    "latency_ms": 342.2,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.22
+    }
+  },
+  {
+    "row_id": 919,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.35,
+    "latency_ms": 450.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.35
+    }
+  },
+  {
+    "row_id": 1219,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.35,
+    "latency_ms": 336.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.35
+    }
+  },
+  {
+    "row_id": 114,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.67,
+    "latency_ms": 445.2,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.67
+    }
+  },
+  {
+    "row_id": 1346,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.25,
+    "latency_ms": 324.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.25
+    }
+  },
+  {
+    "row_id": 1054,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.42,
+    "latency_ms": 490.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.42
+    }
+  },
+  {
+    "row_id": 223,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.34,
+    "latency_ms": 369.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.34
+    }
+  },
+  {
+    "row_id": 1341,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.32,
+    "latency_ms": 387.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.32
+    }
+  },
+  {
+    "row_id": 173,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.41,
+    "latency_ms": 335.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.41
+    }
+  },
+  {
+    "row_id": 1253,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.45,
+    "latency_ms": 441.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.45
+    }
+  },
+  {
+    "row_id": 762,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.66,
+    "latency_ms": 321.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.66
+    }
+  },
+  {
+    "row_id": 126,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.14,
+    "latency_ms": 475.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.14
+    }
+  },
+  {
+    "row_id": 25,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.3,
+    "latency_ms": 291.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.3
+    }
+  },
+  {
+    "row_id": 1350,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.33,
+    "latency_ms": 335.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.33
+    }
+  },
+  {
+    "row_id": 1229,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.73,
+    "latency_ms": 422.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.73
+    }
+  },
+  {
+    "row_id": 471,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.45,
+    "latency_ms": 349.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.45
+    }
+  },
+  {
+    "row_id": 789,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.3,
+    "latency_ms": 499.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.3
+    }
+  },
+  {
+    "row_id": 459,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.38,
+    "latency_ms": 454.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.38
+    }
+  },
+  {
+    "row_id": 1211,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.31,
+    "latency_ms": 336.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.31
+    }
+  },
+  {
+    "row_id": 178,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.37,
+    "latency_ms": 454.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.37
+    }
+  },
+  {
+    "row_id": 190,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.26,
+    "latency_ms": 344.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.26
+    }
+  },
+  {
+    "row_id": 911,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.5,
+    "latency_ms": 490.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.5
+    }
+  },
+  {
+    "row_id": 697,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.34,
+    "latency_ms": 535.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.34
+    }
+  },
+  {
+    "row_id": 292,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.62,
+    "latency_ms": 563.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.62
+    }
+  },
+  {
+    "row_id": 1021,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.61,
+    "latency_ms": 442.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.61
+    }
+  },
+  {
+    "row_id": 1168,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.31,
+    "latency_ms": 309.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.31
+    }
+  },
+  {
+    "row_id": 217,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.35,
+    "latency_ms": 298.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.35
+    }
+  },
+  {
+    "row_id": 1433,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.46,
+    "latency_ms": 465.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.46
+    }
+  },
+  {
+    "row_id": 961,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.39,
+    "latency_ms": 502.8,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.39
+    }
+  },
+  {
+    "row_id": 770,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.34,
+    "latency_ms": 367.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.34
+    }
+  },
+  {
+    "row_id": 824,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.49,
+    "latency_ms": 397.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.49
+    }
+  },
+  {
+    "row_id": 577,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.65,
+    "latency_ms": 323.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.65
+    }
+  },
+  {
+    "row_id": 1248,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.31,
+    "latency_ms": 453.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.31
+    }
+  },
+  {
+    "row_id": 1391,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.75,
+    "latency_ms": 343.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.75
+    }
+  },
+  {
+    "row_id": 1447,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.31,
+    "latency_ms": 458.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.31
+    }
+  },
+  {
+    "row_id": 670,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.43,
+    "latency_ms": 325.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.43
+    }
+  },
+  {
+    "row_id": 257,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.21,
+    "latency_ms": 461.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.21
+    }
+  },
+  {
+    "row_id": 953,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.51,
+    "latency_ms": 332.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.51
+    }
+  },
+  {
+    "row_id": 1117,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.43,
+    "latency_ms": 453.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.43
+    }
+  },
+  {
+    "row_id": 1145,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.45,
+    "latency_ms": 322.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.45
+    }
+  },
+  {
+    "row_id": 819,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.42,
+    "latency_ms": 447.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.42
+    }
+  },
+  {
+    "row_id": 956,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.53,
+    "latency_ms": 302.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.53
+    }
+  },
+  {
+    "row_id": 53,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.62,
+    "latency_ms": 317.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.62
+    }
+  },
+  {
+    "row_id": 967,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.38,
+    "latency_ms": 507.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.38
+    }
+  },
+  {
+    "row_id": 686,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.44,
+    "latency_ms": 492.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.44
+    }
+  },
+  {
+    "row_id": 581,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.31,
+    "latency_ms": 316.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.31
+    }
+  },
+  {
+    "row_id": 465,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.48,
+    "latency_ms": 436.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.48
+    }
+  },
+  {
+    "row_id": 44,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.17,
+    "latency_ms": 308.2,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.17
+    }
+  },
+  {
+    "row_id": 846,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.36,
+    "latency_ms": 309.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.36
+    }
+  },
+  {
+    "row_id": 179,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.26,
+    "latency_ms": 433.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.26
+    }
+  },
+  {
+    "row_id": 559,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.73,
+    "latency_ms": 366.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.73
+    }
+  },
+  {
+    "row_id": 1078,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.54,
+    "latency_ms": 474.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.54
+    }
+  },
+  {
+    "row_id": 1328,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.21,
+    "latency_ms": 729.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.21
+    }
+  },
+  {
+    "row_id": 929,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.39,
+    "latency_ms": 312.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.39
+    }
+  },
+  {
+    "row_id": 27,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.39,
+    "latency_ms": 495.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.39
+    }
+  },
+  {
+    "row_id": 1226,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.51,
+    "latency_ms": 352.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.51
+    }
+  },
+  {
+    "row_id": 293,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.34,
+    "latency_ms": 412.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.34
+    }
+  },
+  {
+    "row_id": 1250,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.38,
+    "latency_ms": 348.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.38
+    }
+  },
+  {
+    "row_id": 950,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.6,
+    "latency_ms": 453.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.6
+    }
+  },
+  {
+    "row_id": 182,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.44,
+    "latency_ms": 301.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.44
+    }
+  },
+  {
+    "row_id": 867,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.67,
+    "latency_ms": 469.2,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.67
+    }
+  },
+  {
+    "row_id": 562,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.31,
+    "latency_ms": 327.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.31
+    }
+  },
+  {
+    "row_id": 665,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.48,
+    "latency_ms": 724.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.48
+    }
+  },
+  {
+    "row_id": 148,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.55,
+    "latency_ms": 303.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.55
+    }
+  },
+  {
+    "row_id": 1402,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.37,
+    "latency_ms": 330.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.37
+    }
+  },
+  {
+    "row_id": 684,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.67,
+    "latency_ms": 412.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.67
+    }
+  },
+  {
+    "row_id": 372,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.67,
+    "latency_ms": 314.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.67
+    }
+  },
+  {
+    "row_id": 1002,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.36,
+    "latency_ms": 494.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.36
+    }
+  },
+  {
+    "row_id": 955,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.22,
+    "latency_ms": 375.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.22
+    }
+  },
+  {
+    "row_id": 1009,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.53,
+    "latency_ms": 390.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.53
+    }
+  },
+  {
+    "row_id": 340,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.34,
+    "latency_ms": 296.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.34
+    }
+  },
+  {
+    "row_id": 274,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.43,
+    "latency_ms": 309.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.43
+    }
+  },
+  {
+    "row_id": 310,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.57,
+    "latency_ms": 441.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.57
+    }
+  },
+  {
+    "row_id": 864,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.82,
+    "latency_ms": 342.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.82
+    }
+  },
+  {
+    "row_id": 117,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.27,
+    "latency_ms": 460.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.27
+    }
+  },
+  {
+    "row_id": 1241,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.42,
+    "latency_ms": 338.2,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.42
+    }
+  },
+  {
+    "row_id": 449,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.34,
+    "latency_ms": 431.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.34
+    }
+  },
+  {
+    "row_id": 160,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.36,
+    "latency_ms": 351.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.36
+    }
+  },
+  {
+    "row_id": 390,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.29,
+    "latency_ms": 444.8,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.29
+    }
+  },
+  {
+    "row_id": 1048,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.5,
+    "latency_ms": 349.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.5
+    }
+  },
+  {
+    "row_id": 1073,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.33,
+    "latency_ms": 430.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.33
+    }
+  },
+  {
+    "row_id": 998,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.29,
+    "latency_ms": 332.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.29
+    }
+  },
+  {
+    "row_id": 231,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.15,
+    "latency_ms": 452.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.15
+    }
+  },
+  {
+    "row_id": 1146,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.36,
+    "latency_ms": 313.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.36
+    }
+  },
+  {
+    "row_id": 122,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.56,
+    "latency_ms": 471.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.56
+    }
+  },
+  {
+    "row_id": 1442,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.36,
+    "latency_ms": 341.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.36
+    }
+  },
+  {
+    "row_id": 978,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.34,
+    "latency_ms": 484.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.34
+    }
+  },
+  {
+    "row_id": 525,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.59,
+    "latency_ms": 481.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.59
+    }
+  },
+  {
+    "row_id": 1355,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.53,
+    "latency_ms": 320.8,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.53
+    }
+  },
+  {
+    "row_id": 548,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.33,
+    "latency_ms": 467.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.33
+    }
+  },
+  {
+    "row_id": 477,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.28,
+    "latency_ms": 354.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.28
+    }
+  },
+  {
+    "row_id": 24,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.49,
+    "latency_ms": 477.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.49
+    }
+  },
+  {
+    "row_id": 878,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.55,
+    "latency_ms": 469.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.55
+    }
+  },
+  {
+    "row_id": 547,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.47,
+    "latency_ms": 317.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.47
+    }
+  },
+  {
+    "row_id": 1064,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.31,
+    "latency_ms": 322.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.31
+    }
+  },
+  {
+    "row_id": 779,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.42,
+    "latency_ms": 483.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.42
+    }
+  },
+  {
+    "row_id": 1366,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.41,
+    "latency_ms": 457.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.41
+    }
+  },
+  {
+    "row_id": 2,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.66,
+    "latency_ms": 322.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.66
+    }
+  },
+  {
+    "row_id": 245,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.61,
+    "latency_ms": 467.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.61
+    }
+  },
+  {
+    "row_id": 1467,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.4,
+    "latency_ms": 336.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.4
+    }
+  },
+  {
+    "row_id": 242,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.79,
+    "latency_ms": 430.2,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.79
+    }
+  },
+  {
+    "row_id": 347,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.74,
+    "latency_ms": 371.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.74
+    }
+  },
+  {
+    "row_id": 747,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.61,
+    "latency_ms": 441.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.61
+    }
+  },
+  {
+    "row_id": 382,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.53,
+    "latency_ms": 347.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.53
+    }
+  },
+  {
+    "row_id": 538,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.21,
+    "latency_ms": 500.2,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.21
+    }
+  },
+  {
+    "row_id": 732,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.51,
+    "latency_ms": 447.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.51
+    }
+  },
+  {
+    "row_id": 269,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.19,
+    "latency_ms": 319.2,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.19
+    }
+  },
+  {
+    "row_id": 801,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.69,
+    "latency_ms": 477.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.69
+    }
+  },
+  {
+    "row_id": 474,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.28,
+    "latency_ms": 306.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.28
+    }
+  },
+  {
+    "row_id": 180,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.32,
+    "latency_ms": 453.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.32
+    }
+  },
+  {
+    "row_id": 1220,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.29,
+    "latency_ms": 318.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.29
+    }
+  },
+  {
+    "row_id": 1434,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.3,
+    "latency_ms": 330.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.3
+    }
+  },
+  {
+    "row_id": 229,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.34,
+    "latency_ms": 479.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.34
+    }
+  },
+  {
+    "row_id": 1055,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.56,
+    "latency_ms": 474.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.56
+    }
+  },
+  {
+    "row_id": 1190,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.45,
+    "latency_ms": 331.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.45
+    }
+  },
+  {
+    "row_id": 1307,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.49,
+    "latency_ms": 453.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.49
+    }
+  },
+  {
+    "row_id": 225,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.45,
+    "latency_ms": 522.8,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.45
+    }
+  },
+  {
+    "row_id": 1080,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.36,
+    "latency_ms": 363.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.36
+    }
+  },
+  {
+    "row_id": 1349,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.53,
+    "latency_ms": 494.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.53
+    }
+  },
+  {
+    "row_id": 1186,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.34,
+    "latency_ms": 469.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.34
+    }
+  },
+  {
+    "row_id": 246,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.28,
+    "latency_ms": 357.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.28
+    }
+  },
+  {
+    "row_id": 617,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.49,
+    "latency_ms": 412.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.49
+    }
+  },
+  {
+    "row_id": 123,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.28,
+    "latency_ms": 314.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.28
+    }
+  },
+  {
+    "row_id": 1040,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.42,
+    "latency_ms": 513.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.42
+    }
+  },
+  {
+    "row_id": 551,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.51,
+    "latency_ms": 478.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.51
+    }
+  },
+  {
+    "row_id": 1204,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.36,
+    "latency_ms": 322.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.36
+    }
+  },
+  {
+    "row_id": 1144,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.63,
+    "latency_ms": 306.2,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.63
+    }
+  },
+  {
+    "row_id": 795,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.49,
+    "latency_ms": 446.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.49
+    }
+  },
+  {
+    "row_id": 764,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.52,
+    "latency_ms": 317.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.52
+    }
+  },
+  {
+    "row_id": 688,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.58,
+    "latency_ms": 445.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.58
+    }
+  },
+  {
+    "row_id": 222,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.26,
+    "latency_ms": 357.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.26
+    }
+  },
+  {
+    "row_id": 934,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.52,
+    "latency_ms": 442.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.52
+    }
+  },
+  {
+    "row_id": 535,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.31,
+    "latency_ms": 351.8,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.31
+    }
+  },
+  {
+    "row_id": 17,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.52,
+    "latency_ms": 434.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.52
+    }
+  },
+  {
+    "row_id": 649,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.26,
+    "latency_ms": 312.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.26
+    }
+  },
+  {
+    "row_id": 766,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.49,
+    "latency_ms": 507.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.49
+    }
+  },
+  {
+    "row_id": 543,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.35,
+    "latency_ms": 335.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.35
+    }
+  },
+  {
+    "row_id": 1216,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.41,
+    "latency_ms": 405.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.41
+    }
+  },
+  {
+    "row_id": 1397,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.37,
+    "latency_ms": 307.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.37
+    }
+  },
+  {
+    "row_id": 135,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.4,
+    "latency_ms": 302.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.4
+    }
+  },
+  {
+    "row_id": 916,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.35,
+    "latency_ms": 442.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.35
+    }
+  },
+  {
+    "row_id": 1264,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.76,
+    "latency_ms": 320.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.76
+    }
+  },
+  {
+    "row_id": 1079,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.54,
+    "latency_ms": 439.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.54
+    }
+  },
+  {
+    "row_id": 357,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.56,
+    "latency_ms": 340.2,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.56
+    }
+  },
+  {
+    "row_id": 330,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.29,
+    "latency_ms": 468.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.29
+    }
+  },
+  {
+    "row_id": 156,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.5,
+    "latency_ms": 340.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.5
+    }
+  },
+  {
+    "row_id": 1035,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.45,
+    "latency_ms": 508.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.45
+    }
+  },
+  {
+    "row_id": 3,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.4,
+    "latency_ms": 506.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.4
+    }
+  },
+  {
+    "row_id": 36,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.41,
+    "latency_ms": 491.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.41
+    }
+  },
+  {
+    "row_id": 755,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.29,
+    "latency_ms": 322.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.29
+    }
+  },
+  {
+    "row_id": 715,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.46,
+    "latency_ms": 455.2,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.46
+    }
+  },
+  {
+    "row_id": 780,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.58,
+    "latency_ms": 318.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.58
+    }
+  },
+  {
+    "row_id": 301,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.58,
+    "latency_ms": 445.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.58
+    }
+  },
+  {
+    "row_id": 729,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.37,
+    "latency_ms": 347.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.37
+    }
+  },
+  {
+    "row_id": 765,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.51,
+    "latency_ms": 461.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.51
+    }
+  },
+  {
+    "row_id": 476,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.48,
+    "latency_ms": 362.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.48
+    }
+  },
+  {
+    "row_id": 483,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.25,
+    "latency_ms": 440.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.25
+    }
+  },
+  {
+    "row_id": 455,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.38,
+    "latency_ms": 322.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.38
+    }
+  },
+  {
+    "row_id": 767,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.5,
+    "latency_ms": 447.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.5
+    }
+  },
+  {
+    "row_id": 773,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.34,
+    "latency_ms": 319.8,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.34
+    }
+  },
+  {
+    "row_id": 724,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.41,
+    "latency_ms": 478.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.41
+    }
+  },
+  {
+    "row_id": 668,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.42,
+    "latency_ms": 338.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.42
+    }
+  },
+  {
+    "row_id": 1175,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.44,
+    "latency_ms": 438.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.44
+    }
+  },
+  {
+    "row_id": 104,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.48,
+    "latency_ms": 327.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.48
+    }
+  },
+  {
+    "row_id": 147,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.69,
+    "latency_ms": 454.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.69
+    }
+  },
+  {
+    "row_id": 965,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.35,
+    "latency_ms": 347.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.35
+    }
+  },
+  {
+    "row_id": 843,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.18,
+    "latency_ms": 440.8,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.18
+    }
+  },
+  {
+    "row_id": 663,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.52,
+    "latency_ms": 318.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.52
+    }
+  },
+  {
+    "row_id": 1118,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.42,
+    "latency_ms": 487.2,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.42
+    }
+  },
+  {
+    "row_id": 1111,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.17,
+    "latency_ms": 367.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.17
+    }
+  },
+  {
+    "row_id": 109,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.39,
+    "latency_ms": 405.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.39
+    }
+  },
+  {
+    "row_id": 594,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.17,
+    "latency_ms": 351.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.17
+    }
+  },
+  {
+    "row_id": 1302,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.3,
+    "latency_ms": 455.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.3
+    }
+  },
+  {
+    "row_id": 247,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.46,
+    "latency_ms": 331.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.46
+    }
+  },
+  {
+    "row_id": 638,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.44,
+    "latency_ms": 428.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.44
+    }
+  },
+  {
+    "row_id": 700,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.53,
+    "latency_ms": 316.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.53
+    }
+  },
+  {
+    "row_id": 16,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.46,
+    "latency_ms": 459.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.46
+    }
+  },
+  {
+    "row_id": 10,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.39,
+    "latency_ms": 338.2,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.39
+    }
+  },
+  {
+    "row_id": 604,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.39,
+    "latency_ms": 459.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.39
+    }
+  },
+  {
+    "row_id": 239,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.54,
+    "latency_ms": 288.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.54
+    }
+  },
+  {
+    "row_id": 744,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.75,
+    "latency_ms": 314.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.75
+    }
+  },
+  {
+    "row_id": 621,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.23,
+    "latency_ms": 446.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.23
+    }
+  },
+  {
+    "row_id": 1389,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.51,
+    "latency_ms": 320.2,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.51
+    }
+  },
+  {
+    "row_id": 1283,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.2,
+    "latency_ms": 446.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.2
+    }
+  },
+  {
+    "row_id": 300,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.3,
+    "latency_ms": 328.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.3
+    }
+  },
+  {
+    "row_id": 946,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.5,
+    "latency_ms": 292.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.5
+    }
+  },
+  {
+    "row_id": 655,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.41,
+    "latency_ms": 455.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.41
+    }
+  },
+  {
+    "row_id": 241,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.37,
+    "latency_ms": 309.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.37
+    }
+  },
+  {
+    "row_id": 1416,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.44,
+    "latency_ms": 467.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.44
+    }
+  },
+  {
+    "row_id": 1288,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.24,
+    "latency_ms": 309.8,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.24
+    }
+  },
+  {
+    "row_id": 1399,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.23,
+    "latency_ms": 484.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.23
+    }
+  },
+  {
+    "row_id": 1322,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.32,
+    "latency_ms": 342.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.32
+    }
+  },
+  {
+    "row_id": 1267,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.25,
+    "latency_ms": 436.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.25
+    }
+  },
+  {
+    "row_id": 1468,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.45,
+    "latency_ms": 350.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.45
+    }
+  },
+  {
+    "row_id": 169,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.37,
+    "latency_ms": 495.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.37
+    }
+  },
+  {
+    "row_id": 1362,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.37,
+    "latency_ms": 459.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.37
+    }
+  },
+  {
+    "row_id": 1258,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.68,
+    "latency_ms": 299.8,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.68
+    }
+  },
+  {
+    "row_id": 1383,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.35,
+    "latency_ms": 327.2,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.35
+    }
+  },
+  {
+    "row_id": 557,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.77,
+    "latency_ms": 451.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.77
+    }
+  },
+  {
+    "row_id": 860,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.53,
+    "latency_ms": 324.1,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.53
+    }
+  },
+  {
+    "row_id": 464,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.26,
+    "latency_ms": 438.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.26
+    }
+  },
+  {
+    "row_id": 345,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.31,
+    "latency_ms": 323.8,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.31
+    }
+  },
+  {
+    "row_id": 496,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.36,
+    "latency_ms": 437.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.36
+    }
+  },
+  {
+    "row_id": 772,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.36,
+    "latency_ms": 333.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.36
+    }
+  },
+  {
+    "row_id": 987,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.48,
+    "latency_ms": 475.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.48
+    }
+  },
+  {
+    "row_id": 711,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.8,
+    "latency_ms": 320.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.8
+    }
+  },
+  {
+    "row_id": 742,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.39,
+    "latency_ms": 466.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.39
+    }
+  },
+  {
+    "row_id": 475,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.27,
+    "latency_ms": 322.8,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.27
+    }
+  },
+  {
+    "row_id": 326,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.29,
+    "latency_ms": 464.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.29
+    }
+  },
+  {
+    "row_id": 1147,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.52,
+    "latency_ms": 308.4,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.52
+    }
+  },
+  {
+    "row_id": 825,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.27,
+    "latency_ms": 300.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.27
+    }
+  },
+  {
+    "row_id": 1449,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.52,
+    "latency_ms": 440.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.52
+    }
+  },
+  {
+    "row_id": 1296,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.3,
+    "latency_ms": 333.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.3
+    }
+  },
+  {
+    "row_id": 41,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.68,
+    "latency_ms": 456.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.68
+    }
+  },
+  {
+    "row_id": 1384,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.29,
+    "latency_ms": 308.7,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.29
+    }
+  },
+  {
+    "row_id": 898,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.24,
+    "latency_ms": 474.3,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.24
+    }
+  },
+  {
+    "row_id": 829,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.59,
+    "latency_ms": 351.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.59
+    }
+  },
+  {
+    "row_id": 818,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.42,
+    "latency_ms": 471.6,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.42
+    }
+  },
+  {
+    "row_id": 1269,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.26,
+    "latency_ms": 345.0,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.26
+    }
+  },
+  {
+    "row_id": 1352,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.63,
+    "latency_ms": 404.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.63
+    }
+  },
+  {
+    "row_id": 1236,
+    "provider": "jev",
+    "y_true": true,
+    "y_score": 0.68,
+    "latency_ms": 327.9,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.68
+    }
+  },
+  {
+    "row_id": 1023,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.46,
+    "latency_ms": 473.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.46
+    }
+  },
+  {
+    "row_id": 285,
+    "provider": "jev",
+    "y_true": false,
+    "y_score": 0.21,
+    "latency_ms": 578.5,
+    "error": null,
+    "raw_response": {
+      "attrition_risk": 0.21
+    }
+  }
+]

@@ -1,0 +1,358 @@
+{
+  "selection_metric": "cv_pr_auc",
+  "holdout_size": 294,
+  "holdout_positive_rate": 0.1598639455782313,
+  "accuracy_if_nobody_leaves": 0.8401360544217686,
+  "winner": "ensemble",
+  "production": "logistic_l1",
+  "notes": [
+    "Hyperparameters tuned on the training split only (inner 5-fold randomized search).",
+    "CV of tuned candidates reuses the training split, so it slightly favours tuned models over the fixed production logistic.",
+    "Holdout used once per candidate; vs_production is a paired bootstrap of the PR-AUC difference on the holdout."
+  ],
+  "candidates": [
+    {
+      "id": "dummy",
+      "name": "Sin modelo (dummy)",
+      "family": "Referencia",
+      "plain": "Asigna a todos la tasa hist\u00f3rica de salida.",
+      "params": {},
+      "n_features": null,
+      "cv": {
+        "mean": 0.16156509195816807,
+        "std": 0.0002740714028128477,
+        "folds": 25
+      },
+      "holdout": {
+        "pr_auc": 0.1598639455782313,
+        "roc_auc": 0.5,
+        "brier": 0.13431035679577952,
+        "accuracy": 0.8401360544217688,
+        "confusion": {
+          "threshold": 0.5,
+          "tp": 0,
+          "fp": 0,
+          "fn": 47,
+          "tn": 247
+        }
+      },
+      "seconds": 1.7
+    },
+    {
+      "id": "logistic_l1",
+      "name": "Regresi\u00f3n log\u00edstica L1 (actual)",
+      "family": "Lineal",
+      "plain": "Suma ponderada de factores; elimina los que no aportan.",
+      "params": {},
+      "n_features": 51,
+      "cv": {
+        "mean": 0.6178883569037036,
+        "std": 0.05235140617526048,
+        "folds": 25
+      },
+      "holdout": {
+        "pr_auc": 0.5913678209170536,
+        "roc_auc": 0.8089413386165907,
+        "brier": 0.15445919809984807,
+        "accuracy": 0.7857142857142857,
+        "confusion": {
+          "threshold": 0.5,
+          "tp": 32,
+          "fp": 48,
+          "fn": 15,
+          "tn": 199
+        }
+      },
+      "seconds": 0.2
+    },
+    {
+      "id": "logistic_unbalanced",
+      "name": "Regresi\u00f3n log\u00edstica sin balancear",
+      "family": "Lineal",
+      "plain": "La misma idea, pero optimizada para acertar en general y no para detectar salidas.",
+      "params": {},
+      "n_features": 51,
+      "cv": {
+        "mean": 0.6333300875932584,
+        "std": 0.06039061088078554,
+        "folds": 25
+      },
+      "holdout": {
+        "pr_auc": 0.6170722138364882,
+        "roc_auc": 0.8079076578516668,
+        "brier": 0.09580211117584402,
+        "accuracy": 0.8775510204081632,
+        "confusion": {
+          "threshold": 0.5,
+          "tp": 16,
+          "fp": 5,
+          "fn": 31,
+          "tn": 242
+        }
+      },
+      "seconds": 0.1,
+      "vs_production": {
+        "low": -0.010567991444821626,
+        "high": 0.06377013322736515,
+        "share_a_wins": 0.903
+      }
+    },
+    {
+      "id": "logistic_l2",
+      "name": "Regresi\u00f3n log\u00edstica L2 ajustada",
+      "family": "Lineal",
+      "plain": "Log\u00edstica con la fuerza de regularizaci\u00f3n elegida por validaci\u00f3n.",
+      "params": {
+        "C": 0.029763514416313176
+      },
+      "n_features": 51,
+      "cv": {
+        "mean": 0.6221257025443913,
+        "std": 0.04896993123519055,
+        "folds": 25
+      },
+      "holdout": {
+        "pr_auc": 0.5944682479464891,
+        "roc_auc": 0.8086829184253596,
+        "brier": 0.15968220549531906,
+        "accuracy": 0.7721088435374149,
+        "confusion": {
+          "threshold": 0.5,
+          "tp": 33,
+          "fp": 53,
+          "fn": 14,
+          "tn": 194
+        }
+      },
+      "seconds": 0.3,
+      "vs_production": {
+        "low": -0.031906447589388306,
+        "high": 0.04017524241113203,
+        "share_a_wins": 0.549
+      }
+    },
+    {
+      "id": "random_forest",
+      "name": "Random Forest",
+      "family": "\u00c1rboles",
+      "plain": "Cientos de \u00e1rboles de decisi\u00f3n que votan.",
+      "params": {
+        "min_samples_leaf": 3,
+        "max_features": "sqrt",
+        "max_depth": null
+      },
+      "n_features": 51,
+      "cv": {
+        "mean": 0.5514580088564085,
+        "std": 0.05465706717599897,
+        "folds": 25
+      },
+      "holdout": {
+        "pr_auc": 0.44956870010019645,
+        "roc_auc": 0.7905073649754502,
+        "brier": 0.11550811898352749,
+        "accuracy": 0.8367346938775511,
+        "confusion": {
+          "threshold": 0.5,
+          "tp": 11,
+          "fp": 12,
+          "fn": 36,
+          "tn": 235
+        }
+      },
+      "seconds": 14.8,
+      "vs_production": {
+        "low": -0.24533737146885007,
+        "high": -0.02783037498901949,
+        "share_a_wins": 0.006
+      }
+    },
+    {
+      "id": "xgboost",
+      "name": "XGBoost",
+      "family": "Boosting",
+      "plain": "\u00c1rboles en secuencia: cada uno corrige los errores del anterior.",
+      "params": {
+        "subsample": 0.85,
+        "reg_lambda": 10,
+        "min_child_weight": 5,
+        "max_depth": 2,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.7
+      },
+      "n_features": 51,
+      "cv": {
+        "mean": 0.5993321500547991,
+        "std": 0.049248237193146735,
+        "folds": 25
+      },
+      "holdout": {
+        "pr_auc": 0.5682742537738998,
+        "roc_auc": 0.8133344818675167,
+        "brier": 0.1374233067035675,
+        "accuracy": 0.7857142857142857,
+        "confusion": {
+          "threshold": 0.5,
+          "tp": 27,
+          "fp": 43,
+          "fn": 20,
+          "tn": 204
+        }
+      },
+      "seconds": 1.6,
+      "vs_production": {
+        "low": -0.10942452739621235,
+        "high": 0.06333289853960718,
+        "share_a_wins": 0.329
+      }
+    },
+    {
+      "id": "lightgbm",
+      "name": "LightGBM",
+      "family": "Boosting",
+      "plain": "Boosting r\u00e1pido de \u00e1rboles, muy usado en competencias.",
+      "params": {
+        "subsample": 0.7,
+        "reg_lambda": 0,
+        "num_leaves": 4,
+        "min_child_samples": 20,
+        "learning_rate": 0.03,
+        "colsample_bytree": 0.5
+      },
+      "n_features": 51,
+      "cv": {
+        "mean": 0.6083710905832053,
+        "std": 0.052043693224691205,
+        "folds": 25
+      },
+      "holdout": {
+        "pr_auc": 0.5707529240505093,
+        "roc_auc": 0.8115255405289,
+        "brier": 0.1392371421694567,
+        "accuracy": 0.7925170068027211,
+        "confusion": {
+          "threshold": 0.5,
+          "tp": 28,
+          "fp": 42,
+          "fn": 19,
+          "tn": 205
+        }
+      },
+      "seconds": 1.6,
+      "vs_production": {
+        "low": -0.11376979233132813,
+        "high": 0.07826403215430011,
+        "share_a_wins": 0.374
+      }
+    },
+    {
+      "id": "boruta_logistic",
+      "name": "Boruta + log\u00edstica",
+      "family": "Selecci\u00f3n de variables",
+      "plain": "Boruta deja s\u00f3lo las variables que superan a copias aleatorias de s\u00ed mismas.",
+      "params": {
+        "C": 0.005336699231206312
+      },
+      "n_features": 9,
+      "cv": {
+        "mean": 0.43869830955764455,
+        "std": 0.056906364067428765,
+        "folds": 25
+      },
+      "holdout": {
+        "pr_auc": 0.4594970755189347,
+        "roc_auc": 0.7286587992075114,
+        "brier": 0.2190889542351247,
+        "accuracy": 0.6462585034013606,
+        "confusion": {
+          "threshold": 0.5,
+          "tp": 35,
+          "fp": 92,
+          "fn": 12,
+          "tn": 155
+        }
+      },
+      "seconds": 83.7,
+      "vs_production": {
+        "low": -0.25871496935981264,
+        "high": -0.002558856463684277,
+        "share_a_wins": 0.022
+      }
+    },
+    {
+      "id": "boruta_xgboost",
+      "name": "Boruta + XGBoost",
+      "family": "Selecci\u00f3n de variables",
+      "plain": "XGBoost entrenado s\u00f3lo con las variables que confirma Boruta.",
+      "params": {
+        "subsample": 1.0,
+        "max_depth": 2,
+        "learning_rate": 0.01,
+        "colsample_bytree": 0.7
+      },
+      "n_features": 9,
+      "cv": {
+        "mean": 0.4808639010434681,
+        "std": 0.049485180993135654,
+        "folds": 25
+      },
+      "holdout": {
+        "pr_auc": 0.4297177651380562,
+        "roc_auc": 0.7817210784735981,
+        "brier": 0.18955233693122864,
+        "accuracy": 0.7448979591836735,
+        "confusion": {
+          "threshold": 0.5,
+          "tp": 31,
+          "fp": 59,
+          "fn": 16,
+          "tn": 188
+        }
+      },
+      "seconds": 128.8,
+      "vs_production": {
+        "low": -0.2862810101041985,
+        "high": -0.030542086721990807,
+        "share_a_wins": 0.006
+      }
+    },
+    {
+      "id": "ensemble",
+      "name": "Ensamble log\u00edstica + LightGBM",
+      "family": "Ensamble",
+      "plain": "Promedia la probabilidad de los dos enfoques.",
+      "params": {
+        "members": [
+          "logistic_l1",
+          "lightgbm"
+        ]
+      },
+      "n_features": null,
+      "cv": {
+        "mean": 0.6377579477052435,
+        "std": 0.05584873711681454,
+        "folds": 25
+      },
+      "holdout": {
+        "pr_auc": 0.6216522911943225,
+        "roc_auc": 0.8219484882418812,
+        "brier": 0.14144320121429155,
+        "accuracy": 0.8095238095238095,
+        "confusion": {
+          "threshold": 0.5,
+          "tp": 32,
+          "fp": 41,
+          "fn": 15,
+          "tn": 206
+        }
+      },
+      "seconds": 0.3,
+      "vs_production": {
+        "low": -0.022454018135136325,
+        "high": 0.09531014831434002,
+        "share_a_wins": 0.865
+      }
+    }
+  ],
+  "run_at": "2026-10-12T22:10:29.097164+00:00"
+}

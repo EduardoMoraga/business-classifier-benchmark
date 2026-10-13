@@ -71,3 +71,10 @@ def test_run_pipeline_exports_portfolio_artifacts(tmp_path):
     assert (tmp_path / "app" / "public" / "model-summary.json").exists()
     assert (tmp_path / "reports" / "model_metrics.csv").exists()
     assert (tmp_path / "models" / "logistic_attrition.joblib").exists()
+    assert (tmp_path / "app" / "public" / "holdout.json").exists()
+    assert summary["eda"]["scope"] == "train_only"
+    assert summary["eda"]["rows"] == summary["split"]["train"]
+    assert {"pr", "roc"} <= summary["curves"].keys()
+    assert summary["calibration"]
+    sweep = summary["threshold_sweep"]
+    assert all(r["tp"] + r["fp"] + r["fn"] + r["tn"] == summary["split"]["test"] for r in sweep)

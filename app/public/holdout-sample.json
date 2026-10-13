@@ -1,5 +1,6 @@
 [
   {
+    "row_id":1061,
     "Age":24,
     "BusinessTravel":"Non-Travel",
     "DailyRate":830,
@@ -32,9 +33,24 @@
     "YearsWithCurrManager":0,
     "y_true":false,
     "classical_score":0.360719325,
-    "typed_state":"Employee profile. Age: 24; BusinessTravel: Non-Travel; DailyRate: 830; Department: Sales; DistanceFromHome: 13; Education: 2; EducationField: Life Sciences; EnvironmentSatisfaction: 4; Gender: Female; HourlyRate: 78; JobInvolvement: 3; JobLevel: 1; JobRole: Sales Representative; JobSatisfaction: 2; MaritalStatus: Married; MonthlyIncome: 2033; MonthlyRate: 7103; NumCompaniesWorked: 1; OverTime: No; PercentSalaryHike: 13; PerformanceRating: 3; RelationshipSatisfaction: 3; StockOptionLevel: 1; TotalWorkingYears: 1; TrainingTimesLastYear: 2; WorkLifeBalance: 3; YearsAtCompany: 1; YearsInCurrentRole: 0; YearsSinceLastPromotion: 0; YearsWithCurrManager: 0"
+    "typed_state":"Employee profile. Age: 24; BusinessTravel: Non-Travel; DailyRate: 830; Department: Sales; DistanceFromHome: 13; Education: 2; EducationField: Life Sciences; EnvironmentSatisfaction: 4; Gender: Female; HourlyRate: 78; JobInvolvement: 3; JobLevel: 1; JobRole: Sales Representative; JobSatisfaction: 2; MaritalStatus: Married; MonthlyIncome: 2033; MonthlyRate: 7103; NumCompaniesWorked: 1; OverTime: No; PercentSalaryHike: 13; PerformanceRating: 3; RelationshipSatisfaction: 3; StockOptionLevel: 1; TotalWorkingYears: 1; TrainingTimesLastYear: 2; WorkLifeBalance: 3; YearsAtCompany: 1; YearsInCurrentRole: 0; YearsSinceLastPromotion: 0; YearsWithCurrManager: 0",
+    "model_percentile":54.2517006803,
+    "model_drivers":{
+      "raises":[
+        "JobRole = Sales Representative",
+        "TotalWorkingYears = 1",
+        "Age = 24"
+      ],
+      "lowers":[
+        "OverTime = No",
+        "BusinessTravel = Non-Travel",
+        "EnvironmentSatisfaction = 4"
+      ]
+    },
+    "hybrid_state":"Employee profile. Age: 24; BusinessTravel: Non-Travel; DailyRate: 830; Department: Sales; DistanceFromHome: 13; Education: 2; EducationField: Life Sciences; EnvironmentSatisfaction: 4; Gender: Female; HourlyRate: 78; JobInvolvement: 3; JobLevel: 1; JobRole: Sales Representative; JobSatisfaction: 2; MaritalStatus: Married; MonthlyIncome: 2033; MonthlyRate: 7103; NumCompaniesWorked: 1; OverTime: No; PercentSalaryHike: 13; PerformanceRating: 3; RelationshipSatisfaction: 3; StockOptionLevel: 1; TotalWorkingYears: 1; TrainingTimesLastYear: 2; WorkLifeBalance: 3; YearsAtCompany: 1; YearsInCurrentRole: 0; YearsSinceLastPromotion: 0; YearsWithCurrManager: 0 Statistical model context: a validated logistic regression trained on this company's history gives this employee an attrition score of 0.36, higher than 54% of training employees. Scores are well ordered but inflated, so read them as a ranking. Factors raising risk: JobRole = Sales Representative; TotalWorkingYears = 1; Age = 24. Factors lowering risk: OverTime = No; BusinessTravel = Non-Travel; EnvironmentSatisfaction = 4."
   },
   {
+    "row_id":891,
     "Age":44,
     "BusinessTravel":"Travel_Rarely",
     "DailyRate":1117,
@@ -67,9 +83,24 @@
     "YearsWithCurrManager":7,
     "y_true":false,
     "classical_score":0.0386589816,
-    "typed_state":"Employee profile. Age: 44; BusinessTravel: Travel_Rarely; DailyRate: 1117; Department: Research & Development; DistanceFromHome: 2; Education: 1; EducationField: Life Sciences; EnvironmentSatisfaction: 1; Gender: Female; HourlyRate: 72; JobInvolvement: 4; JobLevel: 1; JobRole: Research Scientist; JobSatisfaction: 4; MaritalStatus: Married; MonthlyIncome: 2011; MonthlyRate: 19982; NumCompaniesWorked: 1; OverTime: No; PercentSalaryHike: 13; PerformanceRating: 3; RelationshipSatisfaction: 4; StockOptionLevel: 1; TotalWorkingYears: 10; TrainingTimesLastYear: 5; WorkLifeBalance: 3; YearsAtCompany: 10; YearsInCurrentRole: 5; YearsSinceLastPromotion: 7; YearsWithCurrManager: 7"
+    "typed_state":"Employee profile. Age: 44; BusinessTravel: Travel_Rarely; DailyRate: 1117; Department: Research & Development; DistanceFromHome: 2; Education: 1; EducationField: Life Sciences; EnvironmentSatisfaction: 1; Gender: Female; HourlyRate: 72; JobInvolvement: 4; JobLevel: 1; JobRole: Research Scientist; JobSatisfaction: 4; MaritalStatus: Married; MonthlyIncome: 2011; MonthlyRate: 19982; NumCompaniesWorked: 1; OverTime: No; PercentSalaryHike: 13; PerformanceRating: 3; RelationshipSatisfaction: 4; StockOptionLevel: 1; TotalWorkingYears: 10; TrainingTimesLastYear: 5; WorkLifeBalance: 3; YearsAtCompany: 10; YearsInCurrentRole: 5; YearsSinceLastPromotion: 7; YearsWithCurrManager: 7",
+    "model_percentile":5.0170068027,
+    "model_drivers":{
+      "raises":[
+        "YearsSinceLastPromotion = 7",
+        "EnvironmentSatisfaction = 1",
+        "PercentSalaryHike = 13"
+      ],
+      "lowers":[
+        "OverTime = No",
+        "Department = Research & Development",
+        "JobInvolvement = 4"
+      ]
+    },
+    "hybrid_state":"Employee profile. Age: 44; BusinessTravel: Travel_Rarely; DailyRate: 1117; Department: Research & Development; DistanceFromHome: 2; Education: 1; EducationField: Life Sciences; EnvironmentSatisfaction: 1; Gender: Female; HourlyRate: 72; JobInvolvement: 4; JobLevel: 1; JobRole: Research Scientist; JobSatisfaction: 4; MaritalStatus: Married; MonthlyIncome: 2011; MonthlyRate: 19982; NumCompaniesWorked: 1; OverTime: No; PercentSalaryHike: 13; PerformanceRating: 3; RelationshipSatisfaction: 4; StockOptionLevel: 1; TotalWorkingYears: 10; TrainingTimesLastYear: 5; WorkLifeBalance: 3; YearsAtCompany: 10; YearsInCurrentRole: 5; YearsSinceLastPromotion: 7; YearsWithCurrManager: 7 Statistical model context: a validated logistic regression trained on this company's history gives this employee an attrition score of 0.04, higher than 5% of training employees. Scores are well ordered but inflated, so read them as a ranking. Factors raising risk: YearsSinceLastPromotion = 7; EnvironmentSatisfaction = 1; PercentSalaryHike = 13. Factors lowering risk: OverTime = No; Department = Research & Development; JobInvolvement = 4."
   },
   {
+    "row_id":456,
     "Age":31,
     "BusinessTravel":"Travel_Rarely",
     "DailyRate":688,
@@ -102,9 +133,24 @@
     "YearsWithCurrManager":1,
     "y_true":false,
     "classical_score":0.4646068066,
-    "typed_state":"Employee profile. Age: 31; BusinessTravel: Travel_Rarely; DailyRate: 688; Department: Sales; DistanceFromHome: 7; Education: 3; EducationField: Life Sciences; EnvironmentSatisfaction: 3; Gender: Male; HourlyRate: 44; JobInvolvement: 2; JobLevel: 3; JobRole: Manager; JobSatisfaction: 4; MaritalStatus: Divorced; MonthlyIncome: 11557; MonthlyRate: 25291; NumCompaniesWorked: 9; OverTime: No; PercentSalaryHike: 21; PerformanceRating: 4; RelationshipSatisfaction: 3; StockOptionLevel: 1; TotalWorkingYears: 10; TrainingTimesLastYear: 3; WorkLifeBalance: 2; YearsAtCompany: 5; YearsInCurrentRole: 4; YearsSinceLastPromotion: 0; YearsWithCurrManager: 1"
+    "typed_state":"Employee profile. Age: 31; BusinessTravel: Travel_Rarely; DailyRate: 688; Department: Sales; DistanceFromHome: 7; Education: 3; EducationField: Life Sciences; EnvironmentSatisfaction: 3; Gender: Male; HourlyRate: 44; JobInvolvement: 2; JobLevel: 3; JobRole: Manager; JobSatisfaction: 4; MaritalStatus: Divorced; MonthlyIncome: 11557; MonthlyRate: 25291; NumCompaniesWorked: 9; OverTime: No; PercentSalaryHike: 21; PerformanceRating: 4; RelationshipSatisfaction: 3; StockOptionLevel: 1; TotalWorkingYears: 10; TrainingTimesLastYear: 3; WorkLifeBalance: 2; YearsAtCompany: 5; YearsInCurrentRole: 4; YearsSinceLastPromotion: 0; YearsWithCurrManager: 1",
+    "model_percentile":64.880952381,
+    "model_drivers":{
+      "raises":[
+        "NumCompaniesWorked = 9",
+        "JobInvolvement = 2",
+        "YearsWithCurrManager = 1"
+      ],
+      "lowers":[
+        "OverTime = No",
+        "JobSatisfaction = 4",
+        "YearsSinceLastPromotion = 0"
+      ]
+    },
+    "hybrid_state":"Employee profile. Age: 31; BusinessTravel: Travel_Rarely; DailyRate: 688; Department: Sales; DistanceFromHome: 7; Education: 3; EducationField: Life Sciences; EnvironmentSatisfaction: 3; Gender: Male; HourlyRate: 44; JobInvolvement: 2; JobLevel: 3; JobRole: Manager; JobSatisfaction: 4; MaritalStatus: Divorced; MonthlyIncome: 11557; MonthlyRate: 25291; NumCompaniesWorked: 9; OverTime: No; PercentSalaryHike: 21; PerformanceRating: 4; RelationshipSatisfaction: 3; StockOptionLevel: 1; TotalWorkingYears: 10; TrainingTimesLastYear: 3; WorkLifeBalance: 2; YearsAtCompany: 5; YearsInCurrentRole: 4; YearsSinceLastPromotion: 0; YearsWithCurrManager: 1 Statistical model context: a validated logistic regression trained on this company's history gives this employee an attrition score of 0.46, higher than 65% of training employees. Scores are well ordered but inflated, so read them as a ranking. Factors raising risk: NumCompaniesWorked = 9; JobInvolvement = 2; YearsWithCurrManager = 1. Factors lowering risk: OverTime = No; JobSatisfaction = 4; YearsSinceLastPromotion = 0."
   },
   {
+    "row_id":922,
     "Age":44,
     "BusinessTravel":"Travel_Rarely",
     "DailyRate":1199,
@@ -137,9 +183,24 @@
     "YearsWithCurrManager":13,
     "y_true":false,
     "classical_score":0.0341272533,
-    "typed_state":"Employee profile. Age: 44; BusinessTravel: Travel_Rarely; DailyRate: 1199; Department: Research & Development; DistanceFromHome: 4; Education: 2; EducationField: Life Sciences; EnvironmentSatisfaction: 3; Gender: Male; HourlyRate: 92; JobInvolvement: 4; JobLevel: 5; JobRole: Manager; JobSatisfaction: 1; MaritalStatus: Divorced; MonthlyIncome: 19190; MonthlyRate: 17477; NumCompaniesWorked: 1; OverTime: No; PercentSalaryHike: 14; PerformanceRating: 3; RelationshipSatisfaction: 4; StockOptionLevel: 2; TotalWorkingYears: 26; TrainingTimesLastYear: 4; WorkLifeBalance: 2; YearsAtCompany: 25; YearsInCurrentRole: 9; YearsSinceLastPromotion: 14; YearsWithCurrManager: 13"
+    "typed_state":"Employee profile. Age: 44; BusinessTravel: Travel_Rarely; DailyRate: 1199; Department: Research & Development; DistanceFromHome: 4; Education: 2; EducationField: Life Sciences; EnvironmentSatisfaction: 3; Gender: Male; HourlyRate: 92; JobInvolvement: 4; JobLevel: 5; JobRole: Manager; JobSatisfaction: 1; MaritalStatus: Divorced; MonthlyIncome: 19190; MonthlyRate: 17477; NumCompaniesWorked: 1; OverTime: No; PercentSalaryHike: 14; PerformanceRating: 3; RelationshipSatisfaction: 4; StockOptionLevel: 2; TotalWorkingYears: 26; TrainingTimesLastYear: 4; WorkLifeBalance: 2; YearsAtCompany: 25; YearsInCurrentRole: 9; YearsSinceLastPromotion: 14; YearsWithCurrManager: 13",
+    "model_percentile":4.5068027211,
+    "model_drivers":{
+      "raises":[
+        "YearsSinceLastPromotion = 14",
+        "JobSatisfaction = 1",
+        "WorkLifeBalance = 2"
+      ],
+      "lowers":[
+        "OverTime = No",
+        "Department = Research & Development",
+        "YearsWithCurrManager = 13"
+      ]
+    },
+    "hybrid_state":"Employee profile. Age: 44; BusinessTravel: Travel_Rarely; DailyRate: 1199; Department: Research & Development; DistanceFromHome: 4; Education: 2; EducationField: Life Sciences; EnvironmentSatisfaction: 3; Gender: Male; HourlyRate: 92; JobInvolvement: 4; JobLevel: 5; JobRole: Manager; JobSatisfaction: 1; MaritalStatus: Divorced; MonthlyIncome: 19190; MonthlyRate: 17477; NumCompaniesWorked: 1; OverTime: No; PercentSalaryHike: 14; PerformanceRating: 3; RelationshipSatisfaction: 4; StockOptionLevel: 2; TotalWorkingYears: 26; TrainingTimesLastYear: 4; WorkLifeBalance: 2; YearsAtCompany: 25; YearsInCurrentRole: 9; YearsSinceLastPromotion: 14; YearsWithCurrManager: 13 Statistical model context: a validated logistic regression trained on this company's history gives this employee an attrition score of 0.03, higher than 5% of training employees. Scores are well ordered but inflated, so read them as a ranking. Factors raising risk: YearsSinceLastPromotion = 14; JobSatisfaction = 1; WorkLifeBalance = 2. Factors lowering risk: OverTime = No; Department = Research & Development; YearsWithCurrManager = 13."
   },
   {
+    "row_id":69,
     "Age":36,
     "BusinessTravel":"Travel_Rarely",
     "DailyRate":318,
@@ -172,9 +233,24 @@
     "YearsWithCurrManager":0,
     "y_true":true,
     "classical_score":0.6660289157,
-    "typed_state":"Employee profile. Age: 36; BusinessTravel: Travel_Rarely; DailyRate: 318; Department: Research & Development; DistanceFromHome: 9; Education: 3; EducationField: Medical; EnvironmentSatisfaction: 4; Gender: Male; HourlyRate: 79; JobInvolvement: 2; JobLevel: 1; JobRole: Research Scientist; JobSatisfaction: 3; MaritalStatus: Married; MonthlyIncome: 3388; MonthlyRate: 21777; NumCompaniesWorked: 0; OverTime: Yes; PercentSalaryHike: 17; PerformanceRating: 3; RelationshipSatisfaction: 1; StockOptionLevel: 1; TotalWorkingYears: 2; TrainingTimesLastYear: 0; WorkLifeBalance: 2; YearsAtCompany: 1; YearsInCurrentRole: 0; YearsSinceLastPromotion: 0; YearsWithCurrManager: 0"
+    "typed_state":"Employee profile. Age: 36; BusinessTravel: Travel_Rarely; DailyRate: 318; Department: Research & Development; DistanceFromHome: 9; Education: 3; EducationField: Medical; EnvironmentSatisfaction: 4; Gender: Male; HourlyRate: 79; JobInvolvement: 2; JobLevel: 1; JobRole: Research Scientist; JobSatisfaction: 3; MaritalStatus: Married; MonthlyIncome: 3388; MonthlyRate: 21777; NumCompaniesWorked: 0; OverTime: Yes; PercentSalaryHike: 17; PerformanceRating: 3; RelationshipSatisfaction: 1; StockOptionLevel: 1; TotalWorkingYears: 2; TrainingTimesLastYear: 0; WorkLifeBalance: 2; YearsAtCompany: 1; YearsInCurrentRole: 0; YearsSinceLastPromotion: 0; YearsWithCurrManager: 0",
+    "model_percentile":82.8231292517,
+    "model_drivers":{
+      "raises":[
+        "OverTime = Yes",
+        "TotalWorkingYears = 2",
+        "YearsWithCurrManager = 0"
+      ],
+      "lowers":[
+        "Department = Research & Development",
+        "EnvironmentSatisfaction = 4",
+        "NumCompaniesWorked = 0"
+      ]
+    },
+    "hybrid_state":"Employee profile. Age: 36; BusinessTravel: Travel_Rarely; DailyRate: 318; Department: Research & Development; DistanceFromHome: 9; Education: 3; EducationField: Medical; EnvironmentSatisfaction: 4; Gender: Male; HourlyRate: 79; JobInvolvement: 2; JobLevel: 1; JobRole: Research Scientist; JobSatisfaction: 3; MaritalStatus: Married; MonthlyIncome: 3388; MonthlyRate: 21777; NumCompaniesWorked: 0; OverTime: Yes; PercentSalaryHike: 17; PerformanceRating: 3; RelationshipSatisfaction: 1; StockOptionLevel: 1; TotalWorkingYears: 2; TrainingTimesLastYear: 0; WorkLifeBalance: 2; YearsAtCompany: 1; YearsInCurrentRole: 0; YearsSinceLastPromotion: 0; YearsWithCurrManager: 0 Statistical model context: a validated logistic regression trained on this company's history gives this employee an attrition score of 0.67, higher than 83% of training employees. Scores are well ordered but inflated, so read them as a ranking. Factors raising risk: OverTime = Yes; TotalWorkingYears = 2; YearsWithCurrManager = 0. Factors lowering risk: Department = Research & Development; EnvironmentSatisfaction = 4; NumCompaniesWorked = 0."
   },
   {
+    "row_id":1164,
     "Age":40,
     "BusinessTravel":"Travel_Rarely",
     "DailyRate":448,
@@ -207,9 +283,24 @@
     "YearsWithCurrManager":3,
     "y_true":false,
     "classical_score":0.5855975169,
-    "typed_state":"Employee profile. Age: 40; BusinessTravel: Travel_Rarely; DailyRate: 448; Department: Research & Development; DistanceFromHome: 16; Education: 3; EducationField: Life Sciences; EnvironmentSatisfaction: 3; Gender: Female; HourlyRate: 84; JobInvolvement: 3; JobLevel: 3; JobRole: Manufacturing Director; JobSatisfaction: 4; MaritalStatus: Single; MonthlyIncome: 7945; MonthlyRate: 19948; NumCompaniesWorked: 6; OverTime: Yes; PercentSalaryHike: 15; PerformanceRating: 3; RelationshipSatisfaction: 4; StockOptionLevel: 0; TotalWorkingYears: 18; TrainingTimesLastYear: 2; WorkLifeBalance: 2; YearsAtCompany: 4; YearsInCurrentRole: 2; YearsSinceLastPromotion: 3; YearsWithCurrManager: 3"
+    "typed_state":"Employee profile. Age: 40; BusinessTravel: Travel_Rarely; DailyRate: 448; Department: Research & Development; DistanceFromHome: 16; Education: 3; EducationField: Life Sciences; EnvironmentSatisfaction: 3; Gender: Female; HourlyRate: 84; JobInvolvement: 3; JobLevel: 3; JobRole: Manufacturing Director; JobSatisfaction: 4; MaritalStatus: Single; MonthlyIncome: 7945; MonthlyRate: 19948; NumCompaniesWorked: 6; OverTime: Yes; PercentSalaryHike: 15; PerformanceRating: 3; RelationshipSatisfaction: 4; StockOptionLevel: 0; TotalWorkingYears: 18; TrainingTimesLastYear: 2; WorkLifeBalance: 2; YearsAtCompany: 4; YearsInCurrentRole: 2; YearsSinceLastPromotion: 3; YearsWithCurrManager: 3",
+    "model_percentile":76.1904761905,
+    "model_drivers":{
+      "raises":[
+        "OverTime = Yes",
+        "NumCompaniesWorked = 6",
+        "MaritalStatus = Single"
+      ],
+      "lowers":[
+        "Department = Research & Development",
+        "JobSatisfaction = 4",
+        "TotalWorkingYears = 18"
+      ]
+    },
+    "hybrid_state":"Employee profile. Age: 40; BusinessTravel: Travel_Rarely; DailyRate: 448; Department: Research & Development; DistanceFromHome: 16; Education: 3; EducationField: Life Sciences; EnvironmentSatisfaction: 3; Gender: Female; HourlyRate: 84; JobInvolvement: 3; JobLevel: 3; JobRole: Manufacturing Director; JobSatisfaction: 4; MaritalStatus: Single; MonthlyIncome: 7945; MonthlyRate: 19948; NumCompaniesWorked: 6; OverTime: Yes; PercentSalaryHike: 15; PerformanceRating: 3; RelationshipSatisfaction: 4; StockOptionLevel: 0; TotalWorkingYears: 18; TrainingTimesLastYear: 2; WorkLifeBalance: 2; YearsAtCompany: 4; YearsInCurrentRole: 2; YearsSinceLastPromotion: 3; YearsWithCurrManager: 3 Statistical model context: a validated logistic regression trained on this company's history gives this employee an attrition score of 0.59, higher than 76% of training employees. Scores are well ordered but inflated, so read them as a ranking. Factors raising risk: OverTime = Yes; NumCompaniesWorked = 6; MaritalStatus = Single. Factors lowering risk: Department = Research & Development; JobSatisfaction = 4; TotalWorkingYears = 18."
   },
   {
+    "row_id":406,
     "Age":52,
     "BusinessTravel":"Travel_Rarely",
     "DailyRate":319,
@@ -242,9 +333,24 @@
     "YearsWithCurrManager":4,
     "y_true":false,
     "classical_score":0.1043847971,
-    "typed_state":"Employee profile. Age: 52; BusinessTravel: Travel_Rarely; DailyRate: 319; Department: Research & Development; DistanceFromHome: 3; Education: 3; EducationField: Medical; EnvironmentSatisfaction: 4; Gender: Male; HourlyRate: 39; JobInvolvement: 2; JobLevel: 3; JobRole: Manufacturing Director; JobSatisfaction: 3; MaritalStatus: Married; MonthlyIncome: 7969; MonthlyRate: 19609; NumCompaniesWorked: 2; OverTime: Yes; PercentSalaryHike: 14; PerformanceRating: 3; RelationshipSatisfaction: 3; StockOptionLevel: 0; TotalWorkingYears: 28; TrainingTimesLastYear: 4; WorkLifeBalance: 3; YearsAtCompany: 5; YearsInCurrentRole: 4; YearsSinceLastPromotion: 0; YearsWithCurrManager: 4"
+    "typed_state":"Employee profile. Age: 52; BusinessTravel: Travel_Rarely; DailyRate: 319; Department: Research & Development; DistanceFromHome: 3; Education: 3; EducationField: Medical; EnvironmentSatisfaction: 4; Gender: Male; HourlyRate: 39; JobInvolvement: 2; JobLevel: 3; JobRole: Manufacturing Director; JobSatisfaction: 3; MaritalStatus: Married; MonthlyIncome: 7969; MonthlyRate: 19609; NumCompaniesWorked: 2; OverTime: Yes; PercentSalaryHike: 14; PerformanceRating: 3; RelationshipSatisfaction: 3; StockOptionLevel: 0; TotalWorkingYears: 28; TrainingTimesLastYear: 4; WorkLifeBalance: 3; YearsAtCompany: 5; YearsInCurrentRole: 4; YearsSinceLastPromotion: 0; YearsWithCurrManager: 4",
+    "model_percentile":17.9421768707,
+    "model_drivers":{
+      "raises":[
+        "OverTime = Yes",
+        "JobInvolvement = 2",
+        "DailyRate = 319"
+      ],
+      "lowers":[
+        "Department = Research & Development",
+        "TotalWorkingYears = 28",
+        "Age = 52"
+      ]
+    },
+    "hybrid_state":"Employee profile. Age: 52; BusinessTravel: Travel_Rarely; DailyRate: 319; Department: Research & Development; DistanceFromHome: 3; Education: 3; EducationField: Medical; EnvironmentSatisfaction: 4; Gender: Male; HourlyRate: 39; JobInvolvement: 2; JobLevel: 3; JobRole: Manufacturing Director; JobSatisfaction: 3; MaritalStatus: Married; MonthlyIncome: 7969; MonthlyRate: 19609; NumCompaniesWorked: 2; OverTime: Yes; PercentSalaryHike: 14; PerformanceRating: 3; RelationshipSatisfaction: 3; StockOptionLevel: 0; TotalWorkingYears: 28; TrainingTimesLastYear: 4; WorkLifeBalance: 3; YearsAtCompany: 5; YearsInCurrentRole: 4; YearsSinceLastPromotion: 0; YearsWithCurrManager: 4 Statistical model context: a validated logistic regression trained on this company's history gives this employee an attrition score of 0.10, higher than 18% of training employees. Scores are well ordered but inflated, so read them as a ranking. Factors raising risk: OverTime = Yes; JobInvolvement = 2; DailyRate = 319. Factors lowering risk: Department = Research & Development; TotalWorkingYears = 28; Age = 52."
   },
   {
+    "row_id":1330,
     "Age":43,
     "BusinessTravel":"Travel_Rarely",
     "DailyRate":823,
@@ -277,9 +383,24 @@
     "YearsWithCurrManager":14,
     "y_true":false,
     "classical_score":0.1222499213,
-    "typed_state":"Employee profile. Age: 43; BusinessTravel: Travel_Rarely; DailyRate: 823; Department: Research & Development; DistanceFromHome: 6; Education: 3; EducationField: Medical; EnvironmentSatisfaction: 1; Gender: Female; HourlyRate: 81; JobInvolvement: 2; JobLevel: 5; JobRole: Manager; JobSatisfaction: 3; MaritalStatus: Married; MonthlyIncome: 19392; MonthlyRate: 22539; NumCompaniesWorked: 7; OverTime: No; PercentSalaryHike: 13; PerformanceRating: 3; RelationshipSatisfaction: 4; StockOptionLevel: 0; TotalWorkingYears: 21; TrainingTimesLastYear: 2; WorkLifeBalance: 3; YearsAtCompany: 16; YearsInCurrentRole: 12; YearsSinceLastPromotion: 6; YearsWithCurrManager: 14"
+    "typed_state":"Employee profile. Age: 43; BusinessTravel: Travel_Rarely; DailyRate: 823; Department: Research & Development; DistanceFromHome: 6; Education: 3; EducationField: Medical; EnvironmentSatisfaction: 1; Gender: Female; HourlyRate: 81; JobInvolvement: 2; JobLevel: 5; JobRole: Manager; JobSatisfaction: 3; MaritalStatus: Married; MonthlyIncome: 19392; MonthlyRate: 22539; NumCompaniesWorked: 7; OverTime: No; PercentSalaryHike: 13; PerformanceRating: 3; RelationshipSatisfaction: 4; StockOptionLevel: 0; TotalWorkingYears: 21; TrainingTimesLastYear: 2; WorkLifeBalance: 3; YearsAtCompany: 16; YearsInCurrentRole: 12; YearsSinceLastPromotion: 6; YearsWithCurrManager: 14",
+    "model_percentile":21.0884353741,
+    "model_drivers":{
+      "raises":[
+        "NumCompaniesWorked = 7",
+        "EnvironmentSatisfaction = 1",
+        "YearsSinceLastPromotion = 6"
+      ],
+      "lowers":[
+        "OverTime = No",
+        "Department = Research & Development",
+        "YearsWithCurrManager = 14"
+      ]
+    },
+    "hybrid_state":"Employee profile. Age: 43; BusinessTravel: Travel_Rarely; DailyRate: 823; Department: Research & Development; DistanceFromHome: 6; Education: 3; EducationField: Medical; EnvironmentSatisfaction: 1; Gender: Female; HourlyRate: 81; JobInvolvement: 2; JobLevel: 5; JobRole: Manager; JobSatisfaction: 3; MaritalStatus: Married; MonthlyIncome: 19392; MonthlyRate: 22539; NumCompaniesWorked: 7; OverTime: No; PercentSalaryHike: 13; PerformanceRating: 3; RelationshipSatisfaction: 4; StockOptionLevel: 0; TotalWorkingYears: 21; TrainingTimesLastYear: 2; WorkLifeBalance: 3; YearsAtCompany: 16; YearsInCurrentRole: 12; YearsSinceLastPromotion: 6; YearsWithCurrManager: 14 Statistical model context: a validated logistic regression trained on this company's history gives this employee an attrition score of 0.12, higher than 21% of training employees. Scores are well ordered but inflated, so read them as a ranking. Factors raising risk: NumCompaniesWorked = 7; EnvironmentSatisfaction = 1; YearsSinceLastPromotion = 6. Factors lowering risk: OverTime = No; Department = Research & Development; YearsWithCurrManager = 14."
   },
   {
+    "row_id":1232,
     "Age":35,
     "BusinessTravel":"Travel_Rarely",
     "DailyRate":1370,
@@ -312,9 +433,24 @@
     "YearsWithCurrManager":7,
     "y_true":false,
     "classical_score":0.0443666341,
-    "typed_state":"Employee profile. Age: 35; BusinessTravel: Travel_Rarely; DailyRate: 1370; Department: Research & Development; DistanceFromHome: 27; Education: 4; EducationField: Life Sciences; EnvironmentSatisfaction: 4; Gender: Male; HourlyRate: 49; JobInvolvement: 3; JobLevel: 2; JobRole: Manufacturing Director; JobSatisfaction: 3; MaritalStatus: Married; MonthlyIncome: 6883; MonthlyRate: 5151; NumCompaniesWorked: 2; OverTime: No; PercentSalaryHike: 16; PerformanceRating: 3; RelationshipSatisfaction: 2; StockOptionLevel: 1; TotalWorkingYears: 17; TrainingTimesLastYear: 3; WorkLifeBalance: 3; YearsAtCompany: 7; YearsInCurrentRole: 7; YearsSinceLastPromotion: 0; YearsWithCurrManager: 7"
+    "typed_state":"Employee profile. Age: 35; BusinessTravel: Travel_Rarely; DailyRate: 1370; Department: Research & Development; DistanceFromHome: 27; Education: 4; EducationField: Life Sciences; EnvironmentSatisfaction: 4; Gender: Male; HourlyRate: 49; JobInvolvement: 3; JobLevel: 2; JobRole: Manufacturing Director; JobSatisfaction: 3; MaritalStatus: Married; MonthlyIncome: 6883; MonthlyRate: 5151; NumCompaniesWorked: 2; OverTime: No; PercentSalaryHike: 16; PerformanceRating: 3; RelationshipSatisfaction: 2; StockOptionLevel: 1; TotalWorkingYears: 17; TrainingTimesLastYear: 3; WorkLifeBalance: 3; YearsAtCompany: 7; YearsInCurrentRole: 7; YearsSinceLastPromotion: 0; YearsWithCurrManager: 7",
+    "model_percentile":6.1224489796,
+    "model_drivers":{
+      "raises":[
+        "DistanceFromHome = 27",
+        "RelationshipSatisfaction = 2",
+        "Age = 35"
+      ],
+      "lowers":[
+        "OverTime = No",
+        "Department = Research & Development",
+        "EnvironmentSatisfaction = 4"
+      ]
+    },
+    "hybrid_state":"Employee profile. Age: 35; BusinessTravel: Travel_Rarely; DailyRate: 1370; Department: Research & Development; DistanceFromHome: 27; Education: 4; EducationField: Life Sciences; EnvironmentSatisfaction: 4; Gender: Male; HourlyRate: 49; JobInvolvement: 3; JobLevel: 2; JobRole: Manufacturing Director; JobSatisfaction: 3; MaritalStatus: Married; MonthlyIncome: 6883; MonthlyRate: 5151; NumCompaniesWorked: 2; OverTime: No; PercentSalaryHike: 16; PerformanceRating: 3; RelationshipSatisfaction: 2; StockOptionLevel: 1; TotalWorkingYears: 17; TrainingTimesLastYear: 3; WorkLifeBalance: 3; YearsAtCompany: 7; YearsInCurrentRole: 7; YearsSinceLastPromotion: 0; YearsWithCurrManager: 7 Statistical model context: a validated logistic regression trained on this company's history gives this employee an attrition score of 0.04, higher than 6% of training employees. Scores are well ordered but inflated, so read them as a ranking. Factors raising risk: DistanceFromHome = 27; RelationshipSatisfaction = 2; Age = 35. Factors lowering risk: OverTime = No; Department = Research & Development; EnvironmentSatisfaction = 4."
   },
   {
+    "row_id":1311,
     "Age":18,
     "BusinessTravel":"Non-Travel",
     "DailyRate":1431,
@@ -347,9 +483,24 @@
     "YearsWithCurrManager":0,
     "y_true":false,
     "classical_score":0.3206697184,
-    "typed_state":"Employee profile. Age: 18; BusinessTravel: Non-Travel; DailyRate: 1431; Department: Research & Development; DistanceFromHome: 14; Education: 3; EducationField: Medical; EnvironmentSatisfaction: 2; Gender: Female; HourlyRate: 33; JobInvolvement: 3; JobLevel: 1; JobRole: Research Scientist; JobSatisfaction: 3; MaritalStatus: Single; MonthlyIncome: 1514; MonthlyRate: 8018; NumCompaniesWorked: 1; OverTime: No; PercentSalaryHike: 16; PerformanceRating: 3; RelationshipSatisfaction: 3; StockOptionLevel: 0; TotalWorkingYears: 0; TrainingTimesLastYear: 4; WorkLifeBalance: 1; YearsAtCompany: 0; YearsInCurrentRole: 0; YearsSinceLastPromotion: 0; YearsWithCurrManager: 0"
+    "typed_state":"Employee profile. Age: 18; BusinessTravel: Non-Travel; DailyRate: 1431; Department: Research & Development; DistanceFromHome: 14; Education: 3; EducationField: Medical; EnvironmentSatisfaction: 2; Gender: Female; HourlyRate: 33; JobInvolvement: 3; JobLevel: 1; JobRole: Research Scientist; JobSatisfaction: 3; MaritalStatus: Single; MonthlyIncome: 1514; MonthlyRate: 8018; NumCompaniesWorked: 1; OverTime: No; PercentSalaryHike: 16; PerformanceRating: 3; RelationshipSatisfaction: 3; StockOptionLevel: 0; TotalWorkingYears: 0; TrainingTimesLastYear: 4; WorkLifeBalance: 1; YearsAtCompany: 0; YearsInCurrentRole: 0; YearsSinceLastPromotion: 0; YearsWithCurrManager: 0",
+    "model_percentile":49.9149659864,
+    "model_drivers":{
+      "raises":[
+        "Age = 18",
+        "TotalWorkingYears = 0",
+        "MaritalStatus = Single"
+      ],
+      "lowers":[
+        "OverTime = No",
+        "Department = Research & Development",
+        "BusinessTravel = Non-Travel"
+      ]
+    },
+    "hybrid_state":"Employee profile. Age: 18; BusinessTravel: Non-Travel; DailyRate: 1431; Department: Research & Development; DistanceFromHome: 14; Education: 3; EducationField: Medical; EnvironmentSatisfaction: 2; Gender: Female; HourlyRate: 33; JobInvolvement: 3; JobLevel: 1; JobRole: Research Scientist; JobSatisfaction: 3; MaritalStatus: Single; MonthlyIncome: 1514; MonthlyRate: 8018; NumCompaniesWorked: 1; OverTime: No; PercentSalaryHike: 16; PerformanceRating: 3; RelationshipSatisfaction: 3; StockOptionLevel: 0; TotalWorkingYears: 0; TrainingTimesLastYear: 4; WorkLifeBalance: 1; YearsAtCompany: 0; YearsInCurrentRole: 0; YearsSinceLastPromotion: 0; YearsWithCurrManager: 0 Statistical model context: a validated logistic regression trained on this company's history gives this employee an attrition score of 0.32, higher than 50% of training employees. Scores are well ordered but inflated, so read them as a ranking. Factors raising risk: Age = 18; TotalWorkingYears = 0; MaritalStatus = Single. Factors lowering risk: OverTime = No; Department = Research & Development; BusinessTravel = Non-Travel."
   },
   {
+    "row_id":1212,
     "Age":34,
     "BusinessTravel":"Travel_Rarely",
     "DailyRate":678,
@@ -382,9 +533,24 @@
     "YearsWithCurrManager":7,
     "y_true":false,
     "classical_score":0.2994133725,
-    "typed_state":"Employee profile. Age: 34; BusinessTravel: Travel_Rarely; DailyRate: 678; Department: Research & Development; DistanceFromHome: 19; Education: 3; EducationField: Life Sciences; EnvironmentSatisfaction: 2; Gender: Female; HourlyRate: 35; JobInvolvement: 2; JobLevel: 1; JobRole: Research Scientist; JobSatisfaction: 4; MaritalStatus: Married; MonthlyIncome: 2929; MonthlyRate: 20338; NumCompaniesWorked: 1; OverTime: No; PercentSalaryHike: 12; PerformanceRating: 3; RelationshipSatisfaction: 2; StockOptionLevel: 0; TotalWorkingYears: 10; TrainingTimesLastYear: 3; WorkLifeBalance: 3; YearsAtCompany: 10; YearsInCurrentRole: 9; YearsSinceLastPromotion: 8; YearsWithCurrManager: 7"
+    "typed_state":"Employee profile. Age: 34; BusinessTravel: Travel_Rarely; DailyRate: 678; Department: Research & Development; DistanceFromHome: 19; Education: 3; EducationField: Life Sciences; EnvironmentSatisfaction: 2; Gender: Female; HourlyRate: 35; JobInvolvement: 2; JobLevel: 1; JobRole: Research Scientist; JobSatisfaction: 4; MaritalStatus: Married; MonthlyIncome: 2929; MonthlyRate: 20338; NumCompaniesWorked: 1; OverTime: No; PercentSalaryHike: 12; PerformanceRating: 3; RelationshipSatisfaction: 2; StockOptionLevel: 0; TotalWorkingYears: 10; TrainingTimesLastYear: 3; WorkLifeBalance: 3; YearsAtCompany: 10; YearsInCurrentRole: 9; YearsSinceLastPromotion: 8; YearsWithCurrManager: 7",
+    "model_percentile":47.5340136054,
+    "model_drivers":{
+      "raises":[
+        "YearsSinceLastPromotion = 8",
+        "DistanceFromHome = 19",
+        "JobInvolvement = 2"
+      ],
+      "lowers":[
+        "OverTime = No",
+        "Department = Research & Development",
+        "JobSatisfaction = 4"
+      ]
+    },
+    "hybrid_state":"Employee profile. Age: 34; BusinessTravel: Travel_Rarely; DailyRate: 678; Department: Research & Development; DistanceFromHome: 19; Education: 3; EducationField: Life Sciences; EnvironmentSatisfaction: 2; Gender: Female; HourlyRate: 35; JobInvolvement: 2; JobLevel: 1; JobRole: Research Scientist; JobSatisfaction: 4; MaritalStatus: Married; MonthlyIncome: 2929; MonthlyRate: 20338; NumCompaniesWorked: 1; OverTime: No; PercentSalaryHike: 12; PerformanceRating: 3; RelationshipSatisfaction: 2; StockOptionLevel: 0; TotalWorkingYears: 10; TrainingTimesLastYear: 3; WorkLifeBalance: 3; YearsAtCompany: 10; YearsInCurrentRole: 9; YearsSinceLastPromotion: 8; YearsWithCurrManager: 7 Statistical model context: a validated logistic regression trained on this company's history gives this employee an attrition score of 0.30, higher than 48% of training employees. Scores are well ordered but inflated, so read them as a ranking. Factors raising risk: YearsSinceLastPromotion = 8; DistanceFromHome = 19; JobInvolvement = 2. Factors lowering risk: OverTime = No; Department = Research & Development; JobSatisfaction = 4."
   },
   {
+    "row_id":771,
     "Age":54,
     "BusinessTravel":"Travel_Rarely",
     "DailyRate":1082,
@@ -417,6 +583,20 @@
     "YearsWithCurrManager":0,
     "y_true":false,
     "classical_score":0.4076393443,
-    "typed_state":"Employee profile. Age: 54; BusinessTravel: Travel_Rarely; DailyRate: 1082; Department: Sales; DistanceFromHome: 2; Education: 4; EducationField: Life Sciences; EnvironmentSatisfaction: 3; Gender: Female; HourlyRate: 41; JobInvolvement: 2; JobLevel: 3; JobRole: Sales Executive; JobSatisfaction: 3; MaritalStatus: Married; MonthlyIncome: 10686; MonthlyRate: 8392; NumCompaniesWorked: 6; OverTime: No; PercentSalaryHike: 11; PerformanceRating: 3; RelationshipSatisfaction: 2; StockOptionLevel: 1; TotalWorkingYears: 13; TrainingTimesLastYear: 4; WorkLifeBalance: 3; YearsAtCompany: 9; YearsInCurrentRole: 4; YearsSinceLastPromotion: 7; YearsWithCurrManager: 0"
+    "typed_state":"Employee profile. Age: 54; BusinessTravel: Travel_Rarely; DailyRate: 1082; Department: Sales; DistanceFromHome: 2; Education: 4; EducationField: Life Sciences; EnvironmentSatisfaction: 3; Gender: Female; HourlyRate: 41; JobInvolvement: 2; JobLevel: 3; JobRole: Sales Executive; JobSatisfaction: 3; MaritalStatus: Married; MonthlyIncome: 10686; MonthlyRate: 8392; NumCompaniesWorked: 6; OverTime: No; PercentSalaryHike: 11; PerformanceRating: 3; RelationshipSatisfaction: 2; StockOptionLevel: 1; TotalWorkingYears: 13; TrainingTimesLastYear: 4; WorkLifeBalance: 3; YearsAtCompany: 9; YearsInCurrentRole: 4; YearsSinceLastPromotion: 7; YearsWithCurrManager: 0",
+    "model_percentile":59.268707483,
+    "model_drivers":{
+      "raises":[
+        "YearsSinceLastPromotion = 7",
+        "NumCompaniesWorked = 6",
+        "YearsWithCurrManager = 0"
+      ],
+      "lowers":[
+        "OverTime = No",
+        "Age = 54",
+        "DistanceFromHome = 2"
+      ]
+    },
+    "hybrid_state":"Employee profile. Age: 54; BusinessTravel: Travel_Rarely; DailyRate: 1082; Department: Sales; DistanceFromHome: 2; Education: 4; EducationField: Life Sciences; EnvironmentSatisfaction: 3; Gender: Female; HourlyRate: 41; JobInvolvement: 2; JobLevel: 3; JobRole: Sales Executive; JobSatisfaction: 3; MaritalStatus: Married; MonthlyIncome: 10686; MonthlyRate: 8392; NumCompaniesWorked: 6; OverTime: No; PercentSalaryHike: 11; PerformanceRating: 3; RelationshipSatisfaction: 2; StockOptionLevel: 1; TotalWorkingYears: 13; TrainingTimesLastYear: 4; WorkLifeBalance: 3; YearsAtCompany: 9; YearsInCurrentRole: 4; YearsSinceLastPromotion: 7; YearsWithCurrManager: 0 Statistical model context: a validated logistic regression trained on this company's history gives this employee an attrition score of 0.41, higher than 59% of training employees. Scores are well ordered but inflated, so read them as a ranking. Factors raising risk: YearsSinceLastPromotion = 7; NumCompaniesWorked = 6; YearsWithCurrManager = 0. Factors lowering risk: OverTime = No; Age = 54; DistanceFromHome = 2."
   }
 ]

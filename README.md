@@ -22,11 +22,13 @@ Verified local run:
 - Python tests: passing
 - npm audit: 0 vulnerabilities
 
-Jev and Laya adapters are implemented but require fresh API keys in `.env` before paid/remote benchmarks are run.
+Live web app: https://eduardomoraga.github.io/business-classifier-benchmark/ (deployed by `.github/workflows/pages.yml` on every push to `main`).
+
+Jev and Laya runs need API keys in `.env`; their saved predictions are committed under `reports/`.
 
 ## Safety
 
-Do not commit API keys. Put credentials in `.env` only. A key was shared during planning; rotate it before running benchmarks.
+Do not commit API keys. Put credentials in `.env` only (gitignored).
 
 ## Quick start
 
@@ -44,8 +46,9 @@ uv run python scripts/run_pipeline.py
 
 This writes:
 
-- `app/public/model-summary.json`
-- `app/public/holdout-sample.json`
+- `app/public/model-summary.json` (metrics, train-only EDA, segments, curves, calibration, threshold sweep)
+- `app/public/holdout.json` (all holdout rows with classical score and typed state)
+- `app/public/holdout-sample.json` (first 12 rows, kept for compatibility)
 - `reports/model_metrics.csv`
 - `reports/logistic_coefficients.csv`
 - `reports/permutation_importance.csv`
@@ -69,10 +72,28 @@ After running the classical pipeline and adding credentials to `.env`:
 
 ```bash
 uv run python scripts/benchmark_typed_models.py --provider jev --limit 20
-uv run python scripts/benchmark_typed_models.py --provider laya --limit 20
+uv run python scripts/benchmark_typed_models.py --provider laya   # full holdout
 ```
 
-Outputs are written to `reports/{provider}_typed_predictions.json`.
+Outputs:
+
+- `reports/{run}_typed_predictions.json`: per-row score, latency and error (failed rows are reported, never imputed).
+- `app/public/typed-benchmark.json`: provider metrics plus the classical model on the exact same scored rows, a 50/50 blend with the classical score, and a paired bootstrap of the PR-AUC difference. The web app picks it up automatically.
+
+Hybrid variant (LLM as a deployment layer): the same profile plus the logistic score, its training percentile and the employee's top risk drivers.
+
+```bash
+uv run python scripts/benchmark_typed_models.py --provider jev --variant hybrid
+uv run python scripts/benchmark_typed_models.py --provider jev --variant hybrid --from-report  # re-summarize, no API calls
+```
+
+## Model tournament
+
+```bash
+uv run python scripts/run_tournament.py
+```
+
+Tunes logistic L2, Random Forest, XGBoost, LightGBM, Boruta + logistic, Boruta + XGBoost and a soft-voting ensemble on the training split only (inner 5-fold randomized search), scores each with RepeatedStratifiedKFold 5x5, evaluates once on the holdout and compares against the production logistic with a paired bootstrap. Writes `app/public/tournament.json` and `reports/tournament.csv`. XGBoost on macOS needs `brew install libomp`.
 
 ## Project phases
 

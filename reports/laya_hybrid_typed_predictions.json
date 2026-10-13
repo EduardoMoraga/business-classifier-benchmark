@@ -1,0 +1,6470 @@
+[
+  {
+    "row_id": 1061,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.2056,
+    "latency_ms": 1040.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.2056
+        }
+      },
+      "usage": {
+        "input_tokens": 458,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 891,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0418,
+    "latency_ms": 832.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0418
+        }
+      },
+      "usage": {
+        "input_tokens": 469,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 456,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.6467,
+    "latency_ms": 1278.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.6467
+        }
+      },
+      "usage": {
+        "input_tokens": 469,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 922,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0438,
+    "latency_ms": 596.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0438
+        }
+      },
+      "usage": {
+        "input_tokens": 473,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 69,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.8147,
+    "latency_ms": 616.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.8147
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1164,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.6765,
+    "latency_ms": 1074.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.6765
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 406,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0381,
+    "latency_ms": 1125.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0381
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1330,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0415,
+    "latency_ms": 1040.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0415
+        }
+      },
+      "usage": {
+        "input_tokens": 470,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1232,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0333,
+    "latency_ms": 777.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0333
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1311,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.2293,
+    "latency_ms": 775.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.2293
+        }
+      },
+      "usage": {
+        "input_tokens": 459,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1212,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1764,
+    "latency_ms": 798.1,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1764
+        }
+      },
+      "usage": {
+        "input_tokens": 469,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 771,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.5254,
+    "latency_ms": 1187.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.5254
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 196,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.9128,
+    "latency_ms": 909.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9128
+        }
+      },
+      "usage": {
+        "input_tokens": 459,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1274,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.6958,
+    "latency_ms": 631.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.6958
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 930,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.8525,
+    "latency_ms": 772.4,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.8525
+        }
+      },
+      "usage": {
+        "input_tokens": 459,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 318,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.785,
+    "latency_ms": 1011.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.785
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 403,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0467,
+    "latency_ms": 841.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0467
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 261,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0297,
+    "latency_ms": 533.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0297
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 602,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.7622,
+    "latency_ms": 584.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.7622
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1458,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0358,
+    "latency_ms": 879.4,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0358
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 645,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.9364,
+    "latency_ms": 623.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9364
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 985,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.3888,
+    "latency_ms": 663.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.3888
+        }
+      },
+      "usage": {
+        "input_tokens": 467,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 854,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.599,
+    "latency_ms": 563.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.599
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1098,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.028,
+    "latency_ms": 755.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.028
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 788,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0279,
+    "latency_ms": 862.4,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0279
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 397,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.9396,
+    "latency_ms": 754.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9396
+        }
+      },
+      "usage": {
+        "input_tokens": 457,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1263,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.2251,
+    "latency_ms": 569.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.2251
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 136,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.0612,
+    "latency_ms": 728.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0612
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 704,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0277,
+    "latency_ms": 779.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0277
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 45,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.036,
+    "latency_ms": 731.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.036
+        }
+      },
+      "usage": {
+        "input_tokens": 474,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1150,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0331,
+    "latency_ms": 598.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0331
+        }
+      },
+      "usage": {
+        "input_tokens": 470,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 901,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.5311,
+    "latency_ms": 860.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.5311
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 603,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1285,
+    "latency_ms": 567.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1285
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 821,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1287,
+    "latency_ms": 902.1,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1287
+        }
+      },
+      "usage": {
+        "input_tokens": 467,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 671,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.6964,
+    "latency_ms": 1033.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.6964
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 514,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.9614,
+    "latency_ms": 638.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9614
+        }
+      },
+      "usage": {
+        "input_tokens": 469,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 78,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.2593,
+    "latency_ms": 615.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.2593
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1393,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0508,
+    "latency_ms": 841.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0508
+        }
+      },
+      "usage": {
+        "input_tokens": 457,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 874,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1077,
+    "latency_ms": 665.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1077
+        }
+      },
+      "usage": {
+        "input_tokens": 467,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 709,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.9247,
+    "latency_ms": 619.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9247
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 189,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0236,
+    "latency_ms": 590.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0236
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 841,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.9298,
+    "latency_ms": 747.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9298
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 235,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.027,
+    "latency_ms": 576.1,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.027
+        }
+      },
+      "usage": {
+        "input_tokens": 468,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1371,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0902,
+    "latency_ms": 574.4,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0902
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1141,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.494,
+    "latency_ms": 660.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.494
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1342,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0446,
+    "latency_ms": 614.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0446
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1238,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.9179,
+    "latency_ms": 839.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9179
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1215,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.9108,
+    "latency_ms": 690.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9108
+        }
+      },
+      "usage": {
+        "input_tokens": 461,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 240,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0525,
+    "latency_ms": 766.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0525
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 374,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1047,
+    "latency_ms": 586.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1047
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1047,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.6293,
+    "latency_ms": 766.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.6293
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1361,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1738,
+    "latency_ms": 1265.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1738
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1451,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0385,
+    "latency_ms": 847.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0385
+        }
+      },
+      "usage": {
+        "input_tokens": 467,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1100,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.5974,
+    "latency_ms": 729.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.5974
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 596,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0339,
+    "latency_ms": 614.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0339
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 522,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.041,
+    "latency_ms": 600.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.041
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 448,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0436,
+    "latency_ms": 623.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0436
+        }
+      },
+      "usage": {
+        "input_tokens": 470,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 132,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.9437,
+    "latency_ms": 830.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9437
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 572,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.6116,
+    "latency_ms": 689.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.6116
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 897,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0619,
+    "latency_ms": 618.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0619
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1026,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0519,
+    "latency_ms": 743.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0519
+        }
+      },
+      "usage": {
+        "input_tokens": 461,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1210,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0256,
+    "latency_ms": 789.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0256
+        }
+      },
+      "usage": {
+        "input_tokens": 469,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 191,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0573,
+    "latency_ms": 806.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0573
+        }
+      },
+      "usage": {
+        "input_tokens": 459,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1293,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.3448,
+    "latency_ms": 590.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.3448
+        }
+      },
+      "usage": {
+        "input_tokens": 461,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1469,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.229,
+    "latency_ms": 596.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.229
+        }
+      },
+      "usage": {
+        "input_tokens": 461,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1280,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0471,
+    "latency_ms": 640.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0471
+        }
+      },
+      "usage": {
+        "input_tokens": 470,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 66,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.6112,
+    "latency_ms": 904.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.6112
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1297,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.8101,
+    "latency_ms": 591.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.8101
+        }
+      },
+      "usage": {
+        "input_tokens": 459,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1028,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.2813,
+    "latency_ms": 565.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.2813
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 850,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0968,
+    "latency_ms": 802.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0968
+        }
+      },
+      "usage": {
+        "input_tokens": 461,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1450,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.6773,
+    "latency_ms": 613.4,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.6773
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 137,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0318,
+    "latency_ms": 606.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0318
+        }
+      },
+      "usage": {
+        "input_tokens": 470,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 919,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.035,
+    "latency_ms": 882.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.035
+        }
+      },
+      "usage": {
+        "input_tokens": 467,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1219,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.5554,
+    "latency_ms": 734.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.5554
+        }
+      },
+      "usage": {
+        "input_tokens": 461,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 114,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0982,
+    "latency_ms": 600.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0982
+        }
+      },
+      "usage": {
+        "input_tokens": 471,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1346,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0417,
+    "latency_ms": 784.1,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0417
+        }
+      },
+      "usage": {
+        "input_tokens": 467,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1054,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0297,
+    "latency_ms": 1027.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0297
+        }
+      },
+      "usage": {
+        "input_tokens": 468,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 223,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0356,
+    "latency_ms": 629.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0356
+        }
+      },
+      "usage": {
+        "input_tokens": 473,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1341,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.6826,
+    "latency_ms": 630.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.6826
+        }
+      },
+      "usage": {
+        "input_tokens": 469,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 173,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0493,
+    "latency_ms": 551.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0493
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1253,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0668,
+    "latency_ms": 630.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0668
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 762,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.9647,
+    "latency_ms": 705.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9647
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 126,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.0318,
+    "latency_ms": 637.4,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0318
+        }
+      },
+      "usage": {
+        "input_tokens": 471,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 25,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0292,
+    "latency_ms": 631.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0292
+        }
+      },
+      "usage": {
+        "input_tokens": 470,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1350,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1026,
+    "latency_ms": 821.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1026
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1229,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.588,
+    "latency_ms": 583.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.588
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 471,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0391,
+    "latency_ms": 777.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0391
+        }
+      },
+      "usage": {
+        "input_tokens": 468,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 789,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.2944,
+    "latency_ms": 733.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.2944
+        }
+      },
+      "usage": {
+        "input_tokens": 467,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 459,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.4139,
+    "latency_ms": 655.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.4139
+        }
+      },
+      "usage": {
+        "input_tokens": 461,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1211,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1931,
+    "latency_ms": 583.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1931
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 178,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0526,
+    "latency_ms": 550.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0526
+        }
+      },
+      "usage": {
+        "input_tokens": 470,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 190,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0324,
+    "latency_ms": 674.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0324
+        }
+      },
+      "usage": {
+        "input_tokens": 469,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 911,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.9411,
+    "latency_ms": 699.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9411
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 697,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.6228,
+    "latency_ms": 557.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.6228
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 292,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.7925,
+    "latency_ms": 610.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.7925
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1021,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.9636,
+    "latency_ms": 589.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9636
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1168,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.9508,
+    "latency_ms": 622.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9508
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 217,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.0434,
+    "latency_ms": 751.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0434
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1433,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.6507,
+    "latency_ms": 649.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.6507
+        }
+      },
+      "usage": {
+        "input_tokens": 467,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 961,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.8572,
+    "latency_ms": 639.4,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.8572
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 770,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0383,
+    "latency_ms": 835.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0383
+        }
+      },
+      "usage": {
+        "input_tokens": 468,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 824,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.9491,
+    "latency_ms": 535.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9491
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 577,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.6928,
+    "latency_ms": 851.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.6928
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1248,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0458,
+    "latency_ms": 930.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0458
+        }
+      },
+      "usage": {
+        "input_tokens": 459,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1391,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.9502,
+    "latency_ms": 532.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9502
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1447,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0567,
+    "latency_ms": 534.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0567
+        }
+      },
+      "usage": {
+        "input_tokens": 473,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 670,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.3015,
+    "latency_ms": 786.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.3015
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 257,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0239,
+    "latency_ms": 557.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0239
+        }
+      },
+      "usage": {
+        "input_tokens": 469,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 953,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.5396,
+    "latency_ms": 590.1,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.5396
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1117,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.2428,
+    "latency_ms": 748.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.2428
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1145,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.8712,
+    "latency_ms": 940.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.8712
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 819,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.5458,
+    "latency_ms": 1054.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.5458
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 956,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0454,
+    "latency_ms": 604.4,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0454
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 53,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.6716,
+    "latency_ms": 744.1,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.6716
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 967,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.104,
+    "latency_ms": 599.4,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.104
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 686,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1658,
+    "latency_ms": 971.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1658
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 581,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1372,
+    "latency_ms": 530.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1372
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 465,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0643,
+    "latency_ms": 616.1,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0643
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 44,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0465,
+    "latency_ms": 584.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0465
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 846,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0342,
+    "latency_ms": 627.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0342
+        }
+      },
+      "usage": {
+        "input_tokens": 469,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 179,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1707,
+    "latency_ms": 799.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1707
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 559,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.9127,
+    "latency_ms": 581.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9127
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1078,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0469,
+    "latency_ms": 1032.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0469
+        }
+      },
+      "usage": {
+        "input_tokens": 474,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1328,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.4571,
+    "latency_ms": 532.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.4571
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 929,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.9473,
+    "latency_ms": 654.1,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9473
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 27,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.082,
+    "latency_ms": 1379.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.082
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1226,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.9107,
+    "latency_ms": 585.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9107
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 293,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.9403,
+    "latency_ms": 543.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9403
+        }
+      },
+      "usage": {
+        "input_tokens": 461,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1250,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.6749,
+    "latency_ms": 622.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.6749
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 950,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1693,
+    "latency_ms": 703.4,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1693
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 182,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.9553,
+    "latency_ms": 770.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9553
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 867,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0444,
+    "latency_ms": 620.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0444
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 562,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.1971,
+    "latency_ms": 645.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1971
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 665,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.9166,
+    "latency_ms": 839.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9166
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 148,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1527,
+    "latency_ms": 571.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1527
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1402,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.3749,
+    "latency_ms": 577.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.3749
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 684,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.8276,
+    "latency_ms": 594.1,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.8276
+        }
+      },
+      "usage": {
+        "input_tokens": 469,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 372,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.7357,
+    "latency_ms": 579.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.7357
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1002,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.5615,
+    "latency_ms": 736.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.5615
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 955,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.027,
+    "latency_ms": 615.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.027
+        }
+      },
+      "usage": {
+        "input_tokens": 468,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1009,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0283,
+    "latency_ms": 613.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0283
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 340,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.038,
+    "latency_ms": 515.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.038
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 274,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0625,
+    "latency_ms": 707.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0625
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 310,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.9218,
+    "latency_ms": 692.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9218
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 864,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.7775,
+    "latency_ms": 1045.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.7775
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 117,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0411,
+    "latency_ms": 562.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0411
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1241,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.8291,
+    "latency_ms": 600.4,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.8291
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 449,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.2482,
+    "latency_ms": 581.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.2482
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 160,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0399,
+    "latency_ms": 618.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0399
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 390,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0549,
+    "latency_ms": 785.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0549
+        }
+      },
+      "usage": {
+        "input_tokens": 470,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1048,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.049,
+    "latency_ms": 655.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.049
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1073,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.4274,
+    "latency_ms": 621.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.4274
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 998,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1824,
+    "latency_ms": 656.4,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1824
+        }
+      },
+      "usage": {
+        "input_tokens": 459,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 231,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0237,
+    "latency_ms": 685.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0237
+        }
+      },
+      "usage": {
+        "input_tokens": 469,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1146,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0823,
+    "latency_ms": 667.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0823
+        }
+      },
+      "usage": {
+        "input_tokens": 467,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 122,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.9211,
+    "latency_ms": 997.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9211
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1442,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.8646,
+    "latency_ms": 566.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.8646
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 978,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0305,
+    "latency_ms": 708.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0305
+        }
+      },
+      "usage": {
+        "input_tokens": 473,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 525,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.9548,
+    "latency_ms": 734.4,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9548
+        }
+      },
+      "usage": {
+        "input_tokens": 458,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1355,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.7794,
+    "latency_ms": 682.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.7794
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 548,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1948,
+    "latency_ms": 509.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1948
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 477,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1007,
+    "latency_ms": 600.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1007
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 24,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.6375,
+    "latency_ms": 575.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.6375
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 878,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0694,
+    "latency_ms": 779.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0694
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 547,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.7737,
+    "latency_ms": 532.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.7737
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1064,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0496,
+    "latency_ms": 570.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0496
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 779,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.1453,
+    "latency_ms": 628.4,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1453
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1366,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.7927,
+    "latency_ms": 633.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.7927
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 2,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.94,
+    "latency_ms": 775.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.94
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 245,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.7143,
+    "latency_ms": 603.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.7143
+        }
+      },
+      "usage": {
+        "input_tokens": 467,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1467,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.7265,
+    "latency_ms": 613.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.7265
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 242,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.2101,
+    "latency_ms": 528.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.2101
+        }
+      },
+      "usage": {
+        "input_tokens": 470,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 347,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.9251,
+    "latency_ms": 607.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9251
+        }
+      },
+      "usage": {
+        "input_tokens": 459,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 747,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.9252,
+    "latency_ms": 797.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9252
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 382,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.6158,
+    "latency_ms": 2123.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.6158
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 538,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.024,
+    "latency_ms": 666.1,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.024
+        }
+      },
+      "usage": {
+        "input_tokens": 470,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 732,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.9526,
+    "latency_ms": 649.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9526
+        }
+      },
+      "usage": {
+        "input_tokens": 459,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 269,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0344,
+    "latency_ms": 756.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0344
+        }
+      },
+      "usage": {
+        "input_tokens": 474,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 801,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.6971,
+    "latency_ms": 524.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.6971
+        }
+      },
+      "usage": {
+        "input_tokens": 459,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 474,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.3574,
+    "latency_ms": 585.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.3574
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 180,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.7678,
+    "latency_ms": 557.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.7678
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1220,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.4588,
+    "latency_ms": 525.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.4588
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1434,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0996,
+    "latency_ms": 588.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0996
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 229,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.8816,
+    "latency_ms": 549.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.8816
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1055,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.2381,
+    "latency_ms": 564.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.2381
+        }
+      },
+      "usage": {
+        "input_tokens": 470,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1190,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0482,
+    "latency_ms": 616.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0482
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1307,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0624,
+    "latency_ms": 746.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0624
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 225,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0408,
+    "latency_ms": 548.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0408
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1080,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.079,
+    "latency_ms": 573.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.079
+        }
+      },
+      "usage": {
+        "input_tokens": 471,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1349,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.9037,
+    "latency_ms": 958.4,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9037
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1186,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.7221,
+    "latency_ms": 537.1,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.7221
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 246,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0331,
+    "latency_ms": 582.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0331
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 617,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.5007,
+    "latency_ms": 567.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.5007
+        }
+      },
+      "usage": {
+        "input_tokens": 461,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 123,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0681,
+    "latency_ms": 612.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0681
+        }
+      },
+      "usage": {
+        "input_tokens": 473,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1040,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0332,
+    "latency_ms": 645.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0332
+        }
+      },
+      "usage": {
+        "input_tokens": 467,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 551,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.7418,
+    "latency_ms": 1044.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.7418
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1204,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.6747,
+    "latency_ms": 728.1,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.6747
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1144,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.8924,
+    "latency_ms": 704.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.8924
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 795,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1767,
+    "latency_ms": 550.4,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1767
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 764,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.5974,
+    "latency_ms": 662.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.5974
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 688,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.9545,
+    "latency_ms": 702.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9545
+        }
+      },
+      "usage": {
+        "input_tokens": 461,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 222,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0428,
+    "latency_ms": 573.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0428
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 934,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0701,
+    "latency_ms": 674.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0701
+        }
+      },
+      "usage": {
+        "input_tokens": 459,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 535,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.3805,
+    "latency_ms": 634.4,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.3805
+        }
+      },
+      "usage": {
+        "input_tokens": 472,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 17,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.3406,
+    "latency_ms": 749.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.3406
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 649,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0287,
+    "latency_ms": 590.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0287
+        }
+      },
+      "usage": {
+        "input_tokens": 467,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 766,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0366,
+    "latency_ms": 601.4,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0366
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 543,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.8986,
+    "latency_ms": 565.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.8986
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1216,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1279,
+    "latency_ms": 854.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1279
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1397,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0503,
+    "latency_ms": 683.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0503
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 135,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1036,
+    "latency_ms": 663.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1036
+        }
+      },
+      "usage": {
+        "input_tokens": 467,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 916,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0441,
+    "latency_ms": 751.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0441
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1264,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0535,
+    "latency_ms": 593.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0535
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1079,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1327,
+    "latency_ms": 531.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1327
+        }
+      },
+      "usage": {
+        "input_tokens": 461,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 357,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.9536,
+    "latency_ms": 533.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9536
+        }
+      },
+      "usage": {
+        "input_tokens": 459,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 330,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1355,
+    "latency_ms": 574.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1355
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 156,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0426,
+    "latency_ms": 565.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0426
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1035,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.3087,
+    "latency_ms": 866.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.3087
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 3,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.2076,
+    "latency_ms": 585.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.2076
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 36,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.951,
+    "latency_ms": 566.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.951
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 755,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0244,
+    "latency_ms": 567.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0244
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 715,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.5563,
+    "latency_ms": 580.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.5563
+        }
+      },
+      "usage": {
+        "input_tokens": 461,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 780,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.6505,
+    "latency_ms": 504.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.6505
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 301,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.9442,
+    "latency_ms": 615.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9442
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 729,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.7913,
+    "latency_ms": 777.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.7913
+        }
+      },
+      "usage": {
+        "input_tokens": 475,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 765,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1067,
+    "latency_ms": 689.1,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1067
+        }
+      },
+      "usage": {
+        "input_tokens": 461,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 476,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.6543,
+    "latency_ms": 619.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.6543
+        }
+      },
+      "usage": {
+        "input_tokens": 459,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 483,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.9049,
+    "latency_ms": 623.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9049
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 455,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0334,
+    "latency_ms": 689.4,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0334
+        }
+      },
+      "usage": {
+        "input_tokens": 468,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 767,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1242,
+    "latency_ms": 617.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1242
+        }
+      },
+      "usage": {
+        "input_tokens": 461,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 773,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0452,
+    "latency_ms": 641.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0452
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 724,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0373,
+    "latency_ms": 838.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0373
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 668,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0713,
+    "latency_ms": 623.1,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0713
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1175,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.05,
+    "latency_ms": 605.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.05
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 104,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0532,
+    "latency_ms": 655.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0532
+        }
+      },
+      "usage": {
+        "input_tokens": 468,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 147,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.3352,
+    "latency_ms": 734.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.3352
+        }
+      },
+      "usage": {
+        "input_tokens": 468,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 965,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0593,
+    "latency_ms": 556.4,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0593
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 843,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0415,
+    "latency_ms": 556.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0415
+        }
+      },
+      "usage": {
+        "input_tokens": 461,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 663,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.0586,
+    "latency_ms": 576.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0586
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1118,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.057,
+    "latency_ms": 550.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.057
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1111,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.0182,
+    "latency_ms": 584.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0182
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 109,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.7622,
+    "latency_ms": 605.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.7622
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 594,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0263,
+    "latency_ms": 770.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0263
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1302,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.8173,
+    "latency_ms": 617.1,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.8173
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 247,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.062,
+    "latency_ms": 556.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.062
+        }
+      },
+      "usage": {
+        "input_tokens": 468,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 638,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.8295,
+    "latency_ms": 647.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.8295
+        }
+      },
+      "usage": {
+        "input_tokens": 461,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 700,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.0544,
+    "latency_ms": 540.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0544
+        }
+      },
+      "usage": {
+        "input_tokens": 461,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 16,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1245,
+    "latency_ms": 780.1,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1245
+        }
+      },
+      "usage": {
+        "input_tokens": 467,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 10,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1784,
+    "latency_ms": 698.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1784
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 604,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0827,
+    "latency_ms": 608.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0827
+        }
+      },
+      "usage": {
+        "input_tokens": 468,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 239,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.9388,
+    "latency_ms": 557.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9388
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 744,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.9341,
+    "latency_ms": 756.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9341
+        }
+      },
+      "usage": {
+        "input_tokens": 467,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 621,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0502,
+    "latency_ms": 691.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0502
+        }
+      },
+      "usage": {
+        "input_tokens": 470,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1389,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.2078,
+    "latency_ms": 601.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.2078
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1283,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0277,
+    "latency_ms": 520.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0277
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 300,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0343,
+    "latency_ms": 809.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0343
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 946,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.9589,
+    "latency_ms": 568.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9589
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 655,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1875,
+    "latency_ms": 594.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1875
+        }
+      },
+      "usage": {
+        "input_tokens": 467,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 241,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0621,
+    "latency_ms": 546.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0621
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1416,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0501,
+    "latency_ms": 580.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0501
+        }
+      },
+      "usage": {
+        "input_tokens": 467,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1288,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0249,
+    "latency_ms": 850.4,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0249
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1399,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0357,
+    "latency_ms": 558.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0357
+        }
+      },
+      "usage": {
+        "input_tokens": 467,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1322,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0359,
+    "latency_ms": 607.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0359
+        }
+      },
+      "usage": {
+        "input_tokens": 467,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1267,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.036,
+    "latency_ms": 934.4,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.036
+        }
+      },
+      "usage": {
+        "input_tokens": 470,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1468,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0537,
+    "latency_ms": 574.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0537
+        }
+      },
+      "usage": {
+        "input_tokens": 461,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 169,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.2023,
+    "latency_ms": 611.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.2023
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1362,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0699,
+    "latency_ms": 549.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0699
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1258,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1292,
+    "latency_ms": 557.1,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1292
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1383,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0572,
+    "latency_ms": 566.1,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0572
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 557,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0711,
+    "latency_ms": 556.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0711
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 860,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.8363,
+    "latency_ms": 775.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.8363
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 464,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0311,
+    "latency_ms": 660.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0311
+        }
+      },
+      "usage": {
+        "input_tokens": 461,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 345,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0496,
+    "latency_ms": 573.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0496
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 496,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.9373,
+    "latency_ms": 605.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9373
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 772,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0443,
+    "latency_ms": 573.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0443
+        }
+      },
+      "usage": {
+        "input_tokens": 461,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 987,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.5386,
+    "latency_ms": 1266.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.5386
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 711,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.9388,
+    "latency_ms": 597.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.9388
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 742,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.2534,
+    "latency_ms": 785.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.2534
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 475,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.2365,
+    "latency_ms": 741.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.2365
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 326,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.6102,
+    "latency_ms": 685.5,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.6102
+        }
+      },
+      "usage": {
+        "input_tokens": 467,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1147,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.1967,
+    "latency_ms": 593.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.1967
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 825,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.5416,
+    "latency_ms": 780.6,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.5416
+        }
+      },
+      "usage": {
+        "input_tokens": 465,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1449,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0808,
+    "latency_ms": 625.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0808
+        }
+      },
+      "usage": {
+        "input_tokens": 461,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1296,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.6789,
+    "latency_ms": 564.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.6789
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 41,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0699,
+    "latency_ms": 595.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0699
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1384,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.5439,
+    "latency_ms": 596.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.5439
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 898,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0253,
+    "latency_ms": 775.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0253
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 829,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.956,
+    "latency_ms": 554.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.956
+        }
+      },
+      "usage": {
+        "input_tokens": 460,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 818,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.5745,
+    "latency_ms": 637.9,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.5745
+        }
+      },
+      "usage": {
+        "input_tokens": 462,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1269,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0403,
+    "latency_ms": 552.8,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0403
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1352,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0368,
+    "latency_ms": 866.0,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0368
+        }
+      },
+      "usage": {
+        "input_tokens": 464,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1236,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": true,
+    "y_score": 0.946,
+    "latency_ms": 619.3,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.946
+        }
+      },
+      "usage": {
+        "input_tokens": 468,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 1023,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.042,
+    "latency_ms": 616.2,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.042
+        }
+      },
+      "usage": {
+        "input_tokens": 463,
+        "output_tokens": 0
+      }
+    }
+  },
+  {
+    "row_id": 285,
+    "provider": "laya",
+    "variant": "hybrid",
+    "y_true": false,
+    "y_score": 0.0233,
+    "latency_ms": 529.7,
+    "error": null,
+    "raw_response": {
+      "model": "clef-flash",
+      "answers": {
+        "attrition_risk": {
+          "type": "noul",
+          "noul": 0.0233
+        }
+      },
+      "usage": {
+        "input_tokens": 466,
+        "output_tokens": 0
+      }
+    }
+  }
+]

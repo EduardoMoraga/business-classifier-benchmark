@@ -1,0 +1,244 @@
+{
+  "providers": {
+    "laya": {
+      "rows_requested": 294,
+      "rows_scored": 294,
+      "positives": 47,
+      "metrics": {
+        "pr_auc": 0.36559285532093366,
+        "roc_auc": 0.6708157464036523,
+        "brier": 0.4038283363945578,
+        "f1": 0.28668941979522183
+      },
+      "confusion": {
+        "threshold": 0.5,
+        "tp": 42,
+        "fp": 204,
+        "fn": 5,
+        "tn": 43
+      },
+      "classical_same_rows": {
+        "pr_auc": 0.5913678209170536,
+        "roc_auc": 0.8089413386165907,
+        "brier": 0.15445919809904665,
+        "f1": 0.5039370078740157
+      },
+      "classical_same_rows_confusion": {
+        "threshold": 0.5,
+        "tp": 32,
+        "fp": 48,
+        "fn": 15,
+        "tn": 199
+      },
+      "latency_ms_p50": 647.2,
+      "latency_ms_p95": 991.3049999999995,
+      "blend_with_classical": {
+        "weights": {
+          "typed": 0.5,
+          "classical": 0.5
+        },
+        "metrics": {
+          "pr_auc": 0.5909688319683226,
+          "roc_auc": 0.786372641915755,
+          "brier": 0.2427519466242837,
+          "f1": 0.36893203883495146
+        },
+        "confusion": {
+          "threshold": 0.5,
+          "tp": 38,
+          "fp": 121,
+          "fn": 9,
+          "tn": 126
+        }
+      },
+      "vs_classical": {
+        "low": -0.35537463226623267,
+        "high": -0.09250085526501885,
+        "share_a_wins": 0.0,
+        "rank_agreement": 0.5434817152661848
+      },
+      "variant": "plain",
+      "run_at": "2026-10-12T22:11:00.168094+00:00"
+    },
+    "jev": {
+      "rows_requested": 294,
+      "rows_scored": 294,
+      "positives": 47,
+      "metrics": {
+        "pr_auc": 0.29233513995835986,
+        "roc_auc": 0.6625893703161342,
+        "brier": 0.2016581632653061,
+        "f1": 0.3939393939393939
+      },
+      "confusion": {
+        "threshold": 0.5,
+        "tp": 26,
+        "fp": 59,
+        "fn": 21,
+        "tn": 188
+      },
+      "classical_same_rows": {
+        "pr_auc": 0.5913678209170536,
+        "roc_auc": 0.8089413386165907,
+        "brier": 0.15445919809904665,
+        "f1": 0.5039370078740157
+      },
+      "classical_same_rows_confusion": {
+        "threshold": 0.5,
+        "tp": 32,
+        "fp": 48,
+        "fn": 15,
+        "tn": 199
+      },
+      "latency_ms_p50": 405.15,
+      "latency_ms_p95": 509.17,
+      "blend_with_classical": {
+        "weights": {
+          "typed": 0.5,
+          "classical": 0.5
+        },
+        "metrics": {
+          "pr_auc": 0.5597114058890815,
+          "roc_auc": 0.7961064691187871,
+          "brier": 0.1632642892923654,
+          "f1": 0.512396694214876
+        },
+        "confusion": {
+          "threshold": 0.5,
+          "tp": 31,
+          "fp": 43,
+          "fn": 16,
+          "tn": 204
+        }
+      },
+      "vs_classical": {
+        "low": -0.42902204124000215,
+        "high": -0.15299138820911404,
+        "share_a_wins": 0.0,
+        "rank_agreement": 0.4166989460391362
+      },
+      "variant": "plain",
+      "run_at": "2026-10-12T22:10:58.641656+00:00"
+    },
+    "jev_hybrid": {
+      "rows_requested": 294,
+      "rows_scored": 294,
+      "positives": 47,
+      "metrics": {
+        "pr_auc": 0.6032598583241241,
+        "roc_auc": 0.8098888793177708,
+        "brier": 0.15993537414965983,
+        "f1": 0.4888888888888889
+      },
+      "confusion": {
+        "threshold": 0.5,
+        "tp": 33,
+        "fp": 55,
+        "fn": 14,
+        "tn": 192
+      },
+      "classical_same_rows": {
+        "pr_auc": 0.5913678209170536,
+        "roc_auc": 0.8089413386165907,
+        "brier": 0.15445919809904665,
+        "f1": 0.5039370078740157
+      },
+      "classical_same_rows_confusion": {
+        "threshold": 0.5,
+        "tp": 32,
+        "fp": 48,
+        "fn": 15,
+        "tn": 199
+      },
+      "latency_ms_p50": 493.6,
+      "latency_ms_p95": 750.845,
+      "blend_with_classical": {
+        "weights": {
+          "typed": 0.5,
+          "classical": 0.5
+        },
+        "metrics": {
+          "pr_auc": 0.597864317189618,
+          "roc_auc": 0.8091136187440778,
+          "brier": 0.1565585247713178,
+          "f1": 0.5
+        },
+        "confusion": {
+          "threshold": 0.5,
+          "tp": 32,
+          "fp": 49,
+          "fn": 15,
+          "tn": 198
+        }
+      },
+      "vs_classical": {
+        "low": -0.013322502407655085,
+        "high": 0.04082450484691062,
+        "share_a_wins": 0.819,
+        "rank_agreement": 0.9894627057144074
+      },
+      "variant": "hybrid",
+      "run_at": "2026-10-12T22:11:01.680356+00:00"
+    },
+    "laya_hybrid": {
+      "rows_requested": 294,
+      "rows_scored": 294,
+      "positives": 47,
+      "metrics": {
+        "pr_auc": 0.5916010490551289,
+        "roc_auc": 0.8005857524334569,
+        "brier": 0.18861857972789114,
+        "f1": 0.4645161290322581
+      },
+      "confusion": {
+        "threshold": 0.5,
+        "tp": 36,
+        "fp": 72,
+        "fn": 11,
+        "tn": 175
+      },
+      "classical_same_rows": {
+        "pr_auc": 0.5913678209170536,
+        "roc_auc": 0.8089413386165907,
+        "brier": 0.15445919809904665,
+        "f1": 0.5039370078740157
+      },
+      "classical_same_rows_confusion": {
+        "threshold": 0.5,
+        "tp": 32,
+        "fp": 48,
+        "fn": 15,
+        "tn": 199
+      },
+      "latency_ms_p50": 626.55,
+      "latency_ms_p95": 1029.5149999999999,
+      "blend_with_classical": {
+        "weights": {
+          "typed": 0.5,
+          "classical": 0.5
+        },
+        "metrics": {
+          "pr_auc": 0.590587552832888,
+          "roc_auc": 0.807132397277974,
+          "brier": 0.1669562520518877,
+          "f1": 0.4864864864864865
+        },
+        "confusion": {
+          "threshold": 0.5,
+          "tp": 36,
+          "fp": 65,
+          "fn": 11,
+          "tn": 182
+        }
+      },
+      "vs_classical": {
+        "low": -0.03815623858371156,
+        "high": 0.04160201412809189,
+        "share_a_wins": 0.507,
+        "rank_agreement": 0.9717987518748056
+      },
+      "variant": "hybrid",
+      "run_at": "2026-10-12T22:13:23.899573+00:00"
+    }
+  }
+}

@@ -16,6 +16,9 @@ dependencies = [
   "requests>=2.32",
   "supabase>=2.7",
   "typesafe-sdk>=0.1",
+  "xgboost>=3.2.0",
+  "lightgbm>=4.7.0",
+  "boruta>=0.4.3",
 ]
 
 [project.optional-dependencies]
