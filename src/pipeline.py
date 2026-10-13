@@ -15,23 +15,32 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix, precision_recall_curve, roc_curve
 from sklearn.model_selection import RepeatedStratifiedKFold, cross_val_score, train_test_split
 from sklearn.pipeline import Pipeline
+from xgboost import XGBClassifier
 
+from src.cases import CASES, Case
 from src.evaluation.metrics import classification_metrics
-from src.features.preprocess import build_preprocessor
 from src.features.selection import numeric_correlation_report, vif_report
+from src.models.pipelines import TARGET, build_model_pipeline, contributions, engineered_frame
 from src.models.typed_state import employee_row_to_state
 
-TARGET = "Attrition"
 RANDOM_STATE = 42
-DROP_COLUMNS = ["EmployeeCount", "EmployeeNumber", "Over18", "StandardHours"]
-SEGMENT_COLUMNS = ["OverTime", "BusinessTravel", "MaritalStatus", "Department", "JobRole"]
+DROP_COLUMNS = CASES["ibm"].drop_columns
 LOGISTIC_C = 0.25
+# Hyperparameters of the original employee-attrition-predictor notebook, fixed up front. The
+# notebook early-stopped on its own test set; here the tree count is simply fixed.
+XGBOOST_PARAMS = {
+    "n_estimators": 300,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+}
 
 
-def prepare_dataset(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.Series]:
+def prepare_dataset(df: pd.DataFrame, drop_columns: list[str] = DROP_COLUMNS):
     clean = df.copy()
     y = clean[TARGET].map({"Yes": 1, "No": 0}).astype(int)
-    x = clean.drop(columns=[TARGET] + [col for col in DROP_COLUMNS if col in clean.columns])
+    x = clean.drop(columns=[TARGET] + [col for col in drop_columns if col in clean.columns])
     return x, y
 
 
@@ -45,24 +54,51 @@ def split_dataset(x: pd.DataFrame, y: pd.Series):
     )
 
 
-def build_logistic_pipeline(train_x: pd.DataFrame) -> Pipeline:
-    sample = train_x.assign(Attrition=0)
-    return Pipeline(
-        steps=[
-            ("preprocess", build_preprocessor(sample, TARGET)),
-            (
-                "model",
-                LogisticRegression(
-                    solver="liblinear",
-                    l1_ratio=1,
-                    class_weight="balanced",
-                    C=LOGISTIC_C,
-                    max_iter=1000,
-                    random_state=RANDOM_STATE,
-                ),
-            ),
-        ]
+def build_logistic_pipeline(train_x: pd.DataFrame, features=None) -> Pipeline:
+    model = LogisticRegression(
+        solver="liblinear",
+        l1_ratio=1,
+        class_weight="balanced",
+        C=LOGISTIC_C,
+        max_iter=1000,
+        random_state=RANDOM_STATE,
     )
+    return build_model_pipeline(train_x, model, features)
+
+
+def build_xgboost_pipeline(train_x: pd.DataFrame, train_y: pd.Series, features=None) -> Pipeline:
+    model = XGBClassifier(
+        **XGBOOST_PARAMS,
+        scale_pos_weight=float((train_y == 0).sum() / (train_y == 1).sum()),
+        eval_metric="logloss",
+        n_jobs=1,
+        random_state=RANDOM_STATE,
+        verbosity=0,
+    )
+    return build_model_pipeline(train_x, model, features)
+
+
+def build_production_model(case: Case, train_x: pd.DataFrame, train_y: pd.Series) -> Pipeline:
+    if case.production == "xgboost":
+        return build_xgboost_pipeline(train_x, train_y, case.features)
+    return build_logistic_pipeline(train_x, case.features)
+
+
+def model_config(case: Case) -> dict:
+    common = {
+        "preprocessing": "OneHotEncoder (categorical) + StandardScaler (numeric)",
+        "dropped_columns": case.drop_columns,
+        "engineered_features": ["satisfaction_x_evaluation", "hours_per_project", "overwork"]
+        if case.features else [],
+        "deduplicated": case.dedupe,
+        "cv": "RepeatedStratifiedKFold 5x5",
+        "test_size": 0.2,
+    }
+    if case.production == "xgboost":
+        return {"estimator": "XGBClassifier", **XGBOOST_PARAMS,
+                "class_weight": "scale_pos_weight = negatives / positives", **common}
+    return {"estimator": "LogisticRegression", "solver": "liblinear", "penalty": "l1",
+            "C": LOGISTIC_C, "class_weight": "balanced", **common}
 
 
 def cross_validation_summary(model: Pipeline, x: pd.DataFrame, y: pd.Series) -> dict:
@@ -76,7 +112,9 @@ def cross_validation_summary(model: Pipeline, x: pd.DataFrame, y: pd.Series) -> 
     }
 
 
-def coefficient_table(model: Pipeline) -> pd.DataFrame:
+def coefficient_table(model: Pipeline) -> pd.DataFrame | None:
+    if not isinstance(model.named_steps["model"], LogisticRegression):
+        return None
     preprocessor = model.named_steps["preprocess"]
     classifier = model.named_steps["model"]
     names = preprocessor.get_feature_names_out()
@@ -87,20 +125,25 @@ def coefficient_table(model: Pipeline) -> pd.DataFrame:
     return table.sort_values("abs_coefficient", ascending=False)
 
 
+def _show(value) -> str:
+    if isinstance(value, float | np.floating) and not float(value).is_integer():
+        return f"{value:.2f}"
+    return str(value.item() if isinstance(value, np.generic) else value)
+
+
 def person_drivers(model: Pipeline, x: pd.DataFrame, top: int = 3) -> list[dict]:
-    """Per-employee logit contributions (coefficient x transformed value), named by raw value."""
-    preprocessor = model.named_steps["preprocess"]
-    contrib = preprocessor.transform(x) * model.named_steps["model"].coef_[0]
-    names = preprocessor.get_feature_names_out()
-    columns = sorted(x.columns, key=len, reverse=True)
+    """Per-employee log-odds contributions, named by the employee's raw value."""
+    contrib, names = contributions(model, x)
+    frame = engineered_frame(model, x)
+    columns = sorted(frame.columns, key=len, reverse=True)
 
     def label(feature: str, row: pd.Series) -> str:
         raw = feature.split("__", 1)[1]
-        column = raw if raw in x.columns else next(c for c in columns if raw.startswith(f"{c}_"))
-        return f"{column} = {row[column]}"
+        column = raw if raw in frame.columns else next(c for c in columns if raw.startswith(f"{c}_"))
+        return f"{column} = {_show(row[column])}"
 
     drivers = []
-    for i, (_, row) in enumerate(x.iterrows()):
+    for i, (_, row) in enumerate(frame.iterrows()):
         order = np.argsort(contrib[i])
         drivers.append({
             "raises": [label(names[j], row) for j in order[::-1][:top] if contrib[i, j] > 0],
@@ -109,15 +152,35 @@ def person_drivers(model: Pipeline, x: pd.DataFrame, top: int = 3) -> list[dict]
     return drivers
 
 
-def hybrid_state(state: str, score: float, percentile: float, drivers: dict) -> str:
+def global_drivers(model: Pipeline, x: pd.DataFrame, top: int = 12) -> list[dict]:
+    """Mean |contribution| per feature and whether high values push risk up (train rows)."""
+    contrib, names = contributions(model, x)
+    transformed = model.named_steps["preprocess"].transform(engineered_frame(model, x))
+    rows = []
+    for j, name in enumerate(names):
+        spread = np.std(transformed[:, j]) > 0 and np.std(contrib[:, j]) > 0
+        direction = float(np.corrcoef(transformed[:, j], contrib[:, j])[0, 1]) if spread else 0.0
+        rows.append({"feature": name, "mean_abs": float(np.abs(contrib[:, j]).mean()),
+                     "direction": direction})
+    return sorted(rows, key=lambda r: -r["mean_abs"])[:top]
+
+
+def hybrid_state(
+    state: str,
+    score: float,
+    percentile: float,
+    drivers: dict,
+    model_label: str = "logistic regression",
+    score_note: str = "Scores are well ordered but inflated, so read them as a ranking.",
+) -> str:
     """Typed state plus the validated model's view, for the LLM-as-deployment-layer test."""
     raises = "; ".join(drivers["raises"]) or "none"
     lowers = "; ".join(drivers["lowers"]) or "none"
     return (
-        f"{state} Statistical model context: a validated logistic regression trained on this "
+        f"{state} Statistical model context: a validated {model_label} trained on this "
         f"company's history gives this employee an attrition score of {score:.2f}, higher than "
-        f"{percentile:.0f}% of training employees. Scores are well ordered but inflated, so read "
-        f"them as a ranking. Factors raising risk: {raises}. Factors lowering risk: {lowers}."
+        f"{percentile:.0f}% of training employees. {score_note} "
+        f"Factors raising risk: {raises}. Factors lowering risk: {lowers}."
     )
 
 
@@ -156,10 +219,10 @@ def pca_summary(train_x: pd.DataFrame) -> dict:
     }
 
 
-def segment_rates(x: pd.DataFrame, y: pd.Series) -> list[dict]:
+def segment_rates(x: pd.DataFrame, y: pd.Series, columns: list[str]) -> list[dict]:
     """Attrition rate by business segment, computed on training rows only."""
     rows = []
-    for column in SEGMENT_COLUMNS:
+    for column in columns:
         if column not in x.columns:
             continue
         grouped = y.groupby(x[column]).agg(["mean", "size"])
@@ -239,30 +302,40 @@ def threshold_summary(y_true, y_score) -> dict:
     }
 
 
-def run_pipeline(raw_df: pd.DataFrame, output_dir: Path = Path(".")) -> dict:
-    x, y = prepare_dataset(raw_df)
+def run_pipeline(
+    raw_df: pd.DataFrame,
+    output_dir: Path = Path("."),
+    case: Case = CASES["ibm"],
+    duplicates_removed: int = 0,
+) -> dict:
+    x, y = prepare_dataset(raw_df, case.drop_columns)
     train_x, test_x, train_y, test_y = split_dataset(x, y)
 
     dummy = DummyClassifier(strategy="prior", random_state=RANDOM_STATE)
     dummy.fit(train_x, train_y)
     dummy_score = dummy.predict_proba(test_x)[:, 1]
 
-    logistic = build_logistic_pipeline(train_x)
-    cv = cross_validation_summary(logistic, train_x, train_y)
-    logistic.fit(train_x, train_y)
-    logistic_score = logistic.predict_proba(test_x)[:, 1]
+    production = build_production_model(case, train_x, train_y)
+    cv = cross_validation_summary(production, train_x, train_y)
+    production.fit(train_x, train_y)
+    production_score = production.predict_proba(test_x)[:, 1]
 
-    threshold = threshold_summary(test_y, logistic_score)
-    y_pred = logistic_score >= threshold["selected"]
+    production_name = (
+        "XGBoost (original notebook)" if case.production == "xgboost"
+        else "Parsimonious logistic model"
+    )
+    threshold = threshold_summary(test_y, production_score)
+    y_pred = production_score >= threshold["selected"]
 
     metrics = [
         {"model": "Dummy prior", **classification_metrics(test_y, dummy_score)},
-        {"model": "Parsimonious logistic model", **classification_metrics(test_y, logistic_score)},
+        {"model": production_name, **classification_metrics(test_y, production_score)},
     ]
 
-    coef = coefficient_table(logistic).head(15)
+    coef = coefficient_table(production)
+    coef = coef.head(15) if coef is not None else None
     importance = permutation_importance(
-        logistic,
+        production,
         test_x,
         test_y,
         n_repeats=10,
@@ -276,17 +349,17 @@ def run_pipeline(raw_df: pd.DataFrame, output_dir: Path = Path(".")) -> dict:
     holdout_rows = test_x.copy()
     holdout_rows.insert(0, "row_id", test_x.index.astype(int))
     holdout_rows["y_true"] = test_y.map({1: True, 0: False}).to_numpy()
-    holdout_rows["classical_score"] = logistic_score
+    holdout_rows["classical_score"] = production_score
     holdout_rows["typed_state"] = [employee_row_to_state(row) for _, row in test_x.iterrows()]
-    train_scores = np.sort(logistic.predict_proba(train_x)[:, 1])
-    percentiles = 100 * np.searchsorted(train_scores, logistic_score) / len(train_scores)
-    drivers = person_drivers(logistic, test_x)
+    train_scores = np.sort(production.predict_proba(train_x)[:, 1])
+    percentiles = 100 * np.searchsorted(train_scores, production_score) / len(train_scores)
+    drivers = person_drivers(production, test_x)
     holdout_rows["model_percentile"] = percentiles
     holdout_rows["model_drivers"] = drivers
     holdout_rows["hybrid_state"] = [
-        hybrid_state(state, score, pct, drv)
+        hybrid_state(state, score, pct, drv, case.model_label, case.score_note)
         for state, score, pct, drv in zip(
-            holdout_rows["typed_state"], logistic_score, percentiles, drivers, strict=True
+            holdout_rows["typed_state"], production_score, percentiles, drivers, strict=True
         )
     ]
     sample_rows = holdout_rows.head(12)
@@ -299,34 +372,29 @@ def run_pipeline(raw_df: pd.DataFrame, output_dir: Path = Path(".")) -> dict:
             "created_at": datetime.now(UTC).isoformat(),
             "dataset_hash": dataset_fingerprint,
         },
-        "dataset": "IBM HR Analytics Employee Attrition",
-        "source": "https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset",
+        "case": case.id,
+        "dataset": case.dataset,
+        "source": case.source,
+        "production": case.production,
+        "production_name": production_name,
+        "duplicates_removed": duplicates_removed,
         "rows": len(raw_df),
         "columns": int(raw_df.shape[1]),
         "target": TARGET,
         "split": {"train": len(train_x), "test": len(test_x), "random_state": RANDOM_STATE},
         "eda": {**eda_summary(train_x, train_y), "scope": "train_only"},
-        "segments": segment_rates(train_x, train_y),
+        "segments": segment_rates(train_x, train_y, case.segment_columns),
         "pca": pca_summary(train_x),
         "cv": cv,
         "threshold": threshold,
         "confusion_matrix": confusion_matrix(test_y, y_pred).tolist(),
-        "curves": curve_summary(test_y, logistic_score),
-        "calibration": calibration_summary(test_y, logistic_score),
-        "threshold_sweep": threshold_sweep(test_y, logistic_score),
-        "model_config": {
-            "estimator": "LogisticRegression",
-            "solver": "liblinear",
-            "penalty": "l1",
-            "C": LOGISTIC_C,
-            "class_weight": "balanced",
-            "preprocessing": "OneHotEncoder (categorical) + StandardScaler (numeric)",
-            "dropped_columns": DROP_COLUMNS,
-            "cv": "RepeatedStratifiedKFold 5x5",
-            "test_size": 0.2,
-        },
+        "curves": curve_summary(test_y, production_score),
+        "calibration": calibration_summary(test_y, production_score),
+        "threshold_sweep": threshold_sweep(test_y, production_score),
+        "model_config": model_config(case),
         "metrics": metrics,
-        "top_coefficients": coef.to_dict(orient="records"),
+        "top_coefficients": coef.to_dict(orient="records") if coef is not None else [],
+        "top_drivers": global_drivers(production, train_x),
         "permutation_importance": importances.head(12).to_dict(orient="records"),
         "typed_decision_models": [
             {"model": "Jev", "status": "adapter_ready_requires_api_key"},
@@ -335,8 +403,8 @@ def run_pipeline(raw_df: pd.DataFrame, output_dir: Path = Path(".")) -> dict:
     }
 
     paths = {
-        "app_public": output_dir / "app" / "public",
-        "reports": output_dir / "reports",
+        "app_public": output_dir / "app" / "public" / case.id,
+        "reports": output_dir / "reports" / case.id,
         "models": output_dir / "models",
     }
     for path in paths.values():
@@ -344,14 +412,15 @@ def run_pipeline(raw_df: pd.DataFrame, output_dir: Path = Path(".")) -> dict:
 
     (paths["app_public"] / "model-summary.json").write_text(json.dumps(summary, indent=2))
     (paths["app_public"] / "holdout.json").write_text(
-        holdout_rows.to_json(orient="records", indent=1)
+        holdout_rows.to_json(orient="records")
     )
     (paths["app_public"] / "holdout-sample.json").write_text(
         sample_rows.to_json(orient="records", indent=2)
     )
     pd.DataFrame(metrics).to_csv(paths["reports"] / "model_metrics.csv", index=False)
-    coef.to_csv(paths["reports"] / "logistic_coefficients.csv", index=False)
+    if coef is not None:
+        coef.to_csv(paths["reports"] / "logistic_coefficients.csv", index=False)
     importances.to_csv(paths["reports"] / "permutation_importance.csv", index=False)
-    joblib.dump(logistic, paths["models"] / "logistic_attrition.joblib")
+    joblib.dump(production, paths["models"] / f"{case.id}_{case.production}.joblib")
 
     return summary

@@ -1,0 +1,248 @@
+{
+  "providers": {
+    "jev": {
+      "rows_requested": 2399,
+      "rows_scored": 2399,
+      "positives": 398,
+      "metrics": {
+        "pr_auc": 0.4671393198390918,
+        "roc_auc": 0.7838109839552586,
+        "brier": 0.23169658190912884,
+        "f1": 0.4439862542955326
+      },
+      "confusion": {
+        "threshold": 0.5,
+        "tp": 323,
+        "fp": 734,
+        "fn": 75,
+        "tn": 1267
+      },
+      "classical_same_rows": {
+        "pr_auc": 0.9662526788536705,
+        "roc_auc": 0.9831855429069385,
+        "brier": 0.017230050251247866,
+        "f1": 0.9416243654822335
+      },
+      "classical_same_rows_confusion": {
+        "threshold": 0.5,
+        "tp": 371,
+        "fp": 19,
+        "fn": 27,
+        "tn": 1982
+      },
+      "latency_ms_p50": 521.0,
+      "latency_ms_p95": 734.5,
+      "blend_with_classical": {
+        "weights": {
+          "typed": 0.5,
+          "classical": 0.5
+        },
+        "metrics": {
+          "pr_auc": 0.9573760994163509,
+          "roc_auc": 0.977808834276329,
+          "brier": 0.07170033086746079,
+          "f1": 0.924223602484472
+        },
+        "confusion": {
+          "threshold": 0.5,
+          "tp": 372,
+          "fp": 35,
+          "fn": 26,
+          "tn": 1966
+        }
+      },
+      "vs_classical": {
+        "low": -0.5463898484482597,
+        "high": -0.4501102588751832,
+        "share_a_wins": 0.0,
+        "rank_agreement": 0.473945490501828
+      },
+      "variant": "plain",
+      "case": "hr",
+      "run_at": "2026-10-13T01:13:28.530277+00:00"
+    },
+    "laya": {
+      "rows_requested": 2399,
+      "rows_scored": 2399,
+      "positives": 398,
+      "metrics": {
+        "pr_auc": 0.350355394204102,
+        "roc_auc": 0.7715551771852767,
+        "brier": 0.3172901808711963,
+        "f1": 0.3826830571886692
+      },
+      "confusion": {
+        "threshold": 0.5,
+        "tp": 358,
+        "fp": 1115,
+        "fn": 40,
+        "tn": 886
+      },
+      "classical_same_rows": {
+        "pr_auc": 0.9662526788536705,
+        "roc_auc": 0.9831855429069385,
+        "brier": 0.017230050251247866,
+        "f1": 0.9416243654822335
+      },
+      "classical_same_rows_confusion": {
+        "threshold": 0.5,
+        "tp": 371,
+        "fp": 19,
+        "fn": 27,
+        "tn": 1982
+      },
+      "latency_ms_p50": 604.0,
+      "latency_ms_p95": 957.8199999999999,
+      "blend_with_classical": {
+        "weights": {
+          "typed": 0.5,
+          "classical": 0.5
+        },
+        "metrics": {
+          "pr_auc": 0.9538484481875301,
+          "roc_auc": 0.9755875830928756,
+          "brier": 0.0938448477489095,
+          "f1": 0.8792497069167644
+        },
+        "confusion": {
+          "threshold": 0.5,
+          "tp": 375,
+          "fp": 80,
+          "fn": 23,
+          "tn": 1921
+        }
+      },
+      "vs_classical": {
+        "low": -0.6529487109301775,
+        "high": -0.5732257034650068,
+        "share_a_wins": 0.0,
+        "rank_agreement": 0.4647368177752432
+      },
+      "variant": "plain",
+      "case": "hr",
+      "run_at": "2026-10-13T01:13:30.403545+00:00"
+    },
+    "jev_hybrid": {
+      "rows_requested": 2399,
+      "rows_scored": 2399,
+      "positives": 398,
+      "metrics": {
+        "pr_auc": 0.9648194590136784,
+        "roc_auc": 0.9813453825850894,
+        "brier": 0.034658024176740305,
+        "f1": 0.9393939393939394
+      },
+      "confusion": {
+        "threshold": 0.5,
+        "tp": 372,
+        "fp": 22,
+        "fn": 26,
+        "tn": 1979
+      },
+      "classical_same_rows": {
+        "pr_auc": 0.9662526788536705,
+        "roc_auc": 0.9831855429069385,
+        "brier": 0.017230050251247866,
+        "f1": 0.9416243654822335
+      },
+      "classical_same_rows_confusion": {
+        "threshold": 0.5,
+        "tp": 371,
+        "fp": 19,
+        "fn": 27,
+        "tn": 1982
+      },
+      "latency_ms_p50": 522.6,
+      "latency_ms_p95": 738.22,
+      "blend_with_classical": {
+        "weights": {
+          "typed": 0.5,
+          "classical": 0.5
+        },
+        "metrics": {
+          "pr_auc": 0.9666165957498002,
+          "roc_auc": 0.981943701516076,
+          "brier": 0.02187022497859542,
+          "f1": 0.9416243654822335
+        },
+        "confusion": {
+          "threshold": 0.5,
+          "tp": 371,
+          "fp": 19,
+          "fn": 27,
+          "tn": 1982
+        }
+      },
+      "vs_classical": {
+        "low": -0.005874695543692512,
+        "high": 0.0034028952644966567,
+        "share_a_wins": 0.272,
+        "rank_agreement": 0.837883807175559
+      },
+      "variant": "hybrid",
+      "case": "hr",
+      "run_at": "2026-10-13T01:13:32.225618+00:00"
+    },
+    "laya_hybrid": {
+      "rows_requested": 2399,
+      "rows_scored": 2399,
+      "positives": 398,
+      "metrics": {
+        "pr_auc": 0.9528840913725733,
+        "roc_auc": 0.9779877649115141,
+        "brier": 0.02843895965402251,
+        "f1": 0.9040097205346294
+      },
+      "confusion": {
+        "threshold": 0.5,
+        "tp": 372,
+        "fp": 53,
+        "fn": 26,
+        "tn": 1948
+      },
+      "classical_same_rows": {
+        "pr_auc": 0.9662526788536705,
+        "roc_auc": 0.9831855429069385,
+        "brier": 0.017230050251247866,
+        "f1": 0.9416243654822335
+      },
+      "classical_same_rows_confusion": {
+        "threshold": 0.5,
+        "tp": 371,
+        "fp": 19,
+        "fn": 27,
+        "tn": 1982
+      },
+      "latency_ms_p50": 586.9,
+      "latency_ms_p95": 858.2499999999998,
+      "blend_with_classical": {
+        "weights": {
+          "typed": 0.5,
+          "classical": 0.5
+        },
+        "metrics": {
+          "pr_auc": 0.9654410064666368,
+          "roc_auc": 0.9812957842686698,
+          "brier": 0.020859481367545455,
+          "f1": 0.9253731343283582
+        },
+        "confusion": {
+          "threshold": 0.5,
+          "tp": 372,
+          "fp": 34,
+          "fn": 26,
+          "tn": 1967
+        }
+      },
+      "vs_classical": {
+        "low": -0.029552034373255008,
+        "high": -0.0016252704377443421,
+        "share_a_wins": 0.009,
+        "rank_agreement": 0.7854252077983759
+      },
+      "variant": "hybrid",
+      "case": "hr",
+      "run_at": "2026-10-13T01:13:34.090049+00:00"
+    }
+  }
+}

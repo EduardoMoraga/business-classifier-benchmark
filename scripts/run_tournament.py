@@ -1,12 +1,14 @@
 """Run the model tournament on the same split as the production pipeline.
 
-    uv run python scripts/run_tournament.py
+    uv run python scripts/run_tournament.py --case ibm
+    uv run python scripts/run_tournament.py --case hr
 
-Writes app/public/tournament.json (read by the web app) and reports/tournament.csv.
+Writes app/public/<case>/tournament.json (read by the web app) and reports/<case>/tournament.csv.
 """
 
 from __future__ import annotations
 
+import argparse
 import json
 import sys
 from datetime import UTC, datetime
@@ -17,18 +19,31 @@ import pandas as pd
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.data.load_dataset import RAW_PATH, load_attrition_csv
-from src.models.tournament import run_tournament
-from src.pipeline import TARGET, prepare_dataset, split_dataset
+from src.cases import CASES, load_case
+from src.models.tournament import ORIGINAL_ID, PRODUCTION_ID, run_tournament
+from src.pipeline import XGBOOST_PARAMS, prepare_dataset, split_dataset
 
 
 def main() -> None:
-    x, y = prepare_dataset(load_attrition_csv(PROJECT_ROOT / RAW_PATH))
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--case", choices=list(CASES), default="ibm")
+    case = CASES[parser.parse_args().case]
+
+    df, _ = load_case(case, PROJECT_ROOT)
+    x, y = prepare_dataset(df, case.drop_columns)
     train_x, test_x, train_y, test_y = split_dataset(x, y)
-    result = run_tournament(train_x, train_y, test_x, test_y, TARGET)
+    original = case.production == "xgboost"
+    result = run_tournament(
+        train_x, train_y, test_x, test_y,
+        features=case.features,
+        original_xgboost=XGBOOST_PARAMS if original else None,
+        deployed=ORIGINAL_ID if original else PRODUCTION_ID,
+        reference_label="referencia" if original else "actual",
+    )
+    result["case"] = case.id
     result["run_at"] = datetime.now(UTC).isoformat()
 
-    public = PROJECT_ROOT / "app" / "public" / "tournament.json"
+    public = PROJECT_ROOT / "app" / "public" / case.id / "tournament.json"
     public.write_text(json.dumps(result, indent=2))
     table = pd.DataFrame(
         {
@@ -39,8 +54,8 @@ def main() -> None:
         }
         for r in result["candidates"]
     )
-    table.to_csv(PROJECT_ROOT / "reports" / "tournament.csv", index=False)
-    print(f"Winner by CV PR-AUC: {result['winner']}. Wrote {public}")
+    table.to_csv(PROJECT_ROOT / "reports" / case.id / "tournament.csv", index=False)
+    print(f"[{case.id}] Winner by CV PR-AUC: {result['winner']}. Wrote {public}")
 
 
 if __name__ == "__main__":

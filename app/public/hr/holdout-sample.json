@@ -1,0 +1,350 @@
+[
+  {
+    "row_id":11555,
+    "satisfaction_level":0.98,
+    "last_evaluation":0.44,
+    "number_project":4,
+    "average_monthly_hours":154,
+    "time_spend_company":6,
+    "work_accident":1,
+    "promotion_last_5years":0,
+    "department":"sales",
+    "salary":"medium",
+    "y_true":false,
+    "classical_score":0.0002089072,
+    "typed_state":"Employee profile. satisfaction_level: 0.98; last_evaluation: 0.44; number_project: 4; average_monthly_hours: 154; time_spend_company: 6; work_accident: 1; promotion_last_5years: 0; department: sales; salary: medium",
+    "model_percentile":1.1467889908,
+    "model_drivers":{
+      "raises":[
+        "time_spend_company = 6",
+        "salary = medium",
+        "department = sales"
+      ],
+      "lowers":[
+        "satisfaction_level = 0.98",
+        "last_evaluation = 0.44",
+        "hours_per_project = 38.50"
+      ]
+    },
+    "hybrid_state":"Employee profile. satisfaction_level: 0.98; last_evaluation: 0.44; number_project: 4; average_monthly_hours: 154; time_spend_company: 6; work_accident: 1; promotion_last_5years: 0; department: sales; salary: medium Statistical model context: a validated gradient-boosted tree model (XGBoost) trained on this company's history gives this employee an attrition score of 0.00, higher than 1% of training employees. Scores are close to calibrated probabilities on held-out employees. Factors raising risk: time_spend_company = 6; salary = medium; department = sales. Factors lowering risk: satisfaction_level = 0.98; last_evaluation = 0.44; hours_per_project = 38.50."
+  },
+  {
+    "row_id":27,
+    "satisfaction_level":0.4,
+    "last_evaluation":0.49,
+    "number_project":2,
+    "average_monthly_hours":135,
+    "time_spend_company":3,
+    "work_accident":0,
+    "promotion_last_5years":0,
+    "department":"sales",
+    "salary":"low",
+    "y_true":true,
+    "classical_score":0.998816371,
+    "typed_state":"Employee profile. satisfaction_level: 0.4; last_evaluation: 0.49; number_project: 2; average_monthly_hours: 135; time_spend_company: 3; work_accident: 0; promotion_last_5years: 0; department: sales; salary: low",
+    "model_percentile":97.4770642202,
+    "model_drivers":{
+      "raises":[
+        "satisfaction_level = 0.40",
+        "number_project = 2",
+        "satisfaction_x_evaluation = 0.20"
+      ],
+      "lowers":[
+        "time_spend_company = 3",
+        "department = sales",
+        "department = sales"
+      ]
+    },
+    "hybrid_state":"Employee profile. satisfaction_level: 0.4; last_evaluation: 0.49; number_project: 2; average_monthly_hours: 135; time_spend_company: 3; work_accident: 0; promotion_last_5years: 0; department: sales; salary: low Statistical model context: a validated gradient-boosted tree model (XGBoost) trained on this company's history gives this employee an attrition score of 1.00, higher than 97% of training employees. Scores are close to calibrated probabilities on held-out employees. Factors raising risk: satisfaction_level = 0.40; number_project = 2; satisfaction_x_evaluation = 0.20. Factors lowering risk: time_spend_company = 3; department = sales; department = sales."
+  },
+  {
+    "row_id":5890,
+    "satisfaction_level":0.3,
+    "last_evaluation":0.67,
+    "number_project":3,
+    "average_monthly_hours":232,
+    "time_spend_company":3,
+    "work_accident":0,
+    "promotion_last_5years":0,
+    "department":"sales",
+    "salary":"low",
+    "y_true":false,
+    "classical_score":0.1156908199,
+    "typed_state":"Employee profile. satisfaction_level: 0.3; last_evaluation: 0.67; number_project: 3; average_monthly_hours: 232; time_spend_company: 3; work_accident: 0; promotion_last_5years: 0; department: sales; salary: low",
+    "model_percentile":80.2648040033,
+    "model_drivers":{
+      "raises":[
+        "department = sales",
+        "salary = low",
+        "satisfaction_x_evaluation = 0.20"
+      ],
+      "lowers":[
+        "last_evaluation = 0.67",
+        "number_project = 3",
+        "average_monthly_hours = 232"
+      ]
+    },
+    "hybrid_state":"Employee profile. satisfaction_level: 0.3; last_evaluation: 0.67; number_project: 3; average_monthly_hours: 232; time_spend_company: 3; work_accident: 0; promotion_last_5years: 0; department: sales; salary: low Statistical model context: a validated gradient-boosted tree model (XGBoost) trained on this company's history gives this employee an attrition score of 0.12, higher than 80% of training employees. Scores are close to calibrated probabilities on held-out employees. Factors raising risk: department = sales; salary = low; satisfaction_x_evaluation = 0.20. Factors lowering risk: last_evaluation = 0.67; number_project = 3; average_monthly_hours = 232."
+  },
+  {
+    "row_id":9098,
+    "satisfaction_level":0.96,
+    "last_evaluation":0.52,
+    "number_project":4,
+    "average_monthly_hours":228,
+    "time_spend_company":3,
+    "work_accident":0,
+    "promotion_last_5years":0,
+    "department":"sales",
+    "salary":"low",
+    "y_true":false,
+    "classical_score":0.0001781308,
+    "typed_state":"Employee profile. satisfaction_level: 0.96; last_evaluation: 0.52; number_project: 4; average_monthly_hours: 228; time_spend_company: 3; work_accident: 0; promotion_last_5years: 0; department: sales; salary: low",
+    "model_percentile":0.7193494579,
+    "model_drivers":{
+      "raises":[
+        "department = sales",
+        "salary = low",
+        "work_accident = 0"
+      ],
+      "lowers":[
+        "satisfaction_level = 0.96",
+        "last_evaluation = 0.52",
+        "time_spend_company = 3"
+      ]
+    },
+    "hybrid_state":"Employee profile. satisfaction_level: 0.96; last_evaluation: 0.52; number_project: 4; average_monthly_hours: 228; time_spend_company: 3; work_accident: 0; promotion_last_5years: 0; department: sales; salary: low Statistical model context: a validated gradient-boosted tree model (XGBoost) trained on this company's history gives this employee an attrition score of 0.00, higher than 1% of training employees. Scores are close to calibrated probabilities on held-out employees. Factors raising risk: department = sales; salary = low; work_accident = 0. Factors lowering risk: satisfaction_level = 0.96; last_evaluation = 0.52; time_spend_company = 3."
+  },
+  {
+    "row_id":239,
+    "satisfaction_level":0.1,
+    "last_evaluation":0.97,
+    "number_project":7,
+    "average_monthly_hours":254,
+    "time_spend_company":4,
+    "work_accident":0,
+    "promotion_last_5years":0,
+    "department":"sales",
+    "salary":"low",
+    "y_true":true,
+    "classical_score":0.999556601,
+    "typed_state":"Employee profile. satisfaction_level: 0.1; last_evaluation: 0.97; number_project: 7; average_monthly_hours: 254; time_spend_company: 4; work_accident: 0; promotion_last_5years: 0; department: sales; salary: low",
+    "model_percentile":98.1651376147,
+    "model_drivers":{
+      "raises":[
+        "satisfaction_level = 0.10",
+        "number_project = 7",
+        "satisfaction_x_evaluation = 0.10"
+      ],
+      "lowers":[
+        "hours_per_project = 36.29",
+        "last_evaluation = 0.97",
+        "department = sales"
+      ]
+    },
+    "hybrid_state":"Employee profile. satisfaction_level: 0.1; last_evaluation: 0.97; number_project: 7; average_monthly_hours: 254; time_spend_company: 4; work_accident: 0; promotion_last_5years: 0; department: sales; salary: low Statistical model context: a validated gradient-boosted tree model (XGBoost) trained on this company's history gives this employee an attrition score of 1.00, higher than 98% of training employees. Scores are close to calibrated probabilities on held-out employees. Factors raising risk: satisfaction_level = 0.10; number_project = 7; satisfaction_x_evaluation = 0.10. Factors lowering risk: hours_per_project = 36.29; last_evaluation = 0.97; department = sales."
+  },
+  {
+    "row_id":5462,
+    "satisfaction_level":0.67,
+    "last_evaluation":0.91,
+    "number_project":3,
+    "average_monthly_hours":256,
+    "time_spend_company":3,
+    "work_accident":0,
+    "promotion_last_5years":0,
+    "department":"technical",
+    "salary":"low",
+    "y_true":false,
+    "classical_score":0.0036311806,
+    "typed_state":"Employee profile. satisfaction_level: 0.67; last_evaluation: 0.91; number_project: 3; average_monthly_hours: 256; time_spend_company: 3; work_accident: 0; promotion_last_5years: 0; department: technical; salary: low",
+    "model_percentile":30.2231025855,
+    "model_drivers":{
+      "raises":[
+        "salary = low",
+        "work_accident = 0",
+        "salary = low"
+      ],
+      "lowers":[
+        "satisfaction_level = 0.67",
+        "time_spend_company = 3",
+        "hours_per_project = 85.33"
+      ]
+    },
+    "hybrid_state":"Employee profile. satisfaction_level: 0.67; last_evaluation: 0.91; number_project: 3; average_monthly_hours: 256; time_spend_company: 3; work_accident: 0; promotion_last_5years: 0; department: technical; salary: low Statistical model context: a validated gradient-boosted tree model (XGBoost) trained on this company's history gives this employee an attrition score of 0.00, higher than 30% of training employees. Scores are close to calibrated probabilities on held-out employees. Factors raising risk: salary = low; work_accident = 0; salary = low. Factors lowering risk: satisfaction_level = 0.67; time_spend_company = 3; hours_per_project = 85.33."
+  },
+  {
+    "row_id":10434,
+    "satisfaction_level":0.77,
+    "last_evaluation":0.65,
+    "number_project":2,
+    "average_monthly_hours":162,
+    "time_spend_company":4,
+    "work_accident":1,
+    "promotion_last_5years":0,
+    "department":"support",
+    "salary":"medium",
+    "y_true":false,
+    "classical_score":0.0070040873,
+    "typed_state":"Employee profile. satisfaction_level: 0.77; last_evaluation: 0.65; number_project: 2; average_monthly_hours: 162; time_spend_company: 4; work_accident: 1; promotion_last_5years: 0; department: support; salary: medium",
+    "model_percentile":44.6830692244,
+    "model_drivers":{
+      "raises":[
+        "department = support",
+        "number_project = 2",
+        "salary = medium"
+      ],
+      "lowers":[
+        "last_evaluation = 0.65",
+        "satisfaction_level = 0.77",
+        "work_accident = 1"
+      ]
+    },
+    "hybrid_state":"Employee profile. satisfaction_level: 0.77; last_evaluation: 0.65; number_project: 2; average_monthly_hours: 162; time_spend_company: 4; work_accident: 1; promotion_last_5years: 0; department: support; salary: medium Statistical model context: a validated gradient-boosted tree model (XGBoost) trained on this company's history gives this employee an attrition score of 0.01, higher than 45% of training employees. Scores are close to calibrated probabilities on held-out employees. Factors raising risk: department = support; number_project = 2; salary = medium. Factors lowering risk: last_evaluation = 0.65; satisfaction_level = 0.77; work_accident = 1."
+  },
+  {
+    "row_id":4026,
+    "satisfaction_level":0.91,
+    "last_evaluation":0.93,
+    "number_project":4,
+    "average_monthly_hours":184,
+    "time_spend_company":3,
+    "work_accident":0,
+    "promotion_last_5years":0,
+    "department":"technical",
+    "salary":"low",
+    "y_true":false,
+    "classical_score":0.0051841717,
+    "typed_state":"Employee profile. satisfaction_level: 0.91; last_evaluation: 0.93; number_project: 4; average_monthly_hours: 184; time_spend_company: 3; work_accident: 0; promotion_last_5years: 0; department: technical; salary: low",
+    "model_percentile":38.1672226856,
+    "model_drivers":{
+      "raises":[
+        "last_evaluation = 0.93",
+        "salary = low",
+        "work_accident = 0"
+      ],
+      "lowers":[
+        "time_spend_company = 3",
+        "satisfaction_level = 0.91",
+        "average_monthly_hours = 184"
+      ]
+    },
+    "hybrid_state":"Employee profile. satisfaction_level: 0.91; last_evaluation: 0.93; number_project: 4; average_monthly_hours: 184; time_spend_company: 3; work_accident: 0; promotion_last_5years: 0; department: technical; salary: low Statistical model context: a validated gradient-boosted tree model (XGBoost) trained on this company's history gives this employee an attrition score of 0.01, higher than 38% of training employees. Scores are close to calibrated probabilities on held-out employees. Factors raising risk: last_evaluation = 0.93; salary = low; work_accident = 0. Factors lowering risk: time_spend_company = 3; satisfaction_level = 0.91; average_monthly_hours = 184."
+  },
+  {
+    "row_id":9813,
+    "satisfaction_level":0.64,
+    "last_evaluation":0.94,
+    "number_project":3,
+    "average_monthly_hours":204,
+    "time_spend_company":2,
+    "work_accident":0,
+    "promotion_last_5years":0,
+    "department":"technical",
+    "salary":"high",
+    "y_true":false,
+    "classical_score":0.001780026,
+    "typed_state":"Employee profile. satisfaction_level: 0.64; last_evaluation: 0.94; number_project: 3; average_monthly_hours: 204; time_spend_company: 2; work_accident: 0; promotion_last_5years: 0; department: technical; salary: high",
+    "model_percentile":18.4633027523,
+    "model_drivers":{
+      "raises":[
+        "work_accident = 0",
+        "last_evaluation = 0.94",
+        "department = technical"
+      ],
+      "lowers":[
+        "satisfaction_level = 0.64",
+        "time_spend_company = 2",
+        "salary = high"
+      ]
+    },
+    "hybrid_state":"Employee profile. satisfaction_level: 0.64; last_evaluation: 0.94; number_project: 3; average_monthly_hours: 204; time_spend_company: 2; work_accident: 0; promotion_last_5years: 0; department: technical; salary: high Statistical model context: a validated gradient-boosted tree model (XGBoost) trained on this company's history gives this employee an attrition score of 0.00, higher than 18% of training employees. Scores are close to calibrated probabilities on held-out employees. Factors raising risk: work_accident = 0; last_evaluation = 0.94; department = technical. Factors lowering risk: satisfaction_level = 0.64; time_spend_company = 2; salary = high."
+  },
+  {
+    "row_id":3062,
+    "satisfaction_level":0.76,
+    "last_evaluation":0.9,
+    "number_project":5,
+    "average_monthly_hours":142,
+    "time_spend_company":3,
+    "work_accident":0,
+    "promotion_last_5years":0,
+    "department":"marketing",
+    "salary":"low",
+    "y_true":false,
+    "classical_score":0.0134926634,
+    "typed_state":"Employee profile. satisfaction_level: 0.76; last_evaluation: 0.9; number_project: 5; average_monthly_hours: 142; time_spend_company: 3; work_accident: 0; promotion_last_5years: 0; department: marketing; salary: low",
+    "model_percentile":58.4341117598,
+    "model_drivers":{
+      "raises":[
+        "salary = low",
+        "work_accident = 0",
+        "salary = low"
+      ],
+      "lowers":[
+        "satisfaction_level = 0.76",
+        "time_spend_company = 3",
+        "hours_per_project = 28.40"
+      ]
+    },
+    "hybrid_state":"Employee profile. satisfaction_level: 0.76; last_evaluation: 0.9; number_project: 5; average_monthly_hours: 142; time_spend_company: 3; work_accident: 0; promotion_last_5years: 0; department: marketing; salary: low Statistical model context: a validated gradient-boosted tree model (XGBoost) trained on this company's history gives this employee an attrition score of 0.01, higher than 58% of training employees. Scores are close to calibrated probabilities on held-out employees. Factors raising risk: salary = low; work_accident = 0; salary = low. Factors lowering risk: satisfaction_level = 0.76; time_spend_company = 3; hours_per_project = 28.40."
+  },
+  {
+    "row_id":6070,
+    "satisfaction_level":0.78,
+    "last_evaluation":0.47,
+    "number_project":4,
+    "average_monthly_hours":129,
+    "time_spend_company":2,
+    "work_accident":0,
+    "promotion_last_5years":0,
+    "department":"technical",
+    "salary":"medium",
+    "y_true":false,
+    "classical_score":0.0026116699,
+    "typed_state":"Employee profile. satisfaction_level: 0.78; last_evaluation: 0.47; number_project: 4; average_monthly_hours: 129; time_spend_company: 2; work_accident: 0; promotion_last_5years: 0; department: technical; salary: medium",
+    "model_percentile":24.2910758966,
+    "model_drivers":{
+      "raises":[
+        "work_accident = 0",
+        "salary = medium",
+        "department = technical"
+      ],
+      "lowers":[
+        "satisfaction_level = 0.78",
+        "time_spend_company = 2",
+        "last_evaluation = 0.47"
+      ]
+    },
+    "hybrid_state":"Employee profile. satisfaction_level: 0.78; last_evaluation: 0.47; number_project: 4; average_monthly_hours: 129; time_spend_company: 2; work_accident: 0; promotion_last_5years: 0; department: technical; salary: medium Statistical model context: a validated gradient-boosted tree model (XGBoost) trained on this company's history gives this employee an attrition score of 0.00, higher than 24% of training employees. Scores are close to calibrated probabilities on held-out employees. Factors raising risk: work_accident = 0; salary = medium; department = technical. Factors lowering risk: satisfaction_level = 0.78; time_spend_company = 2; last_evaluation = 0.47."
+  },
+  {
+    "row_id":7116,
+    "satisfaction_level":0.77,
+    "last_evaluation":0.51,
+    "number_project":4,
+    "average_monthly_hours":142,
+    "time_spend_company":4,
+    "work_accident":0,
+    "promotion_last_5years":0,
+    "department":"sales",
+    "salary":"low",
+    "y_true":false,
+    "classical_score":0.0139969513,
+    "typed_state":"Employee profile. satisfaction_level: 0.77; last_evaluation: 0.51; number_project: 4; average_monthly_hours: 142; time_spend_company: 4; work_accident: 0; promotion_last_5years: 0; department: sales; salary: low",
+    "model_percentile":59.1430358632,
+    "model_drivers":{
+      "raises":[
+        "salary = low",
+        "time_spend_company = 4",
+        "work_accident = 0"
+      ],
+      "lowers":[
+        "satisfaction_level = 0.77",
+        "last_evaluation = 0.51",
+        "satisfaction_x_evaluation = 0.39"
+      ]
+    },
+    "hybrid_state":"Employee profile. satisfaction_level: 0.77; last_evaluation: 0.51; number_project: 4; average_monthly_hours: 142; time_spend_company: 4; work_accident: 0; promotion_last_5years: 0; department: sales; salary: low Statistical model context: a validated gradient-boosted tree model (XGBoost) trained on this company's history gives this employee an attrition score of 0.01, higher than 59% of training employees. Scores are close to calibrated probabilities on held-out employees. Factors raising risk: salary = low; time_spend_company = 4; work_accident = 0. Factors lowering risk: satisfaction_level = 0.77; last_evaluation = 0.51; satisfaction_x_evaluation = 0.39."
+  }
+]

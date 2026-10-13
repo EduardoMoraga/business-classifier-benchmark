@@ -118,7 +118,8 @@
         "rank_agreement": 0.4166989460391362
       },
       "variant": "plain",
-      "run_at": "2026-10-12T22:10:58.641656+00:00"
+      "case": "ibm",
+      "run_at": "2026-10-13T00:59:28.404772+00:00"
     },
     "jev_hybrid": {
       "rows_requested": 294,

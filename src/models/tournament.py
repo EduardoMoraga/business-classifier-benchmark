@@ -11,6 +11,7 @@ from __future__ import annotations
 import time
 import warnings
 from dataclasses import dataclass, field
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -36,12 +37,14 @@ from sklearn.pipeline import Pipeline
 from xgboost import XGBClassifier
 
 from src.features.boruta_selector import BorutaSelector
-from src.features.preprocess import build_preprocessor
+from src.models.pipelines import build_model_pipeline
 
 RANDOM_STATE = 42
 SEARCH_ITER = 25
 BOOTSTRAP_ROUNDS = 1000
 PRODUCTION_ID = "logistic_l1"
+ORIGINAL_ID = "xgboost_original"
+BORUTA_CACHE = Path(".cache/boruta")
 
 
 @dataclass
@@ -54,20 +57,27 @@ class Candidate:
     grid: dict = field(default_factory=dict)
 
 
-def _pipe(train_x: pd.DataFrame, target: str, model, boruta: bool = False) -> Pipeline:
-    steps = [("preprocess", build_preprocessor(train_x.assign(**{target: 0}), target))]
-    if boruta:
-        steps.append(("boruta", BorutaSelector(random_state=RANDOM_STATE)))
-    steps.append(("model", model))
-    return Pipeline(steps)
-
-
-def build_candidates(train_x: pd.DataFrame, train_y: pd.Series, target: str) -> list[Candidate]:
+def build_candidates(
+    train_x: pd.DataFrame,
+    train_y: pd.Series,
+    features=None,
+    original_xgboost: dict | None = None,
+    reference_label: str = "actual",
+) -> list[Candidate]:
+    """original_xgboost: fixed hyperparameters of a pre-existing XGBoost to score untuned."""
     pos_weight = float((train_y == 0).sum() / (train_y == 1).sum())
 
-    def xgb():
+    def _pipe(model, boruta: bool = False) -> Pipeline:
+        # Boruta only depends on the fold, so cache it across the hyperparameter search.
+        return build_model_pipeline(
+            train_x, model, features,
+            selector=BorutaSelector(random_state=RANDOM_STATE) if boruta else None,
+            memory=str(BORUTA_CACHE) if boruta else None,
+        )
+
+    def xgb(**params):
         return XGBClassifier(
-            n_estimators=400,
+            **({"n_estimators": 400} | params),
             scale_pos_weight=pos_weight,
             eval_metric="logloss",
             n_jobs=1,
@@ -86,33 +96,33 @@ def build_candidates(train_x: pd.DataFrame, train_y: pd.Series, target: str) -> 
         "model__min_child_weight": [1, 3, 5],
         "model__reg_lambda": [1, 5, 10],
     }
-    return [
+    candidates = [
         Candidate(
             "dummy", "Sin modelo (dummy)", "Referencia",
             "Asigna a todos la tasa histórica de salida.",
             DummyClassifier(strategy="prior"),
         ),
         Candidate(
-            PRODUCTION_ID, "Regresión logística L1 (actual)", "Lineal",
+            PRODUCTION_ID, f"Regresión logística L1 ({reference_label})", "Lineal",
             "Suma ponderada de factores; elimina los que no aportan.",
-            _pipe(train_x, target, logistic(solver="liblinear", l1_ratio=1, C=0.25,
+            _pipe(logistic(solver="liblinear", l1_ratio=1, C=0.25,
                                              class_weight="balanced")),
         ),
         Candidate(
             "logistic_unbalanced", "Regresión logística sin balancear", "Lineal",
             "La misma idea, pero optimizada para acertar en general y no para detectar salidas.",
-            _pipe(train_x, target, logistic(solver="liblinear", l1_ratio=1, C=0.25)),
+            _pipe(logistic(solver="liblinear", l1_ratio=1, C=0.25)),
         ),
         Candidate(
             "logistic_l2", "Regresión logística L2 ajustada", "Lineal",
             "Logística con la fuerza de regularización elegida por validación.",
-            _pipe(train_x, target, logistic(class_weight="balanced")),
+            _pipe(logistic(class_weight="balanced")),
             {"model__C": np.logspace(-3, 1, 20)},
         ),
         Candidate(
             "random_forest", "Random Forest", "Árboles",
             "Cientos de árboles de decisión que votan.",
-            _pipe(train_x, target, RandomForestClassifier(
+            _pipe(RandomForestClassifier(
                 n_estimators=500, class_weight="balanced_subsample", n_jobs=1,
                 random_state=RANDOM_STATE)),
             {
@@ -124,13 +134,13 @@ def build_candidates(train_x: pd.DataFrame, train_y: pd.Series, target: str) -> 
         Candidate(
             "xgboost", "XGBoost", "Boosting",
             "Árboles en secuencia: cada uno corrige los errores del anterior.",
-            _pipe(train_x, target, xgb()),
+            _pipe(xgb()),
             boost_grid,
         ),
         Candidate(
             "lightgbm", "LightGBM", "Boosting",
             "Boosting rápido de árboles, muy usado en competencias.",
-            _pipe(train_x, target, LGBMClassifier(
+            _pipe(LGBMClassifier(
                 n_estimators=400, class_weight="balanced", subsample_freq=1, n_jobs=1,
                 random_state=RANDOM_STATE, verbose=-1)),
             {
@@ -145,13 +155,13 @@ def build_candidates(train_x: pd.DataFrame, train_y: pd.Series, target: str) -> 
         Candidate(
             "boruta_logistic", "Boruta + logística", "Selección de variables",
             "Boruta deja sólo las variables que superan a copias aleatorias de sí mismas.",
-            _pipe(train_x, target, logistic(class_weight="balanced"), boruta=True),
+            _pipe(logistic(class_weight="balanced"), boruta=True),
             {"model__C": np.logspace(-3, 1, 12)},
         ),
         Candidate(
             "boruta_xgboost", "Boruta + XGBoost", "Selección de variables",
             "XGBoost entrenado sólo con las variables que confirma Boruta.",
-            _pipe(train_x, target, xgb(), boruta=True),
+            _pipe(xgb(), boruta=True),
             {
                 "model__max_depth": [2, 3, 4],
                 "model__learning_rate": [0.01, 0.03, 0.05],
@@ -160,6 +170,13 @@ def build_candidates(train_x: pd.DataFrame, train_y: pd.Series, target: str) -> 
             },
         ),
     ]
+    if original_xgboost:
+        candidates.insert(2, Candidate(
+            ORIGINAL_ID, "XGBoost del ejercicio original", "Boosting",
+            "Tu XGBoost con sus hiperparámetros originales, sin ajustar y sin fugas.",
+            _pipe(xgb(**original_xgboost)),
+        ))
+    return candidates
 
 
 def _tune(candidate: Candidate, train_x, train_y):
@@ -222,13 +239,23 @@ def paired_bootstrap(y_true, score_a, score_b, rounds: int = BOOTSTRAP_ROUNDS, s
     return {"low": float(low), "high": float(high), "share_a_wins": float(np.mean(np.array(diffs) > 0))}
 
 
-def run_tournament(train_x, train_y, holdout_x, holdout_y, target: str, log=print) -> dict:
+def run_tournament(
+    train_x,
+    train_y,
+    holdout_x,
+    holdout_y,
+    features=None,
+    original_xgboost: dict | None = None,
+    deployed: str = PRODUCTION_ID,
+    reference_label: str = "actual",
+    log=print,
+) -> dict:
     warnings.filterwarnings("ignore", category=UserWarning)
     outer = RepeatedStratifiedKFold(n_splits=5, n_repeats=5, random_state=RANDOM_STATE)
     y_true = holdout_y.to_numpy()
     fitted, rows = {}, []
 
-    for candidate in build_candidates(train_x, train_y, target):
+    for candidate in build_candidates(train_x, train_y, features, original_xgboost, reference_label):
         started = time.perf_counter()
         model, params = _tune(candidate, train_x, train_y)
         cv = cross_val_score(clone(model), train_x, train_y, scoring="average_precision",
@@ -279,6 +306,8 @@ def run_tournament(train_x, train_y, holdout_x, holdout_y, target: str, log=prin
     for row in rows:
         if row["id"] not in (PRODUCTION_ID, "dummy"):
             row["vs_production"] = paired_bootstrap(y_true, fitted[row["id"]][1], production)
+        if deployed != PRODUCTION_ID and row["id"] not in (deployed, "dummy"):
+            row["vs_deployed"] = paired_bootstrap(y_true, fitted[row["id"]][1], fitted[deployed][1])
 
     ranked = sorted((r for r in rows if r["id"] != "dummy"), key=lambda r: -r["cv"]["mean"])
     return {
@@ -288,6 +317,7 @@ def run_tournament(train_x, train_y, holdout_x, holdout_y, target: str, log=prin
         "accuracy_if_nobody_leaves": float(1 - y_true.mean()),
         "winner": ranked[0]["id"],
         "production": PRODUCTION_ID,
+        "deployed": deployed,
         "notes": [
             "Hyperparameters tuned on the training split only (inner 5-fold randomized search).",
             (

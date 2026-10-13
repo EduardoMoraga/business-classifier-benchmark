@@ -5,6 +5,7 @@
   "accuracy_if_nobody_leaves": 0.8401360544217686,
   "winner": "ensemble",
   "production": "logistic_l1",
+  "deployed": "logistic_l1",
   "notes": [
     "Hyperparameters tuned on the training split only (inner 5-fold randomized search).",
     "CV of tuned candidates reuses the training split, so it slightly favours tuned models over the fixed production logistic.",
@@ -36,7 +37,7 @@
           "tn": 247
         }
       },
-      "seconds": 1.7
+      "seconds": 1.5
     },
     {
       "id": "logistic_l1",
@@ -124,7 +125,7 @@
           "tn": 194
         }
       },
-      "seconds": 0.3,
+      "seconds": 0.4,
       "vs_production": {
         "low": -0.031906447589388306,
         "high": 0.04017524241113203,
@@ -160,7 +161,7 @@
           "tn": 235
         }
       },
-      "seconds": 14.8,
+      "seconds": 15.3,
       "vs_production": {
         "low": -0.24533737146885007,
         "high": -0.02783037498901949,
@@ -199,7 +200,7 @@
           "tn": 204
         }
       },
-      "seconds": 1.6,
+      "seconds": 1.7,
       "vs_production": {
         "low": -0.10942452739621235,
         "high": 0.06333289853960718,
@@ -238,7 +239,7 @@
           "tn": 205
         }
       },
-      "seconds": 1.6,
+      "seconds": 1.5,
       "vs_production": {
         "low": -0.11376979233132813,
         "high": 0.07826403215430011,
@@ -272,7 +273,7 @@
           "tn": 155
         }
       },
-      "seconds": 83.7,
+      "seconds": 45.0,
       "vs_production": {
         "low": -0.25871496935981264,
         "high": -0.002558856463684277,
@@ -309,7 +310,7 @@
           "tn": 188
         }
       },
-      "seconds": 128.8,
+      "seconds": 1.3,
       "vs_production": {
         "low": -0.2862810101041985,
         "high": -0.030542086721990807,
@@ -354,5 +355,6 @@
       }
     }
   ],
-  "run_at": "2026-10-12T22:10:29.097164+00:00"
+  "case": "ibm",
+  "run_at": "2026-10-13T01:04:17.680211+00:00"
 }

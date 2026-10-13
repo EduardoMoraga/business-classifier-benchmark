@@ -381,7 +381,8 @@ table.dense { width: 100%; border-collapse: separate; border-spacing: 0; backgro
 
 .more { display: block; width: 100%; padding: 11px; border: 1px solid var(--line); border-top: 0; background: var(--paper); color: var(--ink); font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em; }
 .more:hover { background: var(--wash); }
-.seg-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; align-items: start; }
+.seg-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 16px; align-items: start; }
+.seg-grid table { width: 100%; }
 .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
 .chart.xy .diag { stroke: var(--faint); stroke-dasharray: 4 4; }
 .chart.xy .curve { fill: none; stroke: var(--ink); stroke-width: 2.2; }
@@ -434,3 +435,16 @@ table.dense { width: 100%; border-collapse: separate; border-spacing: 0; backgro
 .state-details .state-str { margin-top: 10px; }
 .lab-table td:first-child { min-width: 180px; }
 .lab-table td:first-child b { cursor: help; }
+
+/* dataset switcher */
+.cases { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 12px 32px 4px; background: var(--canvas); }
+.cases .scope-label { margin-right: 4px; }
+.cases button { border: 1px solid var(--line-strong); background: var(--paper); color: var(--ink); padding: 8px 14px; font-weight: 500; font-size: 13.5px; }
+.cases button:hover { border-color: var(--ink); }
+.cases button.on { background: var(--ink); border-color: var(--ink); color: var(--canvas); }
+.cases button.on .muted { color: inherit; opacity: 0.7; }
+@media (max-width: 760px) { .cases { padding: 12px 16px 4px; } }
+
+/* narrow screens: wide tables scroll inside their exhibit instead of the page */
+.exhibit { min-width: 0; overflow-x: auto; }
+.grid-2 > *, .grid-3 > * { min-width: 0; }

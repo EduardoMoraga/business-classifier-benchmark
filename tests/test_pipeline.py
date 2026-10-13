@@ -68,10 +68,10 @@ def test_run_pipeline_exports_portfolio_artifacts(tmp_path):
     summary = run_pipeline(pd.DataFrame(rows), tmp_path)
 
     assert summary["rows"] == 80
-    assert (tmp_path / "app" / "public" / "model-summary.json").exists()
-    assert (tmp_path / "reports" / "model_metrics.csv").exists()
-    assert (tmp_path / "models" / "logistic_attrition.joblib").exists()
-    assert (tmp_path / "app" / "public" / "holdout.json").exists()
+    assert (tmp_path / "app" / "public" / "ibm" / "model-summary.json").exists()
+    assert (tmp_path / "reports" / "ibm" / "model_metrics.csv").exists()
+    assert (tmp_path / "models" / "ibm_logistic.joblib").exists()
+    assert (tmp_path / "app" / "public" / "ibm" / "holdout.json").exists()
     assert summary["eda"]["scope"] == "train_only"
     assert summary["eda"]["rows"] == summary["split"]["train"]
     assert {"pr", "roc"} <= summary["curves"].keys()

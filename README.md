@@ -6,21 +6,26 @@ Portfolio-grade data science project comparing:
 2. Jev / TypeSafe System One typed decisions.
 3. Laya typed-decision classification.
 
-Primary business use case: employee attrition classification using IBM HR Analytics Employee Attrition & Performance.
+Primary business use case: employee attrition classification, run on two datasets with the same protocol:
+
+| Case | Dataset | Rows (holdout) | Production model |
+|---|---|---|---|
+| `ibm` | IBM HR Analytics Employee Attrition & Performance | 1,470 (294) | Parsimonious L1 logistic |
+| `hr` | HR Analytics from [employee-attrition-predictor](https://github.com/EduardoMoraga/employee-attrition-predictor), deduplicated | 11,991 (2,399) | XGBoost with the original notebook's hyperparameters |
+
+The `hr` case redoes the earlier XGBoost + SHAP project without its leaks (3,008 duplicate rows, early stopping on the test set) and audits the difference with `scripts/audit_original.py`.
 
 ## Current status
 
 The project is runnable end to end for the classical model and portfolio web app.
 
-Verified local run:
+Verified local run (holdout PR-AUC; CV is RepeatedStratifiedKFold 5x5 on train):
 
-- Dataset rows: 1,470
-- Classical holdout PR-AUC: 0.591
-- Classical holdout ROC-AUC: 0.809
-- Repeated CV PR-AUC: 0.618 ± 0.052 across 25 folds
-- Web build: passing
-- Python tests: passing
-- npm audit: 0 vulnerabilities
+| | IBM | HR (your exercise) |
+|---|---|---|
+| Logistic L1 | 0.591 (CV 0.618) | 0.437 (CV 0.417) |
+| Best tree model | 0.571 LightGBM, tie | 0.969 LightGBM / Boruta + XGBoost, tie with original XGBoost 0.966 |
+| Max ROC-AUC, any model | 0.82 | 0.985 |
 
 Live web app: https://eduardomoraga.github.io/business-classifier-benchmark/ (deployed by `.github/workflows/pages.yml` on every push to `main`).
 
@@ -38,21 +43,19 @@ uv sync --extra dev
 npm install
 ```
 
-Run the Python pipeline:
+Put the raw data in `data/raw/` (see `docs/dataset-card.md`), then run the Python pipeline for both cases (or one with `--case ibm|hr`):
 
 ```bash
 uv run python scripts/run_pipeline.py
 ```
 
-This writes:
+This writes, per case:
 
-- `app/public/model-summary.json` (metrics, train-only EDA, segments, curves, calibration, threshold sweep)
-- `app/public/holdout.json` (all holdout rows with classical score and typed state)
-- `app/public/holdout-sample.json` (first 12 rows, kept for compatibility)
-- `reports/model_metrics.csv`
-- `reports/logistic_coefficients.csv`
-- `reports/permutation_importance.csv`
-- `models/logistic_attrition.joblib`
+- `app/public/<case>/model-summary.json` (metrics, train-only EDA, segments, curves, calibration, threshold sweep, global drivers)
+- `app/public/<case>/holdout.json` (all holdout rows with production score, typed state and hybrid state)
+- `app/public/<case>/holdout-sample.json` (first 12 rows)
+- `reports/<case>/model_metrics.csv`, `reports/<case>/permutation_importance.csv` (and logistic coefficients for `ibm`)
+- `models/<case>_<model>.joblib`
 
 Run the web app:
 
@@ -71,29 +74,38 @@ npm run build
 After running the classical pipeline and adding credentials to `.env`:
 
 ```bash
-uv run python scripts/benchmark_typed_models.py --provider jev --limit 20
-uv run python scripts/benchmark_typed_models.py --provider laya   # full holdout
+uv run python scripts/benchmark_typed_models.py --case ibm --provider jev --limit 20
+uv run python scripts/benchmark_typed_models.py --case hr --provider laya --workers 4   # full holdout
 ```
 
 Outputs:
 
-- `reports/{run}_typed_predictions.json`: per-row score, latency and error (failed rows are reported, never imputed).
-- `app/public/typed-benchmark.json`: provider metrics plus the classical model on the exact same scored rows, a 50/50 blend with the classical score, and a paired bootstrap of the PR-AUC difference. The web app picks it up automatically.
+- `reports/<case>/{run}_typed_predictions.json`: per-row score, latency and error (each row is retried twice; rows that still fail are reported, never imputed).
+- `app/public/<case>/typed-benchmark.json`: provider metrics plus the production model on the exact same scored rows, a 50/50 blend with its score, and a paired bootstrap of the PR-AUC difference. The web app picks it up automatically.
 
-Hybrid variant (LLM as a deployment layer): the same profile plus the logistic score, its training percentile and the employee's top risk drivers.
+Hybrid variant (LLM as a deployment layer): the same profile plus the production model's score, its training percentile and the employee's top risk drivers (logistic contributions for `ibm`, TreeSHAP for `hr`).
 
 ```bash
-uv run python scripts/benchmark_typed_models.py --provider jev --variant hybrid
-uv run python scripts/benchmark_typed_models.py --provider jev --variant hybrid --from-report  # re-summarize, no API calls
+uv run python scripts/benchmark_typed_models.py --case hr --provider jev --variant hybrid --workers 4
+uv run python scripts/benchmark_typed_models.py --case hr --provider jev --variant hybrid --from-report  # re-summarize, no API calls
 ```
 
 ## Model tournament
 
 ```bash
-uv run python scripts/run_tournament.py
+uv run python scripts/run_tournament.py --case ibm
+uv run python scripts/run_tournament.py --case hr
 ```
 
-Tunes logistic L2, Random Forest, XGBoost, LightGBM, Boruta + logistic, Boruta + XGBoost and a soft-voting ensemble on the training split only (inner 5-fold randomized search), scores each with RepeatedStratifiedKFold 5x5, evaluates once on the holdout and compares against the production logistic with a paired bootstrap. Writes `app/public/tournament.json` and `reports/tournament.csv`. XGBoost on macOS needs `brew install libomp`.
+Tunes logistic L2, Random Forest, XGBoost, LightGBM, Boruta + logistic, Boruta + XGBoost and a soft-voting ensemble on the training split only (inner 5-fold randomized search), scores each with RepeatedStratifiedKFold 5x5, evaluates once on the holdout and compares against the L1 logistic with a paired bootstrap. In the `hr` case it also scores the original notebook's XGBoost untuned and compares every model against it. Boruta's fitted step is cached in `.cache/boruta` across the search. Writes `app/public/<case>/tournament.json` and `reports/<case>/tournament.csv`. XGBoost on macOS needs `brew install libomp`.
+
+## Audit of the original exercise
+
+```bash
+uv run python scripts/audit_original.py
+```
+
+Re-runs the employee-attrition-predictor protocol on the raw workbook and writes `app/public/hr/audit.json`: the original split leaves 31% of test rows copied from train (ROC-AUC 0.994); scored only on unseen rows the same model gets 0.981, and the clean pipeline 0.983.
 
 ## Project phases
 
@@ -109,6 +121,7 @@ Tunes logistic L2, Random Forest, XGBoost, LightGBM, Boruta + logistic, Boruta +
 
 ```txt
 app/                 React/Vite portfolio web app
+src/cases.py         The two datasets and how each is modelled
 src/data/            Dataset loading
 src/features/        Preprocessing, VIF, correlation reports
 src/models/          Classical and typed-state helpers

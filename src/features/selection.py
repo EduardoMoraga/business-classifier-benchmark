@@ -10,7 +10,8 @@ def numeric_correlation_report(df: pd.DataFrame, threshold: float = 0.8) -> pd.D
             value = corr.loc[left, right]
             if value >= threshold:
                 pairs.append({"feature_a": left, "feature_b": right, "abs_corr": value})
-    return pd.DataFrame(pairs).sort_values("abs_corr", ascending=False)
+    columns = ["feature_a", "feature_b", "abs_corr"]
+    return pd.DataFrame(pairs, columns=columns).sort_values("abs_corr", ascending=False)
 
 
 def vif_report(x_numeric: pd.DataFrame) -> pd.DataFrame:

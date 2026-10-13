@@ -1,0 +1,27 @@
+{
+  "rows_raw": 14999,
+  "duplicate_rows": 3008,
+  "test_rows_copied_from_train": 0.31133333333333335,
+  "original": {
+    "roc_auc": 0.9935351218352608,
+    "pr_auc": 0.9899360595207713,
+    "best_iteration": 299,
+    "cv_roc_auc": 0.9941250055710406,
+    "test_rows": 3000
+  },
+  "original_unseen_rows": {
+    "roc_auc": 0.981479826200323,
+    "pr_auc": 0.9587260263552111,
+    "test_rows": 2066
+  },
+  "no_early_stopping": {
+    "roc_auc": 0.9935351218352608,
+    "pr_auc": 0.9899360595207713
+  },
+  "clean": {
+    "roc_auc": 0.9831855429069385,
+    "pr_auc": 0.9662526788536705,
+    "cv_pr_auc": 0.9659301020693134,
+    "test_rows": 2399
+  }
+}
